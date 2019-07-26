@@ -1,0 +1,1430 @@
+IQ-TREE multicore version 1.6.5 for Mac OS X 64-bit built May 10 2018
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Jordans-MacBook-Pro.local (AVX2, FMA3, 16 GB RAM)
+Command: iqtree -s GLRaV3/GLRaV3_coat_protein_protein_align.fasta
+Seed:    710335 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jul 26 14:50:41 2019
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file GLRaV3/GLRaV3_coat_protein_protein_align.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 638 sequences with 238 columns, 202 distinct patterns
+61 parsimony-informative, 70 singleton sites, 107 constant sites
+                                                      Gap/Ambiguity  Composition  p-value
+   1  EU344894_1_35_kDa_coat_protein_Chile                    2.10%    passed     99.91%
+   2  EU344895_1_35_kDa_coat_protein_Chile                    2.10%    passed     99.95%
+   3  EU344896_1_35_kDa_coat_protein_Chile                    2.10%    passed     99.26%
+   4  DQ062152_1_coat_protein_Brazil                          2.10%    passed     99.95%
+   5  DQ119574_1_coat_protein_China                           2.10%    passed     99.95%
+   6  DQ680141_1_coat_protein_Brazil                          2.10%    passed     99.95%
+   7  HQ401017_1_coat_protein_Portugal                        2.10%    passed     99.95%
+   8  JN546586_1_coat_protein_Poland                          2.10%    passed     99.95%
+   9  JX481789_1_coat_protein_China                           2.10%    passed     99.95%
+  10  DQ680142_1_coat_protein_Brazil                          2.10%    passed     99.93%
+  11  DQ911148_1_coat_protein_China                           2.10%    passed     99.65%
+  12  HM059034_1_coat_protein_Brazil                          2.10%    passed     99.93%
+  13  HQ130283_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.60%
+  14  HQ130284_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  15  HQ130285_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  16  HQ130286_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  17  HQ130287_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  18  HQ130288_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  19  HQ130289_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  20  HQ130290_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  21  HQ130291_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  22  HQ130292_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  23  HQ130293_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.87%
+  24  HQ130294_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.90%
+  25  HQ130295_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  26  HQ130296_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  27  HQ130297_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.92%
+  28  HQ130298_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  29  HQ130299_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.95%
+  30  HQ130300_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.94%
+  31  HQ130301_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  32  HQ130302_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  33  HQ130303_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.95%
+  34  HQ130304_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  35  HQ130305_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  36  HQ130306_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  37  HQ130307_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  38  HQ130308_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.95%
+  39  HQ130309_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.96%
+  40  HQ130310_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.96%
+  41  HQ130311_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.96%
+  42  HQ130312_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.96%
+  43  HQ130313_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  44  HQ130317_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  45  HQ130318_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  46  HQ130319_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  47  HQ130314_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  48  HQ130320_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  49  HQ130315_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.95%
+  50  HQ130316_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  51  HQ130321_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  52  HQ130322_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  53  HQ130323_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  54  HQ130324_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  55  HQ130325_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  56  HQ130326_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  57  HQ130332_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  58  HQ130327_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.98%
+  59  HQ130328_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.95%
+  60  HQ130329_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.97%
+  61  HQ130330_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.95%
+  62  HQ130331_1_coat_protein_USA__California__Napa_Valley    2.10%    passed     99.99%
+  63  HQ401015_1_coat_protein_Portugal                        2.10%    passed     99.97%
+  64  HQ401016_1_coat_protein_Portugal                        2.10%    passed     99.79%
+  65  HQ401018_1_coat_protein_Portugal                        2.10%    passed     99.98%
+  66  HQ401019_1_coat_protein_Portugal                        2.10%    passed     99.87%
+  67  JN546587_1_coat_protein_Poland                          2.10%    passed     99.95%
+  68  JX088129_1_coat_protein_China                           2.10%    passed     99.95%
+  69  JX088130_1_coat_protein_China                           2.10%    passed     99.89%
+  70  JX088131_1_coat_protein_China                           2.10%    passed     99.87%
+  71  JX088132_1_coat_protein_China                           2.10%    passed     99.98%
+  72  JX088133_1_coat_protein_China                           2.10%    passed     99.91%
+  73  JX088134_1_coat_protein_China                           2.10%    passed     99.95%
+  74  JX088135_1_coat_protein_China                           2.10%    passed     99.95%
+  75  JX088136_1_coat_protein_China                           2.10%    passed     99.95%
+  76  JX088137_1_coat_protein_China                           2.10%    passed     99.96%
+  77  JX088138_1_coat_protein_China                           2.10%    passed     99.94%
+  78  JX088139_1_coat_protein_China                           2.10%    passed     99.95%
+  79  JX088140_1_coat_protein_China                           2.10%    passed     99.87%
+  80  JX088143_1_coat_protein_China                           2.10%    passed     99.87%
+  81  JX088141_1_coat_protein_China                           2.10%    passed     99.87%
+  82  JX088142_1_coat_protein_China                           2.10%    passed     98.78%
+  83  JX088144_1_coat_protein_China                           2.10%    passed     99.95%
+  84  JX088145_1_coat_protein_China                           2.10%    passed     99.95%
+  85  JX088148_1_coat_protein_China                           2.10%    passed     99.95%
+  86  JX088149_1_coat_protein_China                           2.10%    passed     99.95%
+  87  JX088159_1_coat_protein_China                           2.10%    passed     99.95%
+  88  JX088160_1_coat_protein_China                           2.10%    passed     99.95%
+  89  JX088218_1_coat_protein_China                           2.10%    passed     99.95%
+  90  JX088146_1_coat_protein_China                           2.10%    passed     99.93%
+  91  JX088147_1_coat_protein_China                           2.10%    passed     99.95%
+  92  JX088150_1_coat_protein_China                           2.10%    passed     99.93%
+  93  JX088151_1_coat_protein_China                           2.10%    passed     99.95%
+  94  JX088152_1_coat_protein_China                           2.10%    passed     99.87%
+  95  JX088153_1_coat_protein_China                           2.10%    passed     99.61%
+  96  JX088154_1_coat_protein_China                           2.10%    passed     99.68%
+  97  JX088155_1_coat_protein_China                           2.10%    passed     99.87%
+  98  JX088156_1_coat_protein_China                           2.10%    passed     99.87%
+  99  JX088157_1_coat_protein_China                           2.10%    passed     99.60%
+ 100  JX088158_1_coat_protein_China                           2.10%    passed     99.87%
+ 101  JX088161_1_coat_protein_China                           2.10%    passed     99.95%
+ 102  JX088214_1_coat_protein_China                           2.10%    passed     99.95%
+ 103  JX088162_1_coat_protein_China                           2.10%    passed     99.95%
+ 104  JX088163_1_coat_protein_China                           2.10%    passed     99.95%
+ 105  JX088164_1_coat_protein_China                           2.10%    passed     99.94%
+ 106  JX088165_1_coat_protein_China                           2.10%    passed     99.98%
+ 107  JX088166_1_coat_protein_China                           2.10%    passed     99.95%
+ 108  JX088167_1_coat_protein_China                           2.10%    passed     99.87%
+ 109  JX088168_1_coat_protein_China                           2.10%    passed     99.85%
+ 110  JX088169_1_coat_protein_China                           2.10%    passed     99.87%
+ 111  JX088170_1_coat_protein_China                           2.10%    passed     99.87%
+ 112  JX088171_1_coat_protein_China                           2.10%    passed     99.87%
+ 113  JX088172_1_coat_protein_China                           2.10%    passed     99.87%
+ 114  JX088173_1_coat_protein_China                           2.10%    passed     99.93%
+ 115  JX088174_1_coat_protein_China                           2.10%    passed     99.95%
+ 116  JX088175_1_coat_protein_China                           2.10%    passed     99.95%
+ 117  JX088176_1_coat_protein_China                           2.10%    passed     99.96%
+ 118  JX088177_1_coat_protein_China                           2.10%    passed     99.87%
+ 119  JX088178_1_coat_protein_China                           2.10%    passed     99.87%
+ 120  JX088179_1_coat_protein_China                           2.10%    passed     99.87%
+ 121  JX088180_1_coat_protein_China                           2.10%    passed     99.95%
+ 122  JX088181_1_coat_protein_China                           2.10%    passed     99.87%
+ 123  JX088182_1_coat_protein_China                           2.10%    passed     99.84%
+ 124  JX088183_1_coat_protein_China                           2.10%    passed     99.91%
+ 125  JX088184_1_coat_protein_China                           2.10%    passed     99.95%
+ 126  JX088185_1_coat_protein_China                           2.10%    passed     99.99%
+ 127  JX088186_1_coat_protein_China                           2.10%    passed     99.91%
+ 128  JX088187_1_coat_protein_China                           2.10%    passed     99.95%
+ 129  JX088188_1_coat_protein_China                           2.10%    passed     99.95%
+ 130  JX088189_1_coat_protein_China                           2.10%    passed     99.95%
+ 131  JX088190_1_coat_protein_China                           2.10%    passed     99.52%
+ 132  JX088191_1_coat_protein_China                           2.10%    passed     99.94%
+ 133  JX088192_1_coat_protein_China                           2.10%    passed     99.95%
+ 134  JX088193_1_coat_protein_China                           2.10%    passed     99.95%
+ 135  JX088198_1_coat_protein_China                           2.10%    passed     99.95%
+ 136  JX088203_1_coat_protein_China                           2.10%    passed     99.95%
+ 137  JX088194_1_coat_protein_China                           2.10%    passed     99.95%
+ 138  JX088195_1_coat_protein_China                           2.10%    passed     99.95%
+ 139  JX088196_1_coat_protein_China                           2.10%    passed     99.95%
+ 140  JX088197_1_coat_protein_China                           2.10%    passed     99.95%
+ 141  JX088199_1_coat_protein_China                           2.10%    passed     99.95%
+ 142  JX088200_1_coat_protein_China                           2.10%    passed     99.95%
+ 143  JX088207_1_coat_protein_China                           2.10%    passed     99.95%
+ 144  JX088201_1_coat_protein_China                           2.10%    passed     99.95%
+ 145  JX088204_1_coat_protein_China                           2.10%    passed     99.95%
+ 146  JX088202_1_coat_protein_China                           2.10%    passed     99.95%
+ 147  JX088205_1_coat_protein_China                           2.10%    passed     99.95%
+ 148  JX088206_1_coat_protein_China                           2.10%    passed     99.95%
+ 149  JX088208_1_coat_protein_China                           2.10%    passed     99.51%
+ 150  JX088209_1_coat_protein_China                           2.10%    passed     99.95%
+ 151  JX088210_1_coat_protein_China                           2.10%    passed     99.95%
+ 152  JX088211_1_coat_protein_China                           2.10%    passed     99.87%
+ 153  JX088212_1_coat_protein_China                           2.10%    passed     99.95%
+ 154  JX088213_1_coat_protein_China                           2.10%    passed     99.95%
+ 155  JX088215_1_coat_protein_China                           2.10%    passed     99.92%
+ 156  JX088216_1_coat_protein_China                           2.10%    passed     99.95%
+ 157  JX088217_1_coat_protein_China                           2.10%    passed     99.95%
+ 158  JX088219_1_coat_protein_China                           2.10%    passed     99.69%
+ 159  JX088220_1_coat_protein_China                           2.10%    passed     99.95%
+ 160  JX088221_1_coat_protein_China                           2.10%    passed     99.95%
+ 161  JX088222_1_coat_protein_China                           2.10%    passed     99.95%
+ 162  JX088223_1_coat_protein_China                           2.10%    passed     99.95%
+ 163  JX088225_1_coat_protein_China                           2.10%    passed     99.95%
+ 164  JX088228_1_coat_protein_China                           2.10%    passed     99.95%
+ 165  JX088224_1_coat_protein_China                           2.10%    passed     99.95%
+ 166  JX088226_1_coat_protein_China                           2.10%    passed     99.95%
+ 167  JX088227_1_coat_protein_China                           2.10%    passed     99.95%
+ 168  JX088229_1_coat_protein_China                           2.10%    passed     99.99%
+ 169  JX088232_1_coat_protein_China                           2.10%    passed     99.99%
+ 170  JX088230_1_coat_protein_China                           2.10%    passed     99.99%
+ 171  JX088235_1_coat_protein_China                           2.10%    passed     99.99%
+ 172  JX088231_1_coat_protein_China                           2.10%    passed     99.98%
+ 173  JX088233_1_coat_protein_China                           2.10%    passed     99.99%
+ 174  JX088234_1_coat_protein_China                           2.10%    passed     99.99%
+ 175  JX088236_1_coat_protein_China                           2.10%    passed     99.99%
+ 176  JX088237_1_coat_protein_China                           2.10%    passed     99.98%
+ 177  JX088238_1_coat_protein_China                           2.10%    passed     99.99%
+ 178  JX088239_1_coat_protein_China                           2.10%    passed     99.99%
+ 179  JX088240_1_coat_protein_China                           2.10%    passed     99.98%
+ 180  JX088241_1_coat_protein_China                           2.10%    passed     99.93%
+ 181  JX088242_1_coat_protein_China                           2.10%    passed     99.94%
+ 182  JX481786_1_coat_protein_China                           2.10%    passed     99.91%
+ 183  JX481787_1_coat_protein_China                           2.10%    passed     99.73%
+ 184  JX481788_1_coat_protein_China                           2.10%    passed     99.87%
+ 185  KC477109_1_coat_protein_China                           2.10%    passed     99.87%
+ 186  KC417451_1_coat_protein_China                           2.10%    passed     99.91%
+ 187  KC477101_1_coat_protein_China                           2.10%    passed     99.95%
+ 188  KC477120_1_coat_protein_China                           2.10%    passed     99.95%
+ 189  KC477132_1_coat_protein_China                           2.10%    passed     99.95%
+ 190  KC477133_1_coat_protein_China                           2.10%    passed     99.95%
+ 191  KC477146_1_coat_protein_China                           2.10%    passed     99.95%
+ 192  KC477153_1_coat_protein_China                           2.10%    passed     99.95%
+ 193  KC477159_1_coat_protein_China                           2.10%    passed     99.95%
+ 194  KC477102_1_coat_protein_China                           2.10%    passed     99.95%
+ 195  KC477103_1_coat_protein_China                           2.10%    passed     99.96%
+ 196  KC477104_1_coat_protein_China                           2.10%    passed     99.93%
+ 197  KC477105_1_coat_protein_China                           2.10%    passed     99.95%
+ 198  KC477175_1_coat_protein_China                           2.10%    passed     99.95%
+ 199  KC477179_1_coat_protein_China                           2.10%    passed     99.95%
+ 200  KC477106_1_coat_protein_China                           2.10%    passed     99.96%
+ 201  KC477107_1_coat_protein_China                           2.10%    passed     99.76%
+ 202  KC477108_1_coat_protein_China                           2.10%    passed     99.93%
+ 203  KC477110_1_coat_protein_China                           2.10%    passed     99.89%
+ 204  KC477111_1_coat_protein_China                           2.10%    passed     99.97%
+ 205  KC477112_1_coat_protein_China                           2.10%    passed     99.96%
+ 206  KC477113_1_coat_protein_China                           2.10%    passed     99.96%
+ 207  KC477114_1_coat_protein_China                           2.10%    passed     99.85%
+ 208  KC477115_1_coat_protein_China                           2.10%    passed     99.95%
+ 209  KC477116_1_coat_protein_China                           2.10%    passed     99.95%
+ 210  KC477117_1_coat_protein_China                           2.10%    passed     99.95%
+ 211  KC477118_1_coat_protein_China                           2.10%    passed     99.95%
+ 212  KC477119_1_coat_protein_China                           2.10%    passed     99.95%
+ 213  KC477121_1_coat_protein_China                           2.10%    passed     99.92%
+ 214  KC477122_1_coat_protein_China                           2.10%    passed     99.95%
+ 215  KC477123_1_coat_protein_China                           2.10%    passed     99.98%
+ 216  KC477124_1_coat_protein_China                           2.10%    passed     99.95%
+ 217  KC477125_1_coat_protein_China                           2.10%    passed     99.87%
+ 218  KC477126_1_coat_protein_China                           2.10%    passed     99.95%
+ 219  KC477127_1_coat_protein_China                           2.10%    passed     99.99%
+ 220  KC477128_1_coat_protein_China                           2.10%    passed     99.93%
+ 221  KC477129_1_coat_protein_China                           2.10%    passed     99.91%
+ 222  KC477130_1_coat_protein_China                           2.10%    passed     99.95%
+ 223  KC477131_1_coat_protein_China                           2.10%    passed     99.95%
+ 224  KC477134_1_coat_protein_China                           2.10%    passed     99.96%
+ 225  KC477135_1_coat_protein_China                           2.10%    passed     99.77%
+ 226  KC477136_1_coat_protein_China                           2.10%    passed     99.91%
+ 227  KC477137_1_coat_protein_China                           2.10%    passed     99.82%
+ 228  KC477138_1_coat_protein_China                           2.10%    passed     99.95%
+ 229  KC477139_1_coat_protein_China                           2.10%    passed     99.91%
+ 230  KC477140_1_coat_protein_China                           2.10%    passed     99.91%
+ 231  KC477141_1_coat_protein_China                           2.10%    passed     99.50%
+ 232  KC477142_1_coat_protein_China                           2.10%    passed     99.91%
+ 233  KC477143_1_coat_protein_China                           2.10%    passed     99.92%
+ 234  KC477144_1_coat_protein_China                           2.10%    passed     99.45%
+ 235  KC477145_1_coat_protein_China                           2.10%    passed     99.95%
+ 236  KC477147_1_coat_protein_China                           2.10%    passed     99.67%
+ 237  KC477148_1_coat_protein_China                           2.10%    passed     99.93%
+ 238  KC477149_1_coat_protein_China                           2.10%    passed     99.94%
+ 239  KC477150_1_coat_protein_China                           2.10%    passed     99.95%
+ 240  KC477151_1_coat_protein_China                           2.10%    passed     99.92%
+ 241  KC477152_1_coat_protein_China                           2.10%    passed     99.87%
+ 242  KC477154_1_coat_protein_China                           2.10%    passed     99.69%
+ 243  KC477155_1_coat_protein_China                           2.10%    passed     99.95%
+ 244  KC477156_1_coat_protein_China                           2.10%    passed     99.95%
+ 245  KC477157_1_coat_protein_China                           2.10%    passed     99.98%
+ 246  KC477158_1_coat_protein_China                           2.10%    passed     99.95%
+ 247  KC477160_1_coat_protein_China                           2.10%    passed     99.70%
+ 248  KC477161_1_coat_protein_China                           2.10%    passed     99.89%
+ 249  KC477162_1_coat_protein_China                           2.10%    passed     99.95%
+ 250  KC477163_1_coat_protein_China                           2.10%    passed     99.87%
+ 251  KC477164_1_coat_protein_China                           2.10%    passed     99.91%
+ 252  KC477165_1_coat_protein_China                           2.10%    passed     99.91%
+ 253  KC477166_1_coat_protein_China                           2.10%    passed     99.95%
+ 254  KC477167_1_coat_protein_China                           2.10%    passed     99.95%
+ 255  KC477168_1_coat_protein_China                           2.10%    passed     99.91%
+ 256  KC477169_1_coat_protein_China                           2.10%    passed     99.93%
+ 257  KC477170_1_coat_protein_China                           2.10%    passed     99.84%
+ 258  KC477171_1_coat_protein_China                           2.10%    passed     99.95%
+ 259  KC477173_1_coat_protein_China                           2.10%    passed     99.95%
+ 260  KC477172_1_coat_protein_China                           2.10%    passed     99.95%
+ 261  KC477174_1_coat_protein_China                           2.10%    passed     99.98%
+ 262  KC477176_1_coat_protein_China                           2.10%    passed     99.79%
+ 263  KC477177_1_coat_protein_China                           2.10%    passed     99.98%
+ 264  KC477178_1_coat_protein_China                           2.10%    passed     99.95%
+ 265  KC477180_1_coat_protein_China                           2.10%    passed     99.93%
+ 266  KC477181_1_coat_protein_China                           2.10%    passed     99.95%
+ 267  KC477182_1_coat_protein_China                           2.10%    passed     99.95%
+ 268  KC477183_1_coat_protein_China                           2.10%    passed     99.68%
+ 269  KC477184_1_coat_protein_China                           2.10%    passed     99.92%
+ 270  KC477185_1_coat_protein_China                           2.10%    passed     99.89%
+ 271  KC477186_1_coat_protein_China                           2.10%    passed     99.95%
+ 272  KC477187_1_coat_protein_China                           2.10%    passed     99.95%
+ 273  KC477188_1_coat_protein_China                           2.10%    passed     99.95%
+ 274  KC477196_1_coat_protein_China                           2.10%    passed     99.95%
+ 275  KJ704369_1_coat_protein_Brazil                          2.10%    passed     99.95%
+ 276  KX499443_1_coat_protein_Brazil__Sao_Roque__SP           2.10%    passed     99.95%
+ 277  KX499445_1_coat_protein_Brazil__Sao_Roque__SP           2.10%    passed     99.95%
+ 278  KX499444_1_coat_protein_Brazil__Sao_Roque__SP           2.10%    passed     99.95%
+ 279  KX499446_1_coat_protein_Brazil__Sao_Roque__SP           2.10%    passed     99.95%
+ 280  KX499447_1_coat_protein_Brazil__Sao_Roque__SP           2.10%    passed     99.95%
+ 281  KX499448_1_coat_protein_Brazil__Sao_Roque__SP           2.10%    passed     99.95%
+ 282  LC387466_1_coat_protein_South_Korea                     0.00%    passed     99.69%
+ 283  MF446631_1_35_kDa_coat_protein_Hungary__Tokaj__Mad     56.30%    passed     99.51%
+ 284  MF677862_1_35_kDa_coat_protein_Hungary__Tokaj__Mad     71.01%    passed     96.25%
+ 285  EF445655_1_major_coat_protein_France                    2.10%    passed     96.12%
+ 286  AJ606338_1_coat_protein_Austria                        50.84%    passed     99.85%
+ 287  AJ606339_1_coat_protein_Austria                        50.84%    passed     99.47%
+ 288  AJ606340_1_coat_protein_Tromelin_Island                50.84%    passed     99.88%
+ 289  AJ606341_1_coat_protein_Nigeria                        50.84%    passed     99.47%
+ 290  AJ606342_1_coat_protein_Greece                         50.84%    passed     97.05%
+ 291  AJ606343_1_coat_protein_Greece                         50.84%    passed     99.47%
+ 292  AJ606344_1_coat_protein_Italy                          50.84%    passed     99.85%
+ 293  AJ606355_1_coat_protein_Israel                         50.84%    passed     99.85%
+ 294  AJ606345_1_coat_protein_Italy                          50.84%    passed     98.88%
+ 295  AJ606346_1_coat_protein_Italy                          50.84%    passed     99.87%
+ 296  AJ606352_1_coat_protein_Syria                          50.84%    passed     99.87%
+ 297  AJ606347_1_coat_protein_Italy                          50.84%    passed     98.10%
+ 298  AJ606348_1_coat_protein_Italy                          50.84%    passed     99.85%
+ 299  AJ606349_1_coat_protein_Italy                          50.84%    passed     99.85%
+ 300  AJ606350_1_coat_protein_Italy                          50.84%    passed     99.85%
+ 301  AJ606351_1_coat_protein_Italy                          50.84%    passed     99.85%
+ 302  AJ606353_1_coat_protein_Tunisia                        50.84%    passed     99.67%
+ 303  AJ606354_1_coat_protein_Israel                         50.84%    passed     99.85%
+ 304  AJ606356_1_coat_protein_China                          50.84%    passed     99.85%
+ 305  AJ606357_1_coat_protein_China                          50.84%    passed     99.66%
+ 306  AJ606358_1_coat_protein_Nigeria                        50.84%    passed     99.47%
+ 307  HG931889_1_coat_protein_Algeria                        50.42%    passed     99.27%
+ 308  HG931890_1_coat_protein_Algeria                        50.42%    passed     99.27%
+ 309  HG931891_1_coat_protein_Algeria                        50.42%    passed     99.27%
+ 310  HG931892_1_coat_protein_Algeria                        50.42%    passed     99.77%
+ 311  HG931893_1_coat_protein_Algeria                        49.16%    passed     99.75%
+ 312  HG931894_1_coat_protein_Algeria                        50.42%    passed     95.98%
+ 313  HG931895_1_coat_protein_Algeria                        50.42%    passed     99.77%
+ 314  HG931896_1_coat_protein_Algeria                        50.42%    passed     99.27%
+ 315  HQ185603_1_coat_protein_USA                            24.79%    passed     99.35%
+ 316  HQ185604_1_coat_protein_USA                            24.79%    passed     99.56%
+ 317  HQ185605_1_coat_protein_USA                            23.95%    passed     99.63%
+ 318  HQ185608_1_coat_protein_USA                            23.95%    passed     99.64%
+ 319  HQ676995_1_coat_protein_USA                            59.66%    passed     98.44%
+ 320  HQ676996_1_coat_protein_USA                            25.21%    passed     99.80%
+ 321  HQ676997_1_coat_protein_USA                            56.30%    passed     99.98%
+ 322  HQ676998_1_coat_protein_USA                            49.58%    passed     99.96%
+ 323  JF421762_1_coat_protein_USA                            54.20%    passed     97.55%
+ 324  JF421765_1_coat_protein_USA                            54.20%    passed     97.55%
+ 325  JF421763_1_coat_protein_USA                            54.20%    passed     98.85%
+ 326  JF421764_1_coat_protein_USA                            54.20%    passed     98.85%
+ 327  JF421941_1_coat_protein_USA                            54.20%    passed     98.85%
+ 328  JF421942_1_coat_protein_USA                            54.20%    passed     98.85%
+ 329  JF421945_1_coat_protein_USA                            54.20%    passed     98.85%
+ 330  JF421789_1_coat_protein_USA                            54.20%    passed     98.85%
+ 331  JF421791_1_coat_protein_USA                            54.20%    passed     98.85%
+ 332  JF421793_1_coat_protein_USA                            54.20%    passed     98.85%
+ 333  JF421800_1_coat_protein_USA                            54.20%    passed     98.85%
+ 334  JF421801_1_coat_protein_USA                            54.20%    passed     98.85%
+ 335  JF421919_1_coat_protein_USA                            54.20%    passed     98.85%
+ 336  JF421938_1_coat_protein_USA                            54.20%    passed     98.85%
+ 337  JF421939_1_coat_protein_USA                            54.20%    passed     98.85%
+ 338  JF421766_1_coat_protein_USA                            54.20%    passed     99.08%
+ 339  JF421767_1_coat_protein_USA                            54.20%    passed     97.55%
+ 340  JF421768_1_coat_protein_USA                            54.20%    passed     97.55%
+ 341  JF421779_1_coat_protein_USA                            54.20%    passed     97.55%
+ 342  JF421769_1_coat_protein_USA                            54.20%    passed     97.55%
+ 343  JF421775_1_coat_protein_USA                            54.20%    passed     97.55%
+ 344  JF421840_1_coat_protein_USA                            54.20%    passed     97.55%
+ 345  JF421845_1_coat_protein_USA                            54.20%    passed     97.55%
+ 346  JF421847_1_coat_protein_USA                            54.20%    passed     97.55%
+ 347  JF421848_1_coat_protein_USA                            54.20%    passed     97.55%
+ 348  JF421850_1_coat_protein_USA                            54.20%    passed     97.55%
+ 349  JF421851_1_coat_protein_USA                            54.20%    passed     97.55%
+ 350  JF421864_1_coat_protein_USA                            54.20%    passed     97.55%
+ 351  JF421866_1_coat_protein_USA                            54.20%    passed     97.55%
+ 352  JF421867_1_coat_protein_USA                            54.20%    passed     97.55%
+ 353  JF421877_1_coat_protein_USA                            54.20%    passed     97.55%
+ 354  JF421782_1_coat_protein_USA                            54.20%    passed     97.55%
+ 355  JF421879_1_coat_protein_USA                            54.20%    passed     97.55%
+ 356  JF421888_1_coat_protein_USA                            54.20%    passed     97.55%
+ 357  JF421914_1_coat_protein_USA                            54.20%    passed     97.55%
+ 358  JF421917_1_coat_protein_USA                            54.20%    passed     97.55%
+ 359  JF421920_1_coat_protein_USA                            54.20%    passed     97.55%
+ 360  JF421921_1_coat_protein_USA                            54.20%    passed     97.55%
+ 361  JF421922_1_coat_protein_USA                            54.20%    passed     97.55%
+ 362  JF421923_1_coat_protein_USA                            54.20%    passed     97.55%
+ 363  JF421924_1_coat_protein_USA                            54.20%    passed     97.55%
+ 364  JF421925_1_coat_protein_USA                            54.20%    passed     97.55%
+ 365  JF421786_1_coat_protein_USA                            54.20%    passed     97.55%
+ 366  JF421926_1_coat_protein_USA                            54.20%    passed     97.55%
+ 367  JF421928_1_coat_protein_USA                            54.20%    passed     97.55%
+ 368  JF421932_1_coat_protein_USA                            54.20%    passed     97.55%
+ 369  JF421934_1_coat_protein_USA                            54.20%    passed     97.55%
+ 370  JF421953_1_coat_protein_USA                            54.20%    passed     97.55%
+ 371  KT213466_1_coat_protein_USA                            54.20%    passed     97.55%
+ 372  KT213493_1_coat_protein_USA                            54.20%    passed     97.55%
+ 373  JF421795_1_coat_protein_USA                            54.20%    passed     97.55%
+ 374  JF421796_1_coat_protein_USA                            54.20%    passed     97.55%
+ 375  JF421797_1_coat_protein_USA                            54.20%    passed     97.55%
+ 376  JF421803_1_coat_protein_USA                            54.20%    passed     97.55%
+ 377  JF421804_1_coat_protein_USA                            54.20%    passed     97.55%
+ 378  JF421834_1_coat_protein_USA                            54.20%    passed     97.55%
+ 379  JF421770_1_coat_protein_USA                            54.20%    passed     99.08%
+ 380  JF421773_1_coat_protein_USA                            54.20%    passed     99.08%
+ 381  JF421870_1_coat_protein_USA                            54.20%    passed     99.08%
+ 382  JF421871_1_coat_protein_USA                            54.20%    passed     99.08%
+ 383  JF421873_1_coat_protein_USA                            54.20%    passed     99.08%
+ 384  JF421874_1_coat_protein_USA                            54.20%    passed     99.08%
+ 385  JF421875_1_coat_protein_USA                            54.20%    passed     99.08%
+ 386  JF421891_1_coat_protein_USA                            54.20%    passed     99.08%
+ 387  JF421963_1_coat_protein_USA                            54.20%    passed     99.08%
+ 388  KT213470_1_coat_protein_USA                            54.20%    passed     99.08%
+ 389  KT213502_1_coat_protein_USA                            54.20%    passed     99.08%
+ 390  KT213504_1_coat_protein_USA                            54.20%    passed     99.08%
+ 391  JF421774_1_coat_protein_USA                            54.20%    passed     99.08%
+ 392  KT213506_1_coat_protein_USA                            54.20%    passed     99.08%
+ 393  KT213508_1_coat_protein_USA                            54.20%    passed     99.08%
+ 394  KT213509_1_coat_protein_USA                            54.20%    passed     99.08%
+ 395  KT213511_1_coat_protein_USA                            54.20%    passed     99.08%
+ 396  KT213513_1_coat_protein_USA                            54.20%    passed     99.08%
+ 397  KT213514_1_coat_protein_USA                            54.20%    passed     99.08%
+ 398  KT213518_1_coat_protein_USA                            54.20%    passed     99.08%
+ 399  KT213522_1_coat_protein_USA                            54.20%    passed     99.08%
+ 400  JF421781_1_coat_protein_USA                            54.20%    passed     99.08%
+ 401  JF421785_1_coat_protein_USA                            54.20%    passed     99.08%
+ 402  JF421787_1_coat_protein_USA                            54.20%    passed     99.08%
+ 403  JF421835_1_coat_protein_USA                            54.20%    passed     99.08%
+ 404  JF421853_1_coat_protein_USA                            54.20%    passed     99.08%
+ 405  JF421855_1_coat_protein_USA                            54.20%    passed     99.08%
+ 406  JF421869_1_coat_protein_USA                            54.20%    passed     99.08%
+ 407  JF421771_1_coat_protein_USA                            54.20%    passed     99.78%
+ 408  JF421799_1_coat_protein_USA                            54.20%    passed     99.78%
+ 409  JF421876_1_coat_protein_USA                            54.20%    passed     99.78%
+ 410  JF421881_1_coat_protein_USA                            54.20%    passed     99.78%
+ 411  JF421882_1_coat_protein_USA                            54.20%    passed     99.78%
+ 412  JF421883_1_coat_protein_USA                            54.20%    passed     99.78%
+ 413  JF421884_1_coat_protein_USA                            54.20%    passed     99.78%
+ 414  JF421885_1_coat_protein_USA                            54.20%    passed     99.78%
+ 415  JF421887_1_coat_protein_USA                            54.20%    passed     99.78%
+ 416  JF421890_1_coat_protein_USA                            54.20%    passed     99.78%
+ 417  JF421892_1_coat_protein_USA                            54.20%    passed     99.78%
+ 418  JF421893_1_coat_protein_USA                            54.20%    passed     99.78%
+ 419  JF421802_1_coat_protein_USA                            54.20%    passed     99.78%
+ 420  JF421894_1_coat_protein_USA                            54.20%    passed     99.78%
+ 421  JF421895_1_coat_protein_USA                            54.20%    passed     99.78%
+ 422  JF421897_1_coat_protein_USA                            54.20%    passed     99.78%
+ 423  JF421899_1_coat_protein_USA                            54.20%    passed     99.78%
+ 424  JF421900_1_coat_protein_USA                            54.20%    passed     99.78%
+ 425  JF421902_1_coat_protein_USA                            54.20%    passed     99.78%
+ 426  JF421911_1_coat_protein_USA                            54.20%    passed     99.78%
+ 427  JF421931_1_coat_protein_USA                            54.20%    passed     99.78%
+ 428  JF421933_1_coat_protein_USA                            54.20%    passed     99.78%
+ 429  JF421952_1_coat_protein_USA                            54.20%    passed     99.78%
+ 430  JF421807_1_coat_protein_USA                            54.20%    passed     99.78%
+ 431  JF421960_1_coat_protein_USA                            54.20%    passed     99.78%
+ 432  JF421961_1_coat_protein_USA                            54.20%    passed     99.78%
+ 433  KT213498_1_coat_protein_USA                            54.20%    passed     99.78%
+ 434  JF421817_1_coat_protein_USA                            54.20%    passed     99.78%
+ 435  JF421822_1_coat_protein_USA                            54.20%    passed     99.78%
+ 436  JF421829_1_coat_protein_USA                            54.20%    passed     99.78%
+ 437  JF421833_1_coat_protein_USA                            54.20%    passed     99.78%
+ 438  JF421860_1_coat_protein_USA                            54.20%    passed     99.78%
+ 439  JF421862_1_coat_protein_USA                            54.20%    passed     99.78%
+ 440  JF421772_1_coat_protein_USA                            54.20%    passed     96.52%
+ 441  JF421806_1_coat_protein_USA                            54.20%    passed     96.52%
+ 442  JF421812_1_coat_protein_USA                            54.20%    passed     96.52%
+ 443  JF421815_1_coat_protein_USA                            54.20%    passed     96.52%
+ 444  JF421859_1_coat_protein_USA                            54.20%    passed     96.52%
+ 445  JF421776_1_coat_protein_USA                            54.20%    passed     97.55%
+ 446  JF421780_1_coat_protein_USA                            54.20%    passed     97.55%
+ 447  JF421783_1_coat_protein_USA                            54.20%    passed     97.55%
+ 448  JF421784_1_coat_protein_USA                            54.20%    passed     97.55%
+ 449  JF421788_1_coat_protein_USA                            54.20%    passed     97.55%
+ 450  JF421777_1_coat_protein_USA                            54.20%    passed     99.09%
+ 451  JF421778_1_coat_protein_USA                            54.20%    passed     97.55%
+ 452  JF421790_1_coat_protein_USA                            54.20%    passed     98.85%
+ 453  JF421792_1_coat_protein_USA                            54.20%    passed     99.78%
+ 454  JF421809_1_coat_protein_USA                            54.20%    passed     99.78%
+ 455  KT213517_1_coat_protein_USA                            54.20%    passed     99.78%
+ 456  JF421816_1_coat_protein_USA                            54.20%    passed     99.78%
+ 457  JF421838_1_coat_protein_USA                            54.20%    passed     99.78%
+ 458  JF421901_1_coat_protein_USA                            54.20%    passed     99.78%
+ 459  JF421935_1_coat_protein_USA                            54.20%    passed     99.78%
+ 460  JF421936_1_coat_protein_USA                            54.20%    passed     99.78%
+ 461  JF421937_1_coat_protein_USA                            54.20%    passed     99.78%
+ 462  KT213512_1_coat_protein_USA                            54.20%    passed     99.78%
+ 463  KT213516_1_coat_protein_USA                            54.20%    passed     99.78%
+ 464  JF421794_1_coat_protein_USA                            54.20%    passed     99.79%
+ 465  JF421798_1_coat_protein_USA                            54.20%    passed     99.55%
+ 466  JF421863_1_coat_protein_USA                            54.20%    passed     99.55%
+ 467  KT213472_1_coat_protein_USA                            54.20%    passed     99.55%
+ 468  KT213473_1_coat_protein_USA                            54.20%    passed     99.55%
+ 469  JF421805_1_coat_protein_USA                            54.20%    passed     98.85%
+ 470  JF421808_1_coat_protein_USA                            54.20%    passed     99.08%
+ 471  JF421811_1_coat_protein_USA                            54.20%    passed     99.08%
+ 472  JF421810_1_coat_protein_USA                            54.20%    passed     97.39%
+ 473  JF421813_1_coat_protein_USA                            54.20%    passed     96.81%
+ 474  JF421814_1_coat_protein_USA                            54.20%    passed     99.78%
+ 475  JF421818_1_coat_protein_USA                            54.20%    passed     90.25%
+ 476  JF421819_1_coat_protein_USA                            54.20%    passed     90.25%
+ 477  JF421821_1_coat_protein_USA                            54.20%    passed     90.25%
+ 478  JF421954_1_coat_protein_USA                            54.20%    passed     90.25%
+ 479  JF421955_1_coat_protein_USA                            54.20%    passed     90.25%
+ 480  JF421956_1_coat_protein_USA                            54.20%    passed     90.25%
+ 481  JF421957_1_coat_protein_USA                            54.20%    passed     90.25%
+ 482  JF421958_1_coat_protein_USA                            54.20%    passed     90.25%
+ 483  JF421962_1_coat_protein_USA                            54.20%    passed     90.25%
+ 484  JF421964_1_coat_protein_USA                            54.20%    passed     90.25%
+ 485  JF421826_1_coat_protein_USA                            54.20%    passed     90.25%
+ 486  JF421828_1_coat_protein_USA                            54.20%    passed     90.25%
+ 487  JF421832_1_coat_protein_USA                            54.20%    passed     90.25%
+ 488  JF421946_1_coat_protein_USA                            54.20%    passed     90.25%
+ 489  JF421947_1_coat_protein_USA                            54.20%    passed     90.25%
+ 490  JF421948_1_coat_protein_USA                            54.20%    passed     90.25%
+ 491  JF421949_1_coat_protein_USA                            54.20%    passed     90.25%
+ 492  JF421950_1_coat_protein_USA                            54.20%    passed     90.25%
+ 493  JF421820_1_coat_protein_USA                            54.20%    passed     99.71%
+ 494  JF421823_1_coat_protein_USA                            54.20%    passed     97.07%
+ 495  JF421824_1_coat_protein_USA                            54.20%    passed     97.07%
+ 496  JF421825_1_coat_protein_USA                            54.20%    passed     97.07%
+ 497  JF421830_1_coat_protein_USA                            54.20%    passed     97.07%
+ 498  JF421827_1_coat_protein_USA                            54.20%    passed     90.25%
+ 499  JF421831_1_coat_protein_USA                            54.20%    passed     99.78%
+ 500  JF421836_1_coat_protein_USA                            54.20%    passed     97.15%
+ 501  JF421837_1_coat_protein_USA                            54.20%    passed     97.15%
+ 502  JF421839_1_coat_protein_USA                            54.20%    passed     97.15%
+ 503  JF421841_1_coat_protein_USA                            54.20%    passed     97.55%
+ 504  JF421842_1_coat_protein_USA                            54.20%    passed     97.55%
+ 505  JF421849_1_coat_protein_USA                            54.20%    passed     97.55%
+ 506  JF421843_1_coat_protein_USA                            54.20%    passed     99.08%
+ 507  JF421844_1_coat_protein_USA                            54.20%    passed     97.55%
+ 508  JF421846_1_coat_protein_USA                            54.20%    passed     97.55%
+ 509  JF421852_1_coat_protein_USA                            54.20%    passed     97.55%
+ 510  JF421854_1_coat_protein_USA                            54.20%    passed     97.55%
+ 511  JF421856_1_coat_protein_USA                            54.20%    passed     98.23%
+ 512  JF421857_1_coat_protein_USA                            54.20%    passed     99.34%
+ 513  JF421858_1_coat_protein_USA                            54.20%    passed     97.55%
+ 514  JF421905_1_coat_protein_USA                            54.20%    passed     97.55%
+ 515  JF421907_1_coat_protein_USA                            54.20%    passed     97.55%
+ 516  JF421913_1_coat_protein_USA                            54.20%    passed     97.55%
+ 517  JF421861_1_coat_protein_USA                            54.20%    passed     99.86%
+ 518  JF421865_1_coat_protein_USA                            54.20%    passed     99.78%
+ 519  JF421868_1_coat_protein_USA                            54.20%    passed     98.03%
+ 520  JF421872_1_coat_protein_USA                            54.20%    passed     99.08%
+ 521  JF421878_1_coat_protein_USA                            54.20%    passed     97.55%
+ 522  JF421880_1_coat_protein_USA                            54.20%    passed     97.55%
+ 523  JF421886_1_coat_protein_USA                            54.20%    passed     99.78%
+ 524  JF421896_1_coat_protein_USA                            54.20%    passed     99.78%
+ 525  JF421898_1_coat_protein_USA                            54.20%    passed     99.78%
+ 526  JF421889_1_coat_protein_USA                            54.20%    passed     99.78%
+ 527  JF421909_1_coat_protein_USA                            54.20%    passed     99.78%
+ 528  JF421903_1_coat_protein_USA                            54.20%    passed     97.53%
+ 529  JF421904_1_coat_protein_USA                            54.20%    passed     99.08%
+ 530  JF421906_1_coat_protein_USA                            54.20%    passed     98.00%
+ 531  JF421908_1_coat_protein_USA                            54.20%    passed     99.08%
+ 532  JF421916_1_coat_protein_USA                            54.20%    passed     99.08%
+ 533  JF421910_1_coat_protein_USA                            54.20%    passed     97.68%
+ 534  JF421912_1_coat_protein_USA                            54.20%    passed     97.68%
+ 535  JF421915_1_coat_protein_USA                            54.20%    passed     97.68%
+ 536  JF421918_1_coat_protein_USA                            54.20%    passed     99.78%
+ 537  JF421927_1_coat_protein_USA                            54.20%    passed     99.78%
+ 538  JF421929_1_coat_protein_USA                            54.20%    passed     97.55%
+ 539  JF421930_1_coat_protein_USA                            54.20%    passed     97.55%
+ 540  JF421940_1_coat_protein_USA                            54.20%    passed     96.26%
+ 541  JF421943_1_coat_protein_USA                            54.20%    passed     96.26%
+ 542  JF421944_1_coat_protein_USA                            54.20%    passed     96.26%
+ 543  JF421951_1_coat_protein_USA                            54.20%    passed     95.06%
+ 544  JF421959_1_coat_protein_USA                            54.20%    passed     97.55%
+ 545  KC953879_1_coat_protein_Spain                          53.78%    passed     95.67%
+ 546  KC953880_1_coat_protein_Spain                          53.78%    passed     98.99%
+ 547  KC953881_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 548  KC953899_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 549  KC953904_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 550  KC953905_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 551  KC953882_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 552  KC953883_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 553  KC953885_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 554  KC953889_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 555  KC953892_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 556  KC953894_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 557  KC953896_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 558  KC953884_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 559  KC953886_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 560  KC953897_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 561  KC953906_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 562  KC953887_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 563  KC953888_1_coat_protein_Spain                          53.78%    passed     98.82%
+ 564  KC953890_1_coat_protein_Spain                          53.78%    passed     96.40%
+ 565  KC953891_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 566  KC953893_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 567  KJ463739_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 568  KJ463741_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 569  KC953895_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 570  KC953898_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 571  KC953900_1_coat_protein_Spain                          53.78%    passed     99.56%
+ 572  KC953901_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 573  KC953902_1_coat_protein_Spain                          53.78%    passed     99.63%
+ 574  KC953903_1_coat_protein_Spain                          53.78%    passed     99.63%
+ 575  KC953907_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 576  KJ463738_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 577  KJ463740_1_coat_protein_Spain                          53.78%    passed     99.63%
+ 578  KJ476947_1_coat_protein_Spain                          53.78%    passed     96.40%
+ 579  KP658158_1_coat_protein_Spain                          53.78%    passed     96.83%
+ 580  KP658159_1_coat_protein_Spain                          53.78%    passed     96.40%
+ 581  KP658160_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 582  KP658161_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 583  KP658163_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 584  KP658164_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 585  KP658167_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 586  KP658168_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 587  KP658169_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 588  KP658171_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 589  KP658173_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 590  KP658174_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 591  KP658162_1_coat_protein_Spain                          53.78%    passed     98.68%
+ 592  KP658165_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 593  KP658166_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 594  KP658170_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 595  KP658176_1_coat_protein_Spain                          53.78%    passed     99.72%
+ 596  KP658172_1_coat_protein_Spain                          53.78%    passed     98.89%
+ 597  KP658175_1_coat_protein_Spain                          53.78%    passed     99.52%
+ 598  KP715553_1_coat_protein_no_value                       78.15%    passed     35.68%
+ 599  KT213467_1_coat_protein_USA                            54.20%    passed     97.55%
+ 600  KT213468_1_coat_protein_USA                            54.20%    passed     98.94%
+ 601  KT213469_1_coat_protein_USA                            54.20%    passed     99.08%
+ 602  KT213471_1_coat_protein_USA                            54.20%    passed     99.08%
+ 603  KT213474_1_coat_protein_USA                            54.20%    passed     99.71%
+ 604  KT213475_1_coat_protein_USA                            54.20%    passed     99.71%
+ 605  KT213484_1_coat_protein_USA                            54.20%    passed     99.71%
+ 606  KT213485_1_coat_protein_USA                            54.20%    passed     99.71%
+ 607  KT213486_1_coat_protein_USA                            54.20%    passed     99.71%
+ 608  KT213487_1_coat_protein_USA                            54.20%    passed     99.71%
+ 609  KT213488_1_coat_protein_USA                            54.20%    passed     99.71%
+ 610  KT213489_1_coat_protein_USA                            54.20%    passed     99.71%
+ 611  KT213490_1_coat_protein_USA                            54.20%    passed     99.71%
+ 612  KT213492_1_coat_protein_USA                            54.20%    passed     99.71%
+ 613  KT213476_1_coat_protein_USA                            54.20%    passed     99.71%
+ 614  KT213477_1_coat_protein_USA                            54.20%    passed     99.71%
+ 615  KT213478_1_coat_protein_USA                            54.20%    passed     99.71%
+ 616  KT213479_1_coat_protein_USA                            54.20%    passed     99.71%
+ 617  KT213480_1_coat_protein_USA                            54.20%    passed     99.71%
+ 618  KT213481_1_coat_protein_USA                            54.20%    passed     99.71%
+ 619  KT213482_1_coat_protein_USA                            54.20%    passed     99.71%
+ 620  KT213483_1_coat_protein_USA                            54.20%    passed     99.71%
+ 621  KT213491_1_coat_protein_USA                            54.20%    passed     99.75%
+ 622  KT213494_1_coat_protein_USA                            54.20%    passed     97.55%
+ 623  KT213495_1_coat_protein_USA                            54.20%    passed     97.55%
+ 624  KT213496_1_coat_protein_USA                            54.20%    passed     97.55%
+ 625  KT213497_1_coat_protein_USA                            54.20%    passed     97.55%
+ 626  KT213499_1_coat_protein_USA                            54.20%    passed     97.79%
+ 627  KT213500_1_coat_protein_USA                            54.20%    passed     97.25%
+ 628  KT213501_1_coat_protein_USA                            54.20%    passed     99.78%
+ 629  KT213503_1_coat_protein_USA                            54.20%    passed     84.83%
+ 630  KT213523_1_coat_protein_USA                            54.20%    passed     84.83%
+ 631  KT213505_1_coat_protein_USA                            54.20%    passed     97.55%
+ 632  KT213510_1_coat_protein_USA                            54.20%    passed     97.55%
+ 633  KT213507_1_coat_protein_USA                            54.20%    passed     99.27%
+ 634  KT213515_1_coat_protein_USA                            54.20%    passed     99.86%
+ 635  KT213519_1_coat_protein_USA                            54.20%    passed     99.86%
+ 636  KT213520_1_coat_protein_USA                            54.20%    passed     99.08%
+ 637  KT213521_1_coat_protein_USA                            54.20%    passed     99.08%
+ 638  KT213524_1_coat_protein_USA                            54.20%    passed     93.65%
+WARNING: 348 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                  30.73%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: JX088183_1_coat_protein_China is identical to EU344894_1_35_kDa_coat_protein_Chile but kept for subsequent analysis
+NOTE: DQ062152_1_coat_protein_Brazil is identical to EU344895_1_35_kDa_coat_protein_Chile but kept for subsequent analysis
+NOTE: JX088157_1_coat_protein_China is identical to HQ130283_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: HQ130285_1_coat_protein_USA__California__Napa_Valley is identical to HQ130284_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: HQ130301_1_coat_protein_USA__California__Napa_Valley is identical to HQ130295_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: HQ130302_1_coat_protein_USA__California__Napa_Valley is identical to HQ130296_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: HQ130314_1_coat_protein_USA__California__Napa_Valley is identical to HQ130298_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: HQ130310_1_coat_protein_USA__California__Napa_Valley is identical to HQ130309_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: HQ130332_1_coat_protein_USA__California__Napa_Valley is identical to HQ130326_1_coat_protein_USA__California__Napa_Valley but kept for subsequent analysis
+NOTE: JX088135_1_coat_protein_China is identical to JX088134_1_coat_protein_China but kept for subsequent analysis
+NOTE: KC477125_1_coat_protein_China is identical to JX088152_1_coat_protein_China but kept for subsequent analysis
+NOTE: JX088193_1_coat_protein_China is identical to JX088192_1_coat_protein_China but kept for subsequent analysis
+NOTE: JX088195_1_coat_protein_China is identical to JX088194_1_coat_protein_China but kept for subsequent analysis
+NOTE: JX088207_1_coat_protein_China is identical to JX088200_1_coat_protein_China but kept for subsequent analysis
+NOTE: JX088232_1_coat_protein_China is identical to JX088229_1_coat_protein_China but kept for subsequent analysis
+NOTE: JX088237_1_coat_protein_China is identical to JX088231_1_coat_protein_China but kept for subsequent analysis
+NOTE: KC477168_1_coat_protein_China is identical to JX481786_1_coat_protein_China but kept for subsequent analysis
+NOTE: KC477129_1_coat_protein_China is identical to KC417451_1_coat_protein_China but kept for subsequent analysis
+NOTE: KC477116_1_coat_protein_China is identical to KC477115_1_coat_protein_China but kept for subsequent analysis
+NOTE: KC477177_1_coat_protein_China is identical to KC477174_1_coat_protein_China but kept for subsequent analysis
+NOTE: AJ606344_1_coat_protein_Italy is identical to AJ606338_1_coat_protein_Austria but kept for subsequent analysis
+NOTE: AJ606341_1_coat_protein_Nigeria is identical to AJ606339_1_coat_protein_Austria but kept for subsequent analysis
+NOTE: AJ606352_1_coat_protein_Syria is identical to AJ606346_1_coat_protein_Italy but kept for subsequent analysis
+NOTE: HG931890_1_coat_protein_Algeria is identical to HG931889_1_coat_protein_Algeria but kept for subsequent analysis
+NOTE: HG931895_1_coat_protein_Algeria is identical to HG931892_1_coat_protein_Algeria but kept for subsequent analysis
+NOTE: JF421765_1_coat_protein_USA is identical to JF421762_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421764_1_coat_protein_USA is identical to JF421763_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421770_1_coat_protein_USA is identical to JF421766_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421799_1_coat_protein_USA is identical to JF421771_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421806_1_coat_protein_USA is identical to JF421772_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421863_1_coat_protein_USA is identical to JF421798_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421819_1_coat_protein_USA is identical to JF421818_1_coat_protein_USA but kept for subsequent analysis
+NOTE: KT213474_1_coat_protein_USA is identical to JF421820_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421824_1_coat_protein_USA is identical to JF421823_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421837_1_coat_protein_USA is identical to JF421836_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421905_1_coat_protein_USA is identical to JF421858_1_coat_protein_USA but kept for subsequent analysis
+NOTE: KT213515_1_coat_protein_USA is identical to JF421861_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421912_1_coat_protein_USA is identical to JF421910_1_coat_protein_USA but kept for subsequent analysis
+NOTE: JF421943_1_coat_protein_USA is identical to JF421940_1_coat_protein_USA but kept for subsequent analysis
+NOTE: KC953899_1_coat_protein_Spain is identical to KC953881_1_coat_protein_Spain but kept for subsequent analysis
+NOTE: KC953883_1_coat_protein_Spain is identical to KC953882_1_coat_protein_Spain but kept for subsequent analysis
+NOTE: KJ476947_1_coat_protein_Spain is identical to KC953890_1_coat_protein_Spain but kept for subsequent analysis
+NOTE: KC953903_1_coat_protein_Spain is identical to KC953902_1_coat_protein_Spain but kept for subsequent analysis
+NOTE: KT213523_1_coat_protein_USA is identical to KT213503_1_coat_protein_USA but kept for subsequent analysis
+NOTE: 422 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: DQ119574_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: DQ680141_1_coat_protein_Brazil (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ401017_1_coat_protein_Portugal (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JN546586_1_coat_protein_Poland (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX481789_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130299_1_coat_protein_USA__California__Napa_Valley (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130303_1_coat_protein_USA__California__Napa_Valley (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130308_1_coat_protein_USA__California__Napa_Valley (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130315_1_coat_protein_USA__California__Napa_Valley (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130328_1_coat_protein_USA__California__Napa_Valley (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130330_1_coat_protein_USA__California__Napa_Valley (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JN546587_1_coat_protein_Poland (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088136_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088144_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088145_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088148_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088149_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088159_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088160_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088218_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088147_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088151_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088161_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088214_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088162_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088163_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088166_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088175_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088180_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088184_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088187_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088188_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088189_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088202_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088205_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088206_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088209_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088216_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088217_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088220_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088221_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088222_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088223_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088225_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088228_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088224_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088226_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: JX088227_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477101_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477120_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477132_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477133_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477146_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477153_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477159_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477102_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477105_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477175_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477179_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477117_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477118_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477119_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477122_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477126_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477130_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477131_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477138_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477145_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477150_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477155_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477156_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477162_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477166_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477167_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477171_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477173_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477172_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477178_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477181_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477182_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477187_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KC477188_1_coat_protein_China (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KJ704369_1_coat_protein_Brazil (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KX499443_1_coat_protein_Brazil__Sao_Roque__SP (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KX499445_1_coat_protein_Brazil__Sao_Roque__SP (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KX499444_1_coat_protein_Brazil__Sao_Roque__SP (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: KX499447_1_coat_protein_Brazil__Sao_Roque__SP (identical to EU344895_1_35_kDa_coat_protein_Chile) is ignored but added at the end
+NOTE: HQ130286_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130287_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130288_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130289_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130290_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130291_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130292_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130293_1_coat_protein_USA__California__Napa_Valley (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ401019_1_coat_protein_Portugal (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088131_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088140_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088143_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088141_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088155_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088156_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088158_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088167_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088169_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088170_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088171_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088172_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088177_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088178_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088179_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088181_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX481788_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: KC477109_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: KC477152_1_coat_protein_China (identical to HQ130284_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130304_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130306_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130313_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130317_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130318_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130319_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130316_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130321_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130322_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130325_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130329_1_coat_protein_USA__California__Napa_Valley (identical to HQ130295_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130305_1_coat_protein_USA__California__Napa_Valley (identical to HQ130296_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130320_1_coat_protein_USA__California__Napa_Valley (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130324_1_coat_protein_USA__California__Napa_Valley (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088230_1_coat_protein_China (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088235_1_coat_protein_China (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088233_1_coat_protein_China (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088234_1_coat_protein_China (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088239_1_coat_protein_China (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: KC477127_1_coat_protein_China (identical to HQ130298_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130311_1_coat_protein_USA__California__Napa_Valley (identical to HQ130309_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130312_1_coat_protein_USA__California__Napa_Valley (identical to HQ130309_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: KC477106_1_coat_protein_China (identical to HQ130309_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: KC477112_1_coat_protein_China (identical to HQ130309_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: KC477113_1_coat_protein_China (identical to HQ130309_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: HQ130331_1_coat_protein_USA__California__Napa_Valley (identical to HQ130326_1_coat_protein_USA__California__Napa_Valley) is ignored but added at the end
+NOTE: JX088139_1_coat_protein_China (identical to JX088134_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477163_1_coat_protein_China (identical to JX088152_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088198_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088203_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088196_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088197_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088201_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088204_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088210_1_coat_protein_China (identical to JX088192_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088199_1_coat_protein_China (identical to JX088194_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477196_1_coat_protein_China (identical to JX088194_1_coat_protein_China) is ignored but added at the end
+NOTE: JX088238_1_coat_protein_China (identical to JX088229_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477136_1_coat_protein_China (identical to KC417451_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477139_1_coat_protein_China (identical to KC417451_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477140_1_coat_protein_China (identical to KC417451_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477142_1_coat_protein_China (identical to KC417451_1_coat_protein_China) is ignored but added at the end
+NOTE: KC477165_1_coat_protein_China (identical to KC417451_1_coat_protein_China) is ignored but added at the end
+NOTE: KX499448_1_coat_protein_Brazil__Sao_Roque__SP (identical to KC477115_1_coat_protein_China) is ignored but added at the end
+NOTE: AJ606355_1_coat_protein_Israel (identical to AJ606338_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606348_1_coat_protein_Italy (identical to AJ606338_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606349_1_coat_protein_Italy (identical to AJ606338_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606350_1_coat_protein_Italy (identical to AJ606338_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606351_1_coat_protein_Italy (identical to AJ606338_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606356_1_coat_protein_China (identical to AJ606338_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606343_1_coat_protein_Greece (identical to AJ606339_1_coat_protein_Austria) is ignored but added at the end
+NOTE: AJ606358_1_coat_protein_Nigeria (identical to AJ606339_1_coat_protein_Austria) is ignored but added at the end
+NOTE: HG931891_1_coat_protein_Algeria (identical to HG931889_1_coat_protein_Algeria) is ignored but added at the end
+NOTE: HG931896_1_coat_protein_Algeria (identical to HG931889_1_coat_protein_Algeria) is ignored but added at the end
+NOTE: JF421767_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421768_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421779_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421769_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421775_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421840_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421845_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421847_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421848_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421850_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421851_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421864_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421866_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421867_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421877_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421782_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421879_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421888_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421914_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421917_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421920_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421921_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421922_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421923_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421924_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421925_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421786_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421926_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421928_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421932_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421934_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421953_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213466_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213493_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421795_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421796_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421797_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421803_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421804_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421834_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421776_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421780_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421783_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421784_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421788_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421778_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421841_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421842_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421849_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421844_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421846_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421852_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421854_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421878_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421880_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421929_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421930_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421959_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213467_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213494_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213495_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213496_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213497_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213505_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213510_1_coat_protein_USA (identical to JF421762_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421941_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421942_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421945_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421789_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421791_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421793_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421800_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421801_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421919_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421938_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421939_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421790_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421805_1_coat_protein_USA (identical to JF421763_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421773_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421870_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421871_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421873_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421874_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421875_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421891_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421963_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213470_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213502_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213504_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421774_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213506_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213508_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213509_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213511_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213513_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213514_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213518_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213522_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421781_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421785_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421787_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421835_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421853_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421855_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421869_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421808_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421811_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421843_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421872_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421904_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421908_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421916_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213469_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213471_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213520_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213521_1_coat_protein_USA (identical to JF421766_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421876_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421881_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421882_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421883_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421884_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421885_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421887_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421890_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421892_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421893_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421802_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421894_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421895_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421897_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421899_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421900_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421902_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421911_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421931_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421933_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421952_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421807_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421960_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421961_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213498_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421817_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421822_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421829_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421833_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421860_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421862_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421792_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421809_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213517_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421816_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421838_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421901_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421935_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421936_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421937_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213512_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213516_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421814_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421831_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421865_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421886_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421896_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421898_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421889_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421909_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421918_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421927_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213501_1_coat_protein_USA (identical to JF421771_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421812_1_coat_protein_USA (identical to JF421772_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421815_1_coat_protein_USA (identical to JF421772_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421859_1_coat_protein_USA (identical to JF421772_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213472_1_coat_protein_USA (identical to JF421798_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213473_1_coat_protein_USA (identical to JF421798_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421821_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421954_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421955_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421956_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421957_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421958_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421962_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421964_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421826_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421828_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421832_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421946_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421947_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421948_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421949_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421950_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421827_1_coat_protein_USA (identical to JF421818_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213475_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213484_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213485_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213486_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213487_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213488_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213489_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213490_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213492_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213476_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213477_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213478_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213479_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213480_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213481_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213482_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213483_1_coat_protein_USA (identical to JF421820_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421825_1_coat_protein_USA (identical to JF421823_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421830_1_coat_protein_USA (identical to JF421823_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421839_1_coat_protein_USA (identical to JF421836_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421907_1_coat_protein_USA (identical to JF421858_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421913_1_coat_protein_USA (identical to JF421858_1_coat_protein_USA) is ignored but added at the end
+NOTE: KT213519_1_coat_protein_USA (identical to JF421861_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421915_1_coat_protein_USA (identical to JF421910_1_coat_protein_USA) is ignored but added at the end
+NOTE: JF421944_1_coat_protein_USA (identical to JF421940_1_coat_protein_USA) is ignored but added at the end
+NOTE: KC953904_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953905_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953886_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953897_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953906_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953887_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953891_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658165_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658166_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658170_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658176_1_coat_protein_Spain (identical to KC953881_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953885_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953889_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953892_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953894_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953896_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953884_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953893_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KJ463739_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KJ463741_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953895_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953901_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KC953907_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KJ463738_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658160_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658161_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658163_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658164_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658167_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658168_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658169_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658171_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658173_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658174_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658172_1_coat_protein_Spain (identical to KC953882_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KP658159_1_coat_protein_Spain (identical to KC953890_1_coat_protein_Spain) is ignored but added at the end
+NOTE: KJ463740_1_coat_protein_Spain (identical to KC953902_1_coat_protein_Spain) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to GLRaV3/GLRaV3_coat_protein_protein_align.fasta.uniqueseq.phy
+
+NOTE: Restoring information from model checkpoint file GLRaV3/GLRaV3_coat_protein_protein_align.fasta.model.gz
+
+CHECKPOINT: Initial tree restored
+NOTE: ModelFinder requires 74 MB RAM!
+ModelFinder will test 546 protein models (sample size: 238) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  Dayhoff       2684.153     429 6226.306     375166.306   7715.911
+  2  Dayhoff+I     2671.421     430 6202.842     376862.842   7695.919
+  3  Dayhoff+G4    2655.677     430 6171.353     376831.353   7664.429
+  4  Dayhoff+I+G4  2656.704     431 6175.408     378559.408   7671.957
+  5  Dayhoff+R2    2652.318     431 6166.636     378550.636   7663.185
+  6  Dayhoff+R3    2652.275     433 6170.550     382014.550   7674.043
+ 14  Dayhoff+F     2695.531     448 6287.063     408591.063   7842.640
+ 15  Dayhoff+F+I   2683.070     449 6264.139     410364.139   7823.189
+ 16  Dayhoff+F+G4  2666.761     449 6231.521     410331.521   7790.571
+ 17  Dayhoff+F+I+G4 2667.713     450 6235.427     412135.427   7797.948
+ 18  Dayhoff+F+R2  2663.031     450 6226.063     412126.063   7788.585
+ 19  Dayhoff+F+R3  2663.024     452 6230.047     415742.047   7799.513
+ 27  mtMAM         2792.058     429 6442.117     375382.117   7931.721
+ 28  mtMAM+I       2771.718     430 6403.435     377063.435   7896.512
+ 29  mtMAM+G4      2732.024     430 6324.047     376984.047   7817.124
+ 30  mtMAM+I+G4    2732.874     431 6327.748     378711.748   7824.296
+ 31  mtMAM+R2      2726.048     431 6314.095     378698.095   7810.644
+ 32  mtMAM+R3      2725.539     433 6317.078     382161.078   7820.571
+ 40  mtMAM+F       2718.902     448 6333.803     408637.803   7889.380
+ 41  mtMAM+F+I     2704.409     449 6306.818     410406.818   7865.868
+ 42  mtMAM+F+G4    2671.856     449 6241.712     410341.712   7800.761
+ 43  mtMAM+F+I+G4  2672.551     450 6245.102     412145.102   7807.624
+ 44  mtMAM+F+R2    2664.947     450 6229.895     412129.895   7792.417
+ 45  mtMAM+F+R3    2656.269     452 6216.537     415728.537   7786.004
+ 46  mtMAM+F+R4    2656.154     454 6220.308     419360.308   7796.719
+ 53  JTT           2586.975     429 6031.950     374971.950   7521.555
+ 54  JTT+I         2576.802     430 6013.604     376673.604   7506.681
+ 55  JTT+G4        2563.699     430 5987.397     376647.397   7480.474
+ 56  JTT+I+G4      2564.227     431 5990.454     378374.454   7487.003
+ 57  JTT+R2        2559.521     431 5981.042     378365.042   7477.591
+ 58  JTT+R3        2559.391     433 5984.783     381828.783   7488.276
+ 66  JTT+F         2596.250     448 6088.499     408392.499   7644.077
+ 67  JTT+F+I       2586.528     449 6071.056     410171.056   7630.106
+ 68  JTT+F+G4      2572.492     449 6042.983     410142.983   7602.033
+ 69  JTT+F+I+G4    2573.047     450 6046.093     411946.093   7608.615
+ 70  JTT+F+R2      2568.716     450 6037.432     411937.432   7599.953
+ 71  JTT+F+R3      2567.765     452 6039.530     415551.530   7608.996
+ 79  WAG           2659.862     429 6177.724     375117.724   7667.328
+ 80  WAG+I         2649.336     430 6158.673     376818.673   7651.749
+ 81  WAG+G4        2634.736     430 6129.471     376789.471   7622.548
+ 82  WAG+I+G4      2635.253     431 6132.506     378516.506   7629.054
+ 83  WAG+R2        2629.717     431 6121.434     378505.434   7617.982
+ 84  WAG+R3        2629.499     433 6124.998     381968.998   7628.492
+ 92  WAG+F         2674.840     448 6245.679     408549.679   7801.256
+ 93  WAG+F+I       2664.970     449 6227.939     410327.939   7786.989
+ 94  WAG+F+G4      2649.879     449 6197.759     410297.759   7756.808
+ 95  WAG+F+I+G4    2650.409     450 6200.818     412100.818   7763.340
+ 96  WAG+F+R2      2644.826     450 6189.653     412089.653   7752.175
+ 97  WAG+F+R3      2644.337     452 6192.674     415704.674   7762.141
+105  cpREV         2679.392     429 6216.784     375156.784   7706.389
+106  cpREV+I       2664.513     430 6189.026     376849.026   7682.102
+107  cpREV+G4      2646.894     430 6153.789     376813.789   7646.865
+108  cpREV+I+G4    2647.259     431 6156.517     378540.517   7653.066
+109  cpREV+R2      2640.866     431 6143.732     378527.732   7640.281
+110  cpREV+R3      2640.156     433 6146.313     381990.313   7649.806
+118  cpREV+F       2677.276     448 6250.553     408554.553   7806.130
+119  cpREV+F+I     2664.754     449 6227.508     410327.508   7786.558
+120  cpREV+F+G4    2646.148     449 6190.297     410290.297   7749.346
+121  cpREV+F+I+G4  2646.613     450 6193.227     412093.227   7755.749
+122  cpREV+F+R2    2640.568     450 6181.136     412081.136   7743.658
+123  cpREV+F+R3    2639.541     452 6183.082     415695.082   7752.548
+131  mtREV         2753.510     429 6365.019     375305.019   7854.624
+132  mtREV+I       2740.800     430 6341.600     377001.600   7834.676
+133  mtREV+G4      2718.171     430 6296.342     376956.342   7789.418
+134  mtREV+I+G4    2718.551     431 6299.102     378683.102   7795.651
+135  mtREV+R2      2711.155     431 6284.310     378668.310   7780.859
+136  mtREV+R3      2706.506     433 6279.013     382123.013   7782.506
+144  mtREV+F       2686.455     448 6268.910     408572.910   7824.487
+145  mtREV+F+I     2675.796     449 6249.592     410349.592   7808.642
+146  mtREV+F+G4    2654.964     449 6207.929     410307.929   7766.978
+147  mtREV+F+I+G4  2655.365     450 6210.729     412110.729   7773.251
+148  mtREV+F+R2    2648.095     450 6196.191     412096.191   7758.713
+149  mtREV+F+R3    2644.617     452 6193.233     415705.233   7762.700
+157  rtREV         2704.013     429 6266.025     375206.025   7755.629
+158  rtREV+I       2694.424     430 6248.848     376908.848   7741.924
+159  rtREV+G4      2678.251     430 6216.502     376876.502   7709.578
+160  rtREV+I+G4    2678.608     431 6219.216     378603.216   7715.765
+161  rtREV+R2      2671.168     431 6204.335     378588.335   7700.884
+162  rtREV+R3      2670.350     433 6206.700     382050.700   7710.193
+170  rtREV+F       2697.512     448 6291.024     408595.024   7846.602
+171  rtREV+F+I     2688.955     449 6275.910     410375.910   7834.960
+172  rtREV+F+G4    2672.139     449 6242.278     410342.278   7801.328
+173  rtREV+F+I+G4  2672.529     450 6245.059     412145.059   7807.580
+174  rtREV+F+R2    2665.759     450 6231.519     412131.519   7794.040
+175  rtREV+F+R3    2664.423     452 6232.846     415744.846   7802.312
+183  mtART         2893.338     429 6644.675     375584.675   8134.279
+184  mtART+I       2874.955     430 6609.909     377269.909   8102.986
+185  mtART+G4      2839.275     430 6538.550     377198.550   8031.627
+186  mtART+I+G4    2839.491     431 6540.981     378924.981   8037.530
+187  mtART+R2      2830.938     431 6523.875     378907.875   8020.424
+188  mtART+R3      2817.911     433 6501.823     382345.823   8005.316
+189  mtART+R4      2817.900     435 6505.801     385825.801   8016.239
+196  mtART+F       2791.609     448 6479.217     408783.217   8034.795
+197  mtART+F+I     2777.996     449 6453.992     410553.992   8013.042
+198  mtART+F+G4    2748.433     449 6394.866     410494.866   7953.916
+199  mtART+F+I+G4  2748.656     450 6397.312     412297.312   7959.834
+200  mtART+F+R2    2738.133     450 6376.265     412276.265   7938.787
+201  mtART+F+R3    2728.459     452 6360.918     415872.918   7930.385
+202  mtART+F+R4    2728.455     454 6364.909     419504.909   7941.320
+209  mtZOA         2775.066     429 6408.132     375348.132   7897.736
+210  mtZOA+I       2760.204     430 6380.408     377040.408   7873.485
+211  mtZOA+G4      2733.575     430 6327.151     376987.151   7820.227
+212  mtZOA+I+G4    2733.793     431 6329.586     378713.586   7826.135
+213  mtZOA+R2      2727.597     431 6317.193     378701.193   7813.742
+214  mtZOA+R3      2716.166     433 6298.332     382142.332   7801.825
+215  mtZOA+R4      2716.159     435 6302.318     385622.318   7812.756
+222  mtZOA+F       2710.074     448 6316.149     408620.149   7871.726
+223  mtZOA+F+I     2698.867     449 6295.735     410395.735   7854.784
+224  mtZOA+F+G4    2676.674     449 6251.348     410351.348   7810.397
+225  mtZOA+F+I+G4  2676.900     450 6253.800     412153.800   7816.322
+226  mtZOA+F+R2    2669.532     450 6239.063     412139.063   7801.585
+227  mtZOA+F+R3    2661.565     452 6227.130     415739.130   7796.596
+228  mtZOA+F+R4    2661.563     454 6231.127     419371.127   7807.538
+235  VT            2660.883     429 6179.766     375119.766   7669.370
+236  VT+I          2650.811     430 6161.622     376821.622   7654.699
+237  VT+G4         2637.452     430 6134.903     376794.903   7627.980
+238  VT+I+G4       2637.646     431 6137.291     378521.291   7633.840
+239  VT+R2         2632.507     431 6127.015     378511.015   7623.563
+240  VT+R3         2632.288     433 6130.576     381974.576   7634.070
+248  VT+F          2668.389     448 6232.778     408536.778   7788.355
+249  VT+F+I        2658.998     449 6215.996     410315.996   7775.046
+250  VT+F+G4       2645.244     449 6188.489     410288.489   7747.538
+251  VT+F+I+G4     2645.453     450 6190.907     412090.907   7753.429
+252  VT+F+R2       2640.495     450 6180.990     412080.990   7743.512
+253  VT+F+R3       2640.053     452 6184.106     415696.106   7753.573
+261  LG            2682.573     429 6223.145     375163.145   7712.749
+262  LG+I          2672.396     430 6204.792     376864.792   7697.868
+263  LG+G4         2657.120     430 6174.240     376834.240   7667.316
+264  LG+I+G4       2657.308     431 6176.616     378560.616   7673.165
+265  LG+R2         2650.922     431 6163.845     378547.845   7660.393
+266  LG+R3         2649.652     433 6165.305     382009.305   7668.798
+274  LG+F          2683.544     448 6263.087     408567.087   7818.665
+275  LG+F+I        2674.275     449 6246.551     410346.551   7805.600
+276  LG+F+G4       2658.015     449 6214.030     410314.030   7773.079
+277  LG+F+I+G4     2658.229     450 6216.457     412116.457   7778.979
+278  LG+F+R2       2652.454     450 6204.909     412104.909   7767.431
+279  LG+F+R3       2650.981     452 6205.963     415717.963   7775.429
+287  DCMut         2684.332     429 6226.665     375166.665   7716.269
+288  DCMut+I       2671.624     430 6203.249     376863.249   7696.325
+289  DCMut+G4      2655.922     430 6171.844     376831.844   7664.921
+290  DCMut+I+G4    2656.090     431 6174.180     378558.180   7670.729
+291  DCMut+R2      2652.544     431 6167.089     378551.089   7663.637
+292  DCMut+R3      2650.937     433 6167.873     382011.873   7671.366
+300  DCMut+F       2695.728     448 6287.456     408591.456   7843.034
+301  DCMut+F+I     2683.288     449 6264.575     410364.575   7823.625
+302  DCMut+F+G4    2667.024     449 6232.048     410332.048   7791.098
+303  DCMut+F+I+G4  2667.190     450 6234.380     412134.380   7796.902
+304  DCMut+F+R2    2663.264     450 6226.527     412126.527   7789.049
+305  DCMut+F+R3    2660.505     452 6225.009     415737.009   7794.475
+313  PMB           2715.414     429 6288.827     375228.827   7778.431
+314  PMB+I         2704.970     430 6269.939     376929.939   7763.015
+315  PMB+G4        2691.351     430 6242.702     376902.702   7735.779
+316  PMB+I+G4      2691.493     431 6244.986     378628.986   7741.535
+317  PMB+R2        2685.919     431 6233.838     378617.838   7730.386
+318  PMB+R3        2685.636     433 6237.273     382081.273   7740.766
+326  PMB+F         2721.982     448 6339.964     408643.964   7895.542
+327  PMB+F+I       2712.089     449 6322.177     410422.177   7881.227
+328  PMB+F+G4      2698.033     449 6294.066     410394.066   7853.116
+329  PMB+F+I+G4    2698.188     450 6296.375     412196.375   7858.897
+330  PMB+F+R2      2692.740     450 6285.479     412185.479   7848.001
+331  PMB+F+R3      2692.503     452 6289.006     415801.006   7858.473
+339  HIVb          2592.844     429 6043.687     374983.687   7533.291
+340  HIVb+I        2579.496     430 6018.991     376678.991   7512.067
+341  HIVb+G4       2563.137     430 5986.273     376646.273   7479.350
+342  HIVb+I+G4     2563.244     431 5988.488     378372.488   7485.036
+343  HIVb+R2       2556.494     431 5974.987     378358.987   7471.536
+344  HIVb+R3       2556.417     433 5978.835     381822.835   7482.328
+352  HIVb+F        2582.505     448 6061.011     408365.011   7616.588
+353  HIVb+F+I      2571.359     449 6040.717     410140.717   7599.767
+354  HIVb+F+G4     2555.235     449 6008.469     410108.469   7567.519
+355  HIVb+F+I+G4   2555.365     450 6010.730     411910.730   7573.252
+356  HIVb+F+R2     2550.911     450 6001.822     411901.822   7564.344
+357  HIVb+F+R3     2549.079     452 6002.157     415514.157   7571.624
+365  HIVw          2635.383     429 6128.766     375068.766   7618.370
+366  HIVw+I        2616.077     430 6092.153     376752.153   7585.229
+367  HIVw+G4       2595.075     430 6050.150     376710.150   7543.226
+368  HIVw+I+G4     2595.163     431 6052.327     378436.327   7548.876
+369  HIVw+R2       2589.546     431 6041.091     378425.091   7537.640
+370  HIVw+R3       2588.852     433 6043.703     381887.703   7547.197
+378  HIVw+F        2603.219     448 6102.438     408406.438   7658.015
+379  HIVw+F+I      2588.296     449 6074.591     410174.591   7633.641
+380  HIVw+F+G4     2568.084     449 6034.169     410134.169   7593.218
+381  HIVw+F+I+G4   2568.193     450 6036.385     411936.385   7598.907
+382  HIVw+F+R2     2563.048     450 6026.096     411926.096   7588.618
+383  HIVw+F+R3     2560.333     452 6024.666     415536.666   7594.132
+391  JTTDCMut      2587.899     429 6033.797     374973.797   7523.401
+392  JTTDCMut+I    2577.697     430 6015.395     376675.395   7508.471
+393  JTTDCMut+G4   2564.563     430 5989.126     376649.126   7482.203
+394  JTTDCMut+I+G4 2564.678     431 5991.356     378375.356   7487.905
+395  JTTDCMut+R2   2560.400     431 5982.801     378366.801   7479.350
+396  JTTDCMut+R3   2559.974     433 5985.947     381829.947   7489.440
+404  JTTDCMut+F    2597.061     448 6090.123     408394.123   7645.700
+405  JTTDCMut+F+I  2587.322     449 6072.644     410172.644   7631.694
+406  JTTDCMut+F+G4 2573.247     449 6044.494     410144.494   7603.544
+407  JTTDCMut+F+I+G4 2573.373     450 6046.745     411946.745   7609.267
+408  JTTDCMut+F+R2 2569.481     450 6038.963     411938.963   7601.485
+409  JTTDCMut+F+R3 2568.517     452 6041.035     415553.035   7610.501
+417  FLU           2624.966     429 6107.932     375047.932   7597.536
+418  FLU+I         2610.170     430 6080.339     376740.339   7573.416
+419  FLU+G4        2592.950     430 6045.901     376705.901   7538.977
+420  FLU+I+G4      2593.031     431 6048.062     378432.062   7544.611
+421  FLU+R2        2587.532     431 6037.064     378421.064   7533.612
+422  FLU+R3        2586.015     433 6038.030     381882.030   7541.523
+430  FLU+F         2610.809     448 6117.618     408421.618   7673.195
+431  FLU+F+I       2599.831     449 6097.663     410197.663   7656.712
+432  FLU+F+G4      2581.347     449 6060.694     410160.694   7619.744
+433  FLU+F+I+G4    2581.457     450 6062.914     411962.914   7625.436
+434  FLU+F+R2      2575.729     450 6051.459     411951.459   7613.981
+435  FLU+F+R3      2573.133     452 6050.267     415562.267   7619.733
+443  Blosum62      2730.482     429 6318.963     375258.963   7808.567
+444  Blosum62+I    2720.428     430 6300.855     376960.855   7793.932
+445  Blosum62+G4   2705.876     430 6271.752     376931.752   7764.829
+446  Blosum62+I+G4 2705.979     431 6273.957     378657.957   7770.506
+447  Blosum62+R2   2699.893     431 6261.785     378645.785   7758.334
+448  Blosum62+R3   2699.527     433 6265.053     382109.053   7768.546
+456  Blosum62+F    2732.848     448 6361.697     408665.697   7917.274
+457  Blosum62+F+I  2723.532     449 6345.065     410445.065   7904.115
+458  Blosum62+F+G4 2708.691     449 6315.382     410415.382   7874.431
+459  Blosum62+F+I+G4 2708.803     450 6317.606     412217.606   7880.128
+460  Blosum62+F+R2 2703.005     450 6306.010     412206.010   7868.532
+461  Blosum62+F+R3 2702.721     452 6309.442     415821.442   7878.908
+469  mtMet         2732.359     429 6322.717     375262.717   7812.321
+470  mtMet+I       2718.410     430 6296.819     376956.819   7789.896
+471  mtMet+G4      2697.405     430 6254.811     376914.811   7747.887
+472  mtMet+I+G4    2697.476     431 6256.953     378640.953   7753.501
+473  mtMet+R2      2692.274     431 6246.547     378630.547   7743.096
+474  mtMet+R3      2684.701     433 6235.402     382079.402   7738.895
+475  mtMet+R4      2684.644     435 6239.288     385559.288   7749.726
+482  mtMet+F       2642.524     448 6181.047     408485.047   7736.624
+483  mtMet+F+I     2631.299     449 6160.599     410260.599   7719.648
+484  mtMet+F+G4    2611.858     449 6121.716     410221.716   7680.765
+485  mtMet+F+I+G4  2611.945     450 6123.889     412023.889   7686.411
+486  mtMet+F+R2    2607.096     450 6114.191     412014.191   7676.713
+487  mtMet+F+R3    2599.019     452 6102.039     415614.039   7671.505
+488  mtMet+F+R4    2598.974     454 6105.947     419245.947   7682.358
+495  mtVer         2713.384     429 6284.768     375224.768   7774.372
+496  mtVer+I       2697.395     430 6254.790     376914.790   7747.866
+497  mtVer+G4      2672.942     430 6205.883     376865.883   7698.960
+498  mtVer+I+G4    2673.006     431 6208.012     378592.012   7704.560
+499  mtVer+R2      2668.546     431 6199.091     378583.091   7695.640
+500  mtVer+R3      2660.159     433 6186.318     382030.318   7689.812
+501  mtVer+R4      2660.147     435 6190.294     385510.294   7700.732
+508  mtVer+F       2648.966     448 6193.931     408497.931   7749.508
+509  mtVer+F+I     2637.301     449 6172.602     410272.602   7731.652
+510  mtVer+F+G4    2616.485     449 6130.970     410230.970   7690.019
+511  mtVer+F+I+G4  2616.558     450 6133.117     412033.117   7695.639
+512  mtVer+F+R2    2610.079     450 6120.158     412020.158   7682.680
+513  mtVer+F+R3    2601.472     452 6106.944     415618.944   7676.411
+514  mtVer+F+R4    2601.470     454 6110.940     419250.940   7687.351
+521  mtInv         2797.472     429 6452.944     375392.944   7942.549
+522  mtInv+I       2784.765     430 6429.530     377089.530   7922.607
+523  mtInv+G4      2766.225     430 6392.451     377052.451   7885.527
+524  mtInv+I+G4    2766.286     431 6394.572     378778.572   7891.120
+525  mtInv+R2      2760.217     431 6382.435     378766.435   7878.983
+526  mtInv+R3      2754.127     433 6374.254     382218.254   7877.747
+527  mtInv+R4      2754.109     435 6378.218     385698.218   7888.656
+534  mtInv+F       2653.852     448 6203.704     408507.704   7759.281
+535  mtInv+F+I     2643.582     449 6185.163     410285.163   7744.213
+536  mtInv+F+G4    2626.239     449 6150.479     410250.479   7709.528
+537  mtInv+F+I+G4  2626.319     450 6152.638     412052.638   7715.160
+538  mtInv+F+R2    2620.594     450 6141.187     412041.187   7703.709
+539  mtInv+F+R3    2615.109     452 6134.218     415646.218   7703.684
+540  mtInv+F+R4    2615.108     454 6138.217     419278.217   7714.628
+Akaike Information Criterion:           HIVb+R2
+Corrected Akaike Information Criterion: JTT
+Bayesian Information Criterion:         HIVb+R2
+Best-fit model: HIVb+R2 chosen according to BIC
+
+All model information printed to GLRaV3/GLRaV3_coat_protein_protein_align.fasta.model.gz
+CPU time for ModelFinder: 0.265 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.275 seconds (0h:0m:0s)
+
+NOTE: 14 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2569.088
+2. Current log-likelihood: -2567.114
+3. Current log-likelihood: -2565.048
+4. Current log-likelihood: -2562.914
+5. Current log-likelihood: -2560.819
+6. Current log-likelihood: -2559.000
+7. Current log-likelihood: -2557.692
+8. Current log-likelihood: -2556.963
+9. Current log-likelihood: -2556.651
+10. Current log-likelihood: -2556.525
+Optimal log-likelihood: -2556.477
+Site proportion and rates:  (0.865,0.594) (0.135,3.613)
+Parameters optimization took 10 rounds (2.051 sec)
+Computing ML distances based on estimated model parameters... 3.749 sec
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing BIONJ tree...
+0.021 seconds
+Log-likelihood of BIONJ tree: -2644.571
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.118 second

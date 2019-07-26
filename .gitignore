@@ -1,4 +1,9 @@
 hyphy-analyses/codon-msa/*.fas
 hyphy-analyses/codon-msa/*.log
-data/*/*.fasta
+
 *.log
+
+data/GLRaV3/*.*
+data/GPGV/*.*
+data/GVA/*.*
+

@@ -1,0 +1,12 @@
+#!/Users/jordanzehr/Desktop/plant_project_papers/data_GVA_GPGV_GLRaV3/grapes/envs/grape/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'snakemake==5.5.4','console_scripts','snakemake'
+__requires__ = 'snakemake==5.5.4'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('snakemake==5.5.4', 'console_scripts', 'snakemake')()
+    )

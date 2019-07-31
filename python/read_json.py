@@ -11,6 +11,12 @@ from collections import Counter
 
 
 def json_to_fasta(infile, virus):
+    
+    def name_fixer(count):
+        temp = count.replace(' ', '_')
+        t_t = temp.replace(',', '__')
+        name = t_t.replace('/','__')
+        return name
 
     file = infile
     # search_term = ''
@@ -53,10 +59,13 @@ def json_to_fasta(infile, virus):
 
     zipped = list(zip(acc_num, products, country, seq, host, date))
 
+
     for count in counted_prods:
-        t = count.replace(' ', '_')
-        t_t = t.replace(',', '__')
-        name = t_t.replace('/','__')
+        # t = count.replace(' ', '_')
+        # t_t = t.replace(',', '__')
+        # name = t_t.replace('/','__')
+
+        name = name_fixer(count)
         file_guts = "data/%s/%s_%s.fasta" % (virus, virus, name)
         #print("this is the file name: ", file_name)
         with open(file_guts, 'w') as out:

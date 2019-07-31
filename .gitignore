@@ -1,6 +1,8 @@
 hyphy-analyses/codon-msa/*.fas
 hyphy-analyses/codon-msa/*.log
 
+rsrc/*.json
+
 *.log
 
 data/GLRaV3/*.*

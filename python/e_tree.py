@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as et
-from collections import Counter
 import json
 
 #gpgv_file = 'GPGV_sequence.gbc.xml'
@@ -65,7 +64,7 @@ def xml_reader(in_file, out_file):
 
     my_dict = {}
     for info in all_info:
-        temp = {}
+        #temp = {}
         for i in info:
             temp = {}
             temp[i[0]] = {'source': i[1], 'seq': i[2], 'country': i[3], 'product': i[4], 'host': i[7], 'date': i[8]}

@@ -35,6 +35,8 @@ def xml_reader(in_file, out_file):
             temp = lst
             if len(temp) == 0:
                 temp.append('no_value')
+            # elif len(temp) == 1:
+            #     temp = str(temp[0])
             return temp
         
         def get_kids(word):
@@ -51,33 +53,39 @@ def xml_reader(in_file, out_file):
         host = checker(get_kids('host'))
         date = checker(get_kids('collection_date'))
 
+        # print(len(product), len(trans))
+        # print('\n')
+        acc_str = str(acc_num[0])
+
+        my_dict = {}
+        my_dict[acc_str] = {'source': source, 'seq': seq, 'country': country, 'product': product, 'pro_id': pro_id, 'trans': trans, 'host': host, 'date': date}
+        #print(type(product))
+
+       
         #print(acc_num, source, seq, country, product, pro_id, trans, host, date, '\n')
-        
-        total_info = list(zip(acc_num, source, seq, country, product, pro_id, trans, host, date))
-        return total_info
+        #print(len(product), len(acc_num), len(source), len(pro_id), len(trans))
+        #print('\n')
+        #total_info = list(zip(acc_num, source, seq, country, product, pro_id, trans, host, date))
+
+        # print(type(my_dict))
+        # print(my_dict)
+        # print('\n')
+        return my_dict
         
 
 
     root = tree.getroot()
-    all_info = list(map(get_info, root.findall("INSDSeq")))
+    temp_info = list(map(get_info, root.findall("INSDSeq")))
 
-
-    my_dict = {}
-    for info in all_info:
-        #temp = {}
-        for i in info:
-            temp = {}
-            temp[i[0]] = {'source': i[1], 'seq': i[2], 'country': i[3], 'product': i[4], 'host': i[7], 'date': i[8]}
-            my_dict.update(temp)
-    #print(my_dict)
-
-
-    data = json.dumps(my_dict)
-    #print(data)
-
-    ''' 
-    where the dictionary is written to a json
     '''
+    not sure why i have to do this but it is a little annoying
+    '''
+
+    all_info = {}
+    for i in temp_info:
+        all_info.update(i)
+    
+    data = json.dumps(all_info)
     with open(virus_out_file, 'w') as out_file:
         out_file.write(data)
 

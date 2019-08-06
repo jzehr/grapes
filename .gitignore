@@ -5,7 +5,5 @@ rsrc/*.json
 
 *.log
 
-data/GLRaV3/*.*
-data/GPGV/*.*
-data/GVA/*.*
+data/*.*
 

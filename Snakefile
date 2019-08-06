@@ -8,24 +8,24 @@ from python.json_part_list import list_maker
 from python.flat import flatten
 from python.e_tree import xml_reader
 from python.read_json import json_to_fasta
+# from python.cat_files import catter
 
+## add this so that you can call it from here instead of running it separately ##
+# shell("python3 rsrc/config_json.py")
 
 ## these are the variables from the grape viruses ##
 #viruses = ['GLRaV3', 'GPGV', 'GVA']
 viruses = ['GLRaV3']
-
-# parts = {GLRaV3 : ['55_KDa_protein', 'p_protease__methyl_transferase__helicase', 'RNA-dependent_RNA_polymerase', '6_kDa_protein', '5_kDa_protein', '59_kDa_protein', '55_kDa_protein', '35_kDa_coat_protein', '53_kDa_protein', '21_kDa_protein', '19.6_kDa_protein', '19.7_kDa_protein', '4_kDa_protein', '7_kDa_protein', 'polymerase', 'RNA_dependent_RNA_polymerase', 'HSP70-like_protein', 'coat_protein', 'heat_shock_protein_70_homologue', 'ORF1a', 'heat_shock_protein_70-like_protein', 'major_coat_protein', 'RNA_polymerase', 'RNA-dependent_RNA_polymerase_2', '59.3_kDa_protein', '55.1_kDa_protein', 'methyl_transferase__helicase', 'Hsp70-like_protein', 'Hsp90-like_protein', 'divergent_coat_protein', 'polyprotein', 'HSP70h', '53_kDa_coat_protein_divergent', 'heat_shock_protein', 'no_value', 'movement_protein', 'heat_shock_70-like_protein', 'Heat_shock_protein_70_homolog', 'heat_shock_protein_70', 'capsid_protein', 'HSP90-like_protein', 'p5', 'p55', 'CPm', 'p21', 'p19.6', 'p19.7', 'p4', 'p7', 'methyl_transferase', 'hypothetical_protein', '245_kDa_polyprotein', 'HSP90h', 'coat_protein_divergent', '3.9_kDa_protein', 'p19.7_RNA_silencing_suppressor_protein', 'replication_associated_protein_3', 'p6', 'Hsp70h', 'Hsp90h', 'CP', 'dCP', 'heat_schock_protein_70-like_protein', 'heat_shock_protein_90', 'diverged_copy_of_the_GLRaV-3_coat_protein', 'Papain-like_protease___methyl_transferase___AlkB_and_helicase_domains', 'divergent_(minor)_coat_protein', '19.8_kDa_protein', 'heat_shock_protein_hsp70h', 'methyltransferase__helicase', 'methyltransferase__helicase_protein', 'ORF7_protein', 'methyltransferase', '19.3_kDa_protein', '9_kDa_protein', '6.2_kDa_protein', 'RdRp', '5.5_kDa_protein', 'divergent_capsid_protein', '20_kDa_protein', '19_kDa_protein', '19.5_kDa_protein', 'RNA_dependent_RNA_polmerase', 'small_hydrophobic_protein', 'hsp70-like_protein', 'capsid_protein_divergent', 'p20', 'truncated_p6', 'replication-related_polyprotein', 'major_capsid_protein', 'p20A', 'p20B', 'putative_small_protein', 'p20_protein'], \
-# GPGV : ['movement_protein', 'coat_protein', 'RNA_dependent_RNA_polymerase', 'polyprotein', 'capsid_protein', 'RNA-dependent_RNA_polymerase', 'replicase', 'no_value', 'rdRpol', 'MP', 'CP', 'RdRp'],\
-#  GVA : ['coat_protein', 'RNA-dependent_RNA_polymerase', 'unknown', 'movement_protein', 'nucleic_acid_binding_protein', 'ORF5', 'capsid_protein', 'replicase', '19_kDa_protein', '10_kDa_protein', 'putative_replicase', 'RNA_binding_protein', '194_kDa_protein', 'RNA-binding_protein', 'replication-related_protein', 'RNA_silencing_suppressor', 'replication-like_protein', 'replication_protein', 'silencing_suppressor', 'truncated_coat_protein', 'mutant_silencing_suppressor', 'truncated_silencing_suppressor', 'no_value', '195_kDa_replicase', 'MP', 'CP', 'hypothetical_protein', 'putative_movement_protein', 'putative_RNA_binding_protein', 'replicase_protein', 'putative_19_kDa_protein', 'GVA_19kDa_protein', 'RNA-binding_protein__silencing_suppressor']}
 
 input_files = ['rsrc/%s/NCBI_data/%s_sequence.gbc.xml' % (v, v) for v in viruses]
 
 
 
 '''
-this will collect all the parts of proteins
-want to put in the virus config file and get out a list of associated proteins
-then add all those lists together to make 'temp'
+this will read in the virus config files and scrape all the protein parts
+that come from that virus
+
+example: heat schock protein 70-like protein
 '''
 all_virus = []
 for v in viruses:
@@ -39,13 +39,11 @@ all_virus = flatten(all_virus)
 ####################################################################
 # rule all: 
 #     input:        
-#         'data/GLRaV3/NCBI_data/GLRaV3_sequence.gbc.xml'
+#         'data/dashboard.json'
 ####################################################################
 
 ####################################################################
-'''
-This rule will read in the XML files from NCBI and parse them into JSONs
-'''
+# This rule will read in the XML files from NCBI and parse them into JSONs
 ####################################################################
 rule xml_to_json:
     params:
@@ -63,125 +61,125 @@ rule xml_to_json:
             print('\n')
 
 ####################################################################
-'''
-This rule will read in the JSON from the previous rule and create Fasta files 
-for EACH protein represented within each virus
-'''
+# This rule will read in the JSON from the previous rule and create Fasta files 
+# for EACH protein represented within each virus
 ####################################################################
 rule json_to_fasta:
     params:
         all_virus=all_virus
+        # viruses=viruses
     input:
         virus_xml = rules.xml_to_json.output
     output:
-        #"data/{virus}/{temp}.fasta"
-        all_outs = expand("data/{temp}.fasta" , virus=viruses, temp=all_virus)
-        #"data/sim_seq/{temp}_sim.fasta"
+        all_outs = expand("data/{temp}.fasta" , temp=all_virus)
     run:
         #import pdb;pdb.set_trace()
-        json_to_fasta(input.virus_xml, output.all_outs)
+        json_to_fasta(input.virus_xml, output.all_outs, viruses)
 
 ####################################################################
-'''
-*** WARNING ***
-~ this might be an extremely fragile bit of the code ~
-
-This rule might be a little annoying, 
-i will need to think of an elegant way to handle this... 
-'''
+#               *** WARNING ***
+# ~ this might be an extremely fragile bit of the code ~
+# 
+# This rule might be a little annoying, 
+# i will need to think of an elegant way to handle this... 
 ####################################################################
 rule cat_files:
-    params:
-        viruses = viruses
+    # params:
+    #     viruses = viruses
+    input:
+        in_files=rules.json_to_fasta.output.all_outs
+    output:
+        outs_temp = expand("data/{virus}_coat_protein_temp_cat.fasta" , virus=viruses)
+        # outs_cat = expand("data/{virus}_coat_protein_cat.fasta" , virus=viruses)
     run:
         for v in viruses:
-            print("cat-ing this virus: ",v)
+            print("cat-ing this virus: ", v)
             shell("bash bash/cat_%s.sh" % v)
             print('\n')
 
 ####################################################################
-'''
-This rule will delete old files that 
-might have been created from the last run
-''' 
+#               *** WARNING ***
+# ~ this might be an extremely fragile bit of the code ~
+#
+# This rule will clean sequences out of the cat files 
+# some sequences are clearly mislabeled 
 ####################################################################
-rule remove_old_files:
-    params:
-        viruses = viruses
-    run:
-        for v in viruses:
-            print("removing old runs from this virus: ",v)
-            shell("rm -rf data/%s/*.fasta.ckp.gz" % v)
-            print('\n')
-
-####################################################################
-'''
-This rule will run a batch file on 
-the nucleotides to put them in frame
-and translate them to amino acids 
-'''
-####################################################################
-rule run_hyphy:
-    params:
-        viruses = viruses
+rule cat_cleaner:
     input:
-        v_in_file = "data/{virus}/{virus}_{protein}.fasta"
+        in_files=rules.cat_files.output.outs_temp
     output:
-        v_out_file = "data/{virus}/{virus}_{protein}_amino.fasta"
+        outs_cat = expand("data/{virus}_coat_protein_cat.fasta" , virus=viruses)
     run:
-        import pdb; pdb.set_trace()
-#     output:
-#         "data/hivtrace/{temp}_edge_report.json"
-#     shell:
-#         "hyphy ../../hyphy-analyses/codon-msa/pre-msa.bf --input ../../data/GLRaV3/GLRaV3_coat_protein_cat.fasta"
+        zipped = list(zip(viruses, input.in_files, output.outs_cat))
+        for z in zipped:
+            virus = z[0]
+            temp_file = z[1]
+            out_file = z[2]
+            # print(virus, temp_file, out_file)
+            with open(temp_file, "r") as in_put:
+                with open(out_file, "w") as out_put: 
+                    for pos, line in enumerate(in_put):
+                        # print(pos, [line])
+                        bad_1 = 'MGAYTHVDFHESRLLKDKQDYLSFKSANEAPPDPPGYVRPDSYVRAYLIQRADFPNTQSLSVTLSVASNKLASGLMGSDAVSSSFMLMNDAGDYFECGVCHNKPYLGREVIFCRKYIGGRGVEITTGKNYTSNNWNETSYVIQVNVVDGLAQTTVNSTYTQTDVSGLPKNWTRIYKITKIVSVDQNLYPGCFSDSKLGVMRIRSLLVSPVRIFFRGILLKPLKKSFNARIEDVLNIDDTSLLEPSPVVPESTGGVGPSEQLDVVALTSDVTELINTRGQGKICFPDSVLSINEADIYDERYLPITEALQINARLRRLVLSKGGSQTPRDMGNMIVAMIQLFVLYSTVKNISVKDGYRVETELGQKKVYLSYSEVREAILGGKYDASPTNTVRSFMRYFTHTTITLLIEKKIQPAYTALAKHGVPKRFTPYCFDFALLDNRYYPADVLKANAMACAIAIKSANLRRKGSETYNILESI\n'
+                        bad_2 = '>QCY41301.1_coat_protein_MK804765.1_Brazil_19-Mar-2018_Vitis-sp.-cv.-BRS-Nubia-(hybrid-grapevine)_\n'
+                        if bad_1 == line or bad_2 == line: 
+                            continue 
+                        out_put.write(line)
 
 ####################################################################
-'''
-This rule will look at the 
-need to make sure there are more than X number of sequences to build a tree
-'''
+# This rule will run a batch file on 
+# the nucleotides to put them in frame
+# and translate them to amino acids 
+#
+# ** do we even need this rule anymore?? ** 
+#
 ####################################################################
+# rule run_hyphy:
+#     params:
+#         viruses = viruses
+#     input:
+#         v_in_file = "data/{temp}_cat.fasta"
+#     run:
+#         for infile in v_in_file:
+#         shell("hyphy hyphy-analyses/codon-msa/pre-msa.bf --infile %s" % infile)
 
 ####################################################################
-'''
-'''
+# This rule will look at the number of sequences in a fasta file 
+# * need to make sure there are more than X number of sequences to *
+# * continue down the pipeline *
+# mark down which ones only have one or two seqs
+####################################################################
 # rule check_file_contents:
 #     params:
 #         viruses = viruses
 #     input:
-####################################################################
+
 
 ####################################################################
-'''
-
-'''
+# this rule will read in the cat files and align the contents
 ####################################################################
-# rule amino_align:
-# # #     input:
-# # #         "londonMSM_tree_simulator/model1.R"        
-# # #     output:
-
-# # #     shell:
-# # #         "mafft --amino ../../data/GLRaV3/GLRaV3_coat_protein_cat.fasta_protein.fas > ../../data/GLRaV3/GLRaV3_coat_protein_protein_align.fasta"
-
-####################################################################
-'''
-this rule consumes all the edge reports and creates a table with all the info 
-'''
-####################################################################
-# rule build_trees:
-#     input:
-#         expand("data/hivtrace/{temp}_edge_report.json", temp=temp)
-#     output:
-#         "data/summary_statistics_table.csv"
-#     shell:
-#         "iqtree -s ../../data/GLRaV3/GLRaV3_coat_protein_protein_align.fasta"
+rule amino_align:
+    input:
+        ins = rules.cat_cleaner.output.outs_cat
+    output:
+        outs = expand("data/{virus}_coat_protein_cat_align.fasta" , virus=viruses)
+    run:
+        for pos, file in enumerate(input.ins):
+            shell("mafft --amino %s > %s" % (file, output.outs[pos]))
 
 ####################################################################
-'''
-This rule will throw all of the files into a json so that
-we can visualize in a dashboard fashion
-'''
+# this rule will build all the trees from the aligned files
+####################################################################
+rule build_trees:
+    input:
+        ins = rules.amino_align.output.outs
+    run:
+        shell("rm data/*.fasta.*")
+        for file in input.ins:
+            shell("iqtree -nt 12 -s %s" % file)
+
+####################################################################
+# this rule will visualize the information into a dashboard
 ####################################################################
 # rule json_for_dashboard:
 

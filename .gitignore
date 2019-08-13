@@ -1,9 +1,12 @@
 hyphy-analyses/codon-msa/*.fas
 hyphy-analyses/codon-msa/*.log
 
+rsrc/GPGV/*.json
+rsrc/GVA/*.json
+rsrc/GLRaV3/*.json
+
+
 *.log
 
-data/GLRaV3/*.*
-data/GPGV/*.*
-data/GVA/*.*
-
+data/*.*
+envs

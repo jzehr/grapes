@@ -14,19 +14,19 @@ from python.read_json import json_to_fasta
 # shell("python3 rsrc/config_json.py")
 
 ## these are the variables from the grape viruses ##
-#viruses = ['GLRaV3', 'GPGV', 'GVA']
-viruses = ['GLRaV3']
+viruses = ['GLRaV3', 'GPGV', 'GVA']
+#viruses = ['GLRaV3']
 
 input_files = ['rsrc/%s/NCBI_data/%s_sequence.gbc.xml' % (v, v) for v in viruses]
 
 
 
-'''
-this will read in the virus config files and scrape all the protein parts
-that come from that virus
 
-example: heat schock protein 70-like protein
-'''
+#this will read in the virus config files and scrape all the protein parts
+#that come from that virus
+
+#example: heat schock protein 70-like protein
+
 all_virus = []
 for v in viruses:
     temp_file = 'rsrc/virus_%s_config.json' % v
@@ -165,7 +165,7 @@ rule amino_align:
         outs = expand("data/{virus}_coat_protein_cat_align.fasta" , virus=viruses)
     run:
         for pos, file in enumerate(input.ins):
-            shell("mafft --amino %s > %s" % (file, output.outs[pos]))
+            shell("mafft %s > %s" % (file, output.outs[pos]))
 
 ####################################################################
 # this rule will build all the trees from the aligned files
@@ -174,9 +174,9 @@ rule build_trees:
     input:
         ins = rules.amino_align.output.outs
     run:
-        shell("rm data/*.fasta.*")
+       # shell("rm data/*.fasta.*")
         for file in input.ins:
-            shell("iqtree -nt 12 -s %s" % file)
+            shell("iqtree -s %s -nt AUTO" % file)
 
 ####################################################################
 # this rule will visualize the information into a dashboard

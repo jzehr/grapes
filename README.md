@@ -33,7 +33,10 @@ ___
 
 - you should see a ```(grape)``` show up to the left of your command line
  
-- set up your virtual environment:
+- it might be useful to run:
+	```pip install --upgrade pip```
+
+- then, set up your virtual environment:
 
 	``` pip install -r requirements.txt) ``` 
 

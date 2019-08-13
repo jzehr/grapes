@@ -20,9 +20,6 @@ Once you run the hyphy-develop code, CLONE THE hyphy-analyses REPO AND CD INTO I
 ___
 ### Install:
 
-
-___
-### To Run
 - navigate to the grapes directory:
 
 	```cd to/the/grapes ```
@@ -34,6 +31,7 @@ ___
 - you should see a ```(grape)``` show up to the left of your command line
  
 - it might be useful to run:
+
 	```pip install --upgrade pip```
 
 - then, set up your virtual environment:
@@ -41,6 +39,13 @@ ___
 	``` pip install -r requirements.txt) ``` 
 
 ___
+
+___
+### To Run
+
+- start by running this python script:
+
+```python rsrc/config_json.py ```
 
 ___
 ### Test:

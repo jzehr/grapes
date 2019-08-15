@@ -37,9 +37,9 @@ all_virus = flatten(all_virus)
 
 
 ####################################################################
-# rule all: 
-#     input:        
-#         'data/dashboard.json'
+rule all: 
+  input:
+    'data/GVA_coat_protein_cat_align.fasta.treefile', 'data/GLRaV3_coat_protein_cat_align.fasta.treefile', 'data/GPGV_coat_protein_cat_align.fasta.treefile'
 ####################################################################
 
 ####################################################################
@@ -141,7 +141,7 @@ rule cat_cleaner:
 #         v_in_file = "data/{temp}_cat.fasta"
 #     run:
 #         for infile in v_in_file:
-#         shell("hyphy hyphy-analyses/codon-msa/pre-msa.bf --infile %s" % infile)
+#         shell("HYPHYMPI -infile %s" % infile)
 
 ####################################################################
 # This rule will look at the number of sequences in a fasta file 

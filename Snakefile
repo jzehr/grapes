@@ -173,6 +173,8 @@ rule amino_align:
 rule build_trees:
     input:
         ins = rules.amino_align.output.outs
+    output:
+      ML_trees= expand("data/{virus}_coat_protein_cat_align.fasta.treefile", virus=viruses)
     run:
        # shell("rm data/*.fasta.*")
         for file in input.ins:
@@ -181,8 +183,14 @@ rule build_trees:
 ####################################################################
 # this rule will visualize the information into a dashboard
 ####################################################################
-# rule json_for_dashboard:
-
+rule fasta_temp_hyphy:
+    input:
+      fastas=rules.amino_align.output.outs,
+      trees=rules.build_trees.output.ML_trees
+    output:
+      outs=expand("data/{virus}_coat_protein_cat_align_temp.fasta", virus=viruses)
+    run:
+      import pdb;pdb.set_trace()
 
 ####################################################################
 

@@ -3,6 +3,9 @@ hyphy-analyses/codon-msa/*.log
 
 rsrc/*.json
 
+*.treefile
+*.tree
+
 *.log
 
 data/*.*

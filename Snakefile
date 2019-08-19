@@ -14,19 +14,19 @@ from python.read_json import json_to_fasta
 # shell("python3 rsrc/config_json.py")
 
 ## these are the variables from the grape viruses ##
-#viruses = ['GLRaV3', 'GPGV', 'GVA']
-viruses = ['GLRaV3']
+viruses = ['GLRaV3', 'GPGV', 'GVA']
+#viruses = ['GLRaV3']
 
 input_files = ['rsrc/%s/NCBI_data/%s_sequence.gbc.xml' % (v, v) for v in viruses]
 
 
 
-'''
-this will read in the virus config files and scrape all the protein parts
-that come from that virus
 
-example: heat schock protein 70-like protein
-'''
+#this will read in the virus config files and scrape all the protein parts
+#that come from that virus
+
+#example: heat schock protein 70-like protein
+
 all_virus = []
 for v in viruses:
     temp_file = 'rsrc/virus_%s_config.json' % v
@@ -37,9 +37,9 @@ all_virus = flatten(all_virus)
 
 
 ####################################################################
-# rule all: 
-#     input:        
-#         'data/dashboard.json'
+rule all: 
+  input:
+    'data/GVA_coat_protein_cat_align.fasta.treefile', 'data/GLRaV3_coat_protein_cat_align.fasta.treefile', 'data/GPGV_coat_protein_cat_align.fasta.treefile'
 ####################################################################
 
 ####################################################################
@@ -141,7 +141,7 @@ rule cat_cleaner:
 #         v_in_file = "data/{temp}_cat.fasta"
 #     run:
 #         for infile in v_in_file:
-#         shell("hyphy hyphy-analyses/codon-msa/pre-msa.bf --infile %s" % infile)
+#         shell("HYPHYMPI -infile %s" % infile)
 
 ####################################################################
 # This rule will look at the number of sequences in a fasta file 
@@ -165,7 +165,7 @@ rule amino_align:
         outs = expand("data/{virus}_coat_protein_cat_align.fasta" , virus=viruses)
     run:
         for pos, file in enumerate(input.ins):
-            shell("mafft --amino %s > %s" % (file, output.outs[pos]))
+            shell("mafft %s > %s" % (file, output.outs[pos]))
 
 ####################################################################
 # this rule will build all the trees from the aligned files
@@ -173,16 +173,24 @@ rule amino_align:
 rule build_trees:
     input:
         ins = rules.amino_align.output.outs
+    output:
+      ML_trees= expand("data/{virus}_coat_protein_cat_align.fasta.treefile", virus=viruses)
     run:
-        shell("rm data/*.fasta.*")
+       # shell("rm data/*.fasta.*")
         for file in input.ins:
-            shell("iqtree -nt 12 -s %s" % file)
+            shell("iqtree -s %s -nt AUTO" % file)
 
 ####################################################################
 # this rule will visualize the information into a dashboard
 ####################################################################
-# rule json_for_dashboard:
-
+rule fasta_temp_hyphy:
+    input:
+      fastas=rules.amino_align.output.outs,
+      trees=rules.build_trees.output.ML_trees
+    output:
+      outs=expand("data/{virus}_coat_protein_cat_align_temp.fasta", virus=viruses)
+    run:
+      import pdb;pdb.set_trace()
 
 ####################################################################
 

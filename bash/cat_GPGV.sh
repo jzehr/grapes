@@ -1,7 +1,12 @@
 #!/bin/bash
 
 ## this will cat the appropriate files for GPGV
-rm data/GPGV/GPGV_coat_protein_temp_cat.fasta
+echo "removing any pre-existing files"
 
-cat data/GPGV_CP.fasta\
+FILE=data/GPGV/GPGV_coat_protein_temp_cat.fasta
+if test -f "$FILE"; then
+    echo "blah"
+    rm "$FILE"
+fi
+cat data/GPGV_CP.fasta \
     data/GPGV_coat_protein.fasta > data/GPGV_coat_protein_temp_cat.fasta

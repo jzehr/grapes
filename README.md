@@ -26,7 +26,7 @@ ___
 
 - activate the virtual environment:
 
-	```source envs/grape/bin/activate```
+	```source envs/grapes/bin/activate```
 
 - you should see a ```(grape)``` show up to the left of your command line
  
@@ -38,6 +38,7 @@ ___
 
 	``` pip install -r requirements.txt) ``` 
 
+- cd back to the base directory 
 ___
 
 ___

@@ -43,9 +43,10 @@ ___
 ___
 ### To Run
 
-- start by running this python script:
+- from the base grapes directory ```cd rsrc/```
+- then run this python script:
 
-```python rsrc/config_json.py ```
+```python config_json.py ```
 
 ___
 ### Test:

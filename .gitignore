@@ -1,4 +1,4 @@
-*.snakemake
+.snakemake
 *.treefile
 *.tree
 

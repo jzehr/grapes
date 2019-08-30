@@ -1,6 +1,4 @@
-hyphy-analyses/codon-msa/*.fas
-hyphy-analyses/codon-msa/*.log
-
+*.snakemake
 *.treefile
 *.tree
 

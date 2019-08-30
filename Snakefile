@@ -137,7 +137,7 @@ rule build_trees:
     output:
       ML_tree = "data/tree/{virus}_coat_protein_cat_align.fasta.treefile"
     run:
-      shell("iqtree -s %s -pre %s -nt AUTO" % (input.in_align, output.ML_tree))
+      shell("iqtree -s %s -pre %s -nt AUTO" % (input.in_align, input.in_align))
 
 ####################################################################
 # this rule will visualize the information into a dashboard

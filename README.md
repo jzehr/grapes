@@ -26,7 +26,7 @@ ___
 
 - activate the virtual environment:
 
-	```source envs/grape/bin/activate```
+	```source envs/grapes/bin/activate```
 
 - you should see a ```(grape)``` show up to the left of your command line
  
@@ -36,16 +36,24 @@ ___
 
 - then, set up your virtual environment:
 
-	``` pip install -r requirements.txt) ``` 
+	``` pip install -r requirements.txt ``` 
 
+- cd back to the base directory 
 ___
 
 ___
 ### To Run
 
-- start by running this python script:
+- from the base grapes directory ```cd rsrc/```
+- then run this python script:
 
-```python rsrc/config_json.py ```
+```python config_json.py ```
+
+- then
+```snakemake all ```
+
+- you can spice this up by adding a ```-j #``` flag after that command to provide snakemake with the available number of cores to run on.
+- if you use something like ```bpsh``` then just add ```bpsh #``` before the ```snakemake``` command
 
 ___
 ### Test:

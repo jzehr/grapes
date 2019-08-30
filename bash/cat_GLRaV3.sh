@@ -8,7 +8,6 @@ if test -f "$FILE"; then
     echo "blah"
     rm "$FILE"
 fi
-echo "other"
 cat data/GLRaV3_35_kDa_coat_protein.fasta \
 data/GLRaV3_major_coat_protein.fasta \
 data/GLRaV3_CP.fasta \

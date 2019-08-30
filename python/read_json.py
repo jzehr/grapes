@@ -1,5 +1,5 @@
 import json
-from collections import Counter 
+from collections import Counter
 
 
 def json_to_fasta(infile, outfile, viruses):
@@ -9,25 +9,34 @@ def json_to_fasta(infile, outfile, viruses):
     files = [str(inf) for inf in infile]
     viruses = list(viruses)
 
-    # print(files, viruses)
+    print(files, viruses)
 
-    
+
 
     def flatten(lst):
         new_lst = [i for l in lst for i in l]
         return new_lst
 
     def name_fixer(count):
-        temp = count.replace(' ', '_')
-        t_t = temp.replace(',', '__')
-        name = t_t.replace('/','__')
-        return name
+        old = count
+        new = []
+        bad = [' ',',','.','/','-','(',')',':']
+        for char in list(count):
+            if not char in bad:
+                new.append(char)
+            else:
+                new.append('_')
+        temp = ''.join(new)
+        name = temp.replace('__','_')
+        #print(count, name)
+        return name, old
+
 
     for pos, virus in enumerate(viruses):
 
         master_dict = {'GVA': ('Grapevine virus A', 'Grapevine virus A (GVA)'),\
                         'GLRaV3' :('Grapevine leafroll-associated virus 3 (GLRaV-3)','Grapevine leafroll-associated virus 3m'),\
-                         'GPGV' :('Grapevine Pinot gris virus','Grapevine Pinot gris virus')} 
+                         'GPGV' :('Grapevine Pinot gris virus','Grapevine Pinot gris virus')}
 
         search_term = master_dict[virus]
 
@@ -61,14 +70,14 @@ def json_to_fasta(infile, outfile, viruses):
             term = "There were %d sequences found for %s!" % (len(acc_num), virus)
             print(term)
 
-        
         flat_products = flatten(products)
         source = flatten(source)
-        counted_prods = list(Counter(flat_products))
+        temp_counted_prods = list(Counter(flat_products))
+        counted_prods = [name_fixer(i) for i in temp_counted_prods]
         counted_source = Counter(source)
 
         zipped = list(zip(acc_num, products, pro_id, trans, country, seq, host, date))
-        
+
         '''
         order
         name, seq_acc_num, place, hst, time, pr_id, trs
@@ -80,8 +89,9 @@ def json_to_fasta(infile, outfile, viruses):
                 temp_id = line[2]
                 temp_trans = line[3]
                 for pos, item in enumerate(temp_prods):
-                    
-                    name = str(name_fixer(item))
+
+                    name = name_fixer(item)
+                    #print('from mult ', name)
                     acc = str(line[0])
                     p = str(line[4][0])
                     h = str(line[6][0])
@@ -89,9 +99,10 @@ def json_to_fasta(infile, outfile, viruses):
 
                     test = [name, acc, p, h, d, temp_id[pos], temp_trans[pos]]
                     this.append(test)
-                    
+
             else:
-                name = str(name_fixer(line[1][0]))
+                name = name_fixer(line[1][0])
+                #print('single ', name)
                 acc = str(line[0])
                 p = str(line[4][0])
                 h = str(line[6][0])
@@ -101,31 +112,33 @@ def json_to_fasta(infile, outfile, viruses):
                 test = [name, acc, p, h, d, pr_id, trs]
                 this.append(test)
 
-        temp_this = [i[0] for i in this]
-        count_this = list(Counter(temp_this))
+        #temp_this = [i[0] for i in this]
+        #count_this = list(Counter(temp_this))
 
-        # print('this ', len(this))
-        # print('temp this ', len(temp_this))
-        # print('count this', len(count_this))
-        # print('counted_prods', len(counted_prods))
-
+        #this is a silly way to do it,
+        # need to add in outputs here to make this less fragile
         for count in counted_prods:
-            print('finding... ', count)
-            temp_name = name_fixer(count)
-            file_guts = "data/%s_%s.fasta" % (virus, temp_name)
+            name = count[0]
+            old_name = count[1]
+            print('finding... ',name)
+            temp_file = "data/%s_%s.fasta" % (virus, name)
+            file_guts = temp_file.replace('__','_')
+
             with open(file_guts, 'w') as out:
                 for line in this:
-                    this_name = line[0]
-                    # print(temp_name, this_name)
-                    if temp_name == this_name:
-                            p_id = line[5]
-                            acc_num = line[1]
-                            place = line[2].replace(' ', '-')
-                            trans_seq = line[6]
-                            host = line[3].replace(' ', '-')
-                            date = line[4].replace(' ', '-')
-                            header = '%s_%s_%s_%s_%s_%s_' % (p_id, this_name, acc_num, place, date, host)
-                            out.write(">{}\n{}\n".format(header, trans_seq))
+                    name_in_this = line[0][0]
+                    #print('name ', name, 'name_this', name_in_this)
+                    if name == name_in_this:
+                        #print(old_name, this_name)
+                        p_id = name_fixer(line[5])
+                        acc_num = name_fixer(line[1])
+                        place = name_fixer(line[2])
+                        trans_seq = line[6]
+                        host =  name_fixer(line[3])
+                        date = name_fixer(line[4])
+                        temp = '%s_%s_%s_%s_%s_%s' % (p_id[0], name, acc_num[0], place[0], date[0], host[0])
+                        header = temp.replace('__','_')
+                        out.write(">{}\n{}\n".format(header, trans_seq))
 
 
 

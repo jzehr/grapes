@@ -49,6 +49,12 @@ ___
 
 ```python config_json.py ```
 
+- then
+```snakemake all ```
+
+- you can spice this up by adding a ```-j #``` flag after that command to provide snakemake with the available number of cores to run on.
+- if you use something like ```bpsh``` then just add ```bpsh #``` before the ```snakemake``` command
+
 ___
 ### Test:
 ___

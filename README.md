@@ -36,7 +36,7 @@ ___
 
 - then, set up your virtual environment:
 
-	``` pip install -r requirements.txt) ``` 
+	``` pip install -r requirements.txt ``` 
 
 - cd back to the base directory 
 ___

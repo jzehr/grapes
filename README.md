@@ -11,8 +11,7 @@ ___
 
 [IQ-TREE](http://www.iqtree.org/#download)  (IQ-TREE multicore version 1.6.11 for Mac OS X 64-bit built Jun  6 2019)
 	
-	hyphy
-	hyphy-analysis
+[HyPhy](https://github.com/veg/hyphy) (Version 2.5.0(MP))
 ___
 
 Make sure to read the docs for BOTH hyphy-develop and [hyphy-analyses](https://github.com/veg/hyphy-analyses). These external repos will allow you to run useful commands on the data.

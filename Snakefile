@@ -135,7 +135,7 @@ rule build_trees:
     input:
         ins = rules.amino_align.output.outs
     output:
-      ML_trees = expand("data/tree/{virus}_coat_protein_cat_align.fasta.treefile", virus=viruses)
+      ML_trees = "data/tree/{virus}_coat_protein_cat_align.fasta.treefile"
     run:
         for file in input.ins:
             shell("iqtree -s %s -pre data/tree/ -nt AUTO" % file)

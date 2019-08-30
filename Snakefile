@@ -36,7 +36,7 @@ all_virus_proteins = flatten(all_virus)
 ####################################################################
 rule all: 
   input:
-    'data/tree/GLRaV3_coat_protein_cat_align.fasta.treefile', 'data/tree/GPGV_coat_protein_cat_align.fasta.treefile', 'data/tree/GVA_coat_protein_cat_align.fasta.treefile'
+    'data/GLRaV3_coat_protein_cat_align.fasta.treefile', 'data/GPGV_coat_protein_cat_align.fasta.treefile', 'data/GVA_coat_protein_cat_align.fasta.treefile'
 
 ####################################################################
 # This rule will read in the XML files from NCBI and parse them into JSONs
@@ -135,7 +135,7 @@ rule build_trees:
     input:
         in_align = "data/{virus}_coat_protein_cat_align.fasta"
     output:
-      ML_tree = "data/tree/{virus}_coat_protein_cat_align.fasta.treefile"
+      ML_tree = "data/{virus}_coat_protein_cat_align.fasta.treefile"
     run:
       shell("iqtree -s %s -pre %s -nt AUTO" % (input.in_align, input.in_align))
 

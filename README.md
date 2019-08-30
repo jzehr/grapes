@@ -38,7 +38,6 @@ ___
 	``` pip install -r requirements.txt ``` 
 
 - cd back to the base directory 
-___
 
 ___
 ### To Run
@@ -46,7 +45,7 @@ ___
 - from the base grapes directory ```cd rsrc/```
 - then run this python script:
 
-```python config_json.py ```
+	```python config_json.py ```
 
 - then
 ```snakemake all ```

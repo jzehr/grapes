@@ -16,10 +16,10 @@ def xml_reader(in_file, out_file):
     root is INSDSet
     child is INSDSeq
     children is "INSDSeq_blah"
-    kids are: INSDSeqid, INSDKeyword, INSDReference, INSDFeature 
-    friends are: INSDFeature_key, INSDReference_reference, INSDReference_position, INSDReference_authors, etc 
-    cousins are: INSDAuthor, INSDInterval 
-    cats are: INSDInterval_from, INSDInterval_to, INSDInterval_accession, INSDQualifier_name, INSDQualifier_value 
+    kids are: INSDSeqid, INSDKeyword, INSDReference, INSDFeature
+    friends are: INSDFeature_key, INSDReference_reference, INSDReference_position, INSDReference_authors, etc
+    cousins are: INSDAuthor, INSDInterval
+    cats are: INSDInterval_from, INSDInterval_to, INSDInterval_accession, INSDQualifier_name, INSDQualifier_value
     '''
 
     def get_info(elem):
@@ -38,13 +38,13 @@ def xml_reader(in_file, out_file):
             # elif len(temp) == 1:
             #     temp = str(temp[0])
             return temp
-        
+
         def get_kids(word):
             temp = list(elem.iter('INSDQualifier'))
             temp_word = filter(lambda x: x.find('INSDQualifier_name').text == word, temp)
             new_word = list(map(lambda x: x.find('INSDQualifier_value').text, temp_word))
             return new_word
-        
+
 
         country = checker(get_kids('country'))
         product = checker(get_kids('product'))
@@ -61,7 +61,7 @@ def xml_reader(in_file, out_file):
         my_dict[acc_str] = {'source': source, 'seq': seq, 'country': country, 'product': product, 'pro_id': pro_id, 'trans': trans, 'host': host, 'date': date}
         #print(type(product))
 
-       
+
         #print(acc_num, source, seq, country, product, pro_id, trans, host, date, '\n')
         #print(len(product), len(acc_num), len(source), len(pro_id), len(trans))
         #print('\n')
@@ -71,7 +71,7 @@ def xml_reader(in_file, out_file):
         # print(my_dict)
         # print('\n')
         return my_dict
-        
+
 
 
     root = tree.getroot()
@@ -84,7 +84,7 @@ def xml_reader(in_file, out_file):
     all_info = {}
     for i in temp_info:
         all_info.update(i)
-    
+
     data = json.dumps(all_info)
     with open(virus_out_file, 'w') as out_file:
         out_file.write(data)

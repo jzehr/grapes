@@ -1,7 +1,6 @@
 import os
 import json
 import xml.etree.ElementTree as et
-from collections import Counter
 import ast
 
 
@@ -45,15 +44,16 @@ def xml_data_grabber(input_file, output_file):
     ## in --> INSDSeq element | out --> dict ##
     def rip_info(elem):
 
+        master = {}
         data = {}
 
         viral_source = name_fixer(str(elem.find("INSDSeq_definition").text))
         accession_number = name_fixer(str(elem.find("INSDSeq_accession-version").text))
         create_date =  name_fixer(str(elem.find("INSDSeq_create-date").text))
 
-        acc_date = (accession_number, create_date)
-
-        data[viral_source] = acc_date
+        master[accession_number] = data
+        data["viral_source"] = viral_source
+        data["create_date"] = create_date
 
         ## in --> list | out --> list ##
         def checker(lst):
@@ -87,23 +87,32 @@ def xml_data_grabber(input_file, output_file):
 
         data["nuc_seq"] = str(elem.find("INSDSeq_sequence").text)
 
-        return  data
+        return  master
 
     tree = et.parse(input_f)
     root = tree.getroot()
     temp_info = list(map(rip_info, root.findall("INSDSeq")))
 
-    info = [str(i) for i in temp_info]
+    info = {}
+    for i in temp_info:
+        info.update(i)
+    #info = [str(i) for i in temp_info]
 
-    json_file = output_f
-
-
-    if os.path.exists(json_file):
-        cmd = "rm -f " + json_file
+    if os.path.exists(output_f):
+        cmd = "rm -f " + output_f
         os.system(cmd)
 
-    for i in info:
-        parsed_data = ast.literal_eval(i)
-        with open(json_file,"a") as f:
-            json.dump(parsed_data, f, indent=3)
+    with open(output_f, "w") as f:
+        json.dump(info, f, indent=4)
+    #for i in temp_info:
+        #parsed_data = ast.literal_eval(i)
+
+        #with open(output_f,"a") as f:
+            #json.dump(i, f, indent=4)
+
+
+
+
+
+
 

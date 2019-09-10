@@ -2,7 +2,7 @@ import os
 import json
 import xml.etree.ElementTree as et
 import ast
-
+from collections import Counter
 
 '''
     ** The data structure used will be a dictionary **
@@ -15,13 +15,14 @@ import ast
 
  '''
 
-def xml_data_grabber(input_file, output_file):
+def xml_data_grabber(input_file, output_full, output_virus):
     '''
     This will rip date from the XML and
     write it to a JSON file
     '''
     input_f = str(input_file)
-    output_f = str(output_file)
+    output_full = str(output_full)
+    output_virus = str(output_virus)
 
     ## in --> str | out --> str ##
     def name_fixer(string):
@@ -98,19 +99,29 @@ def xml_data_grabber(input_file, output_file):
         info.update(i)
     #info = [str(i) for i in temp_info]
 
-    if os.path.exists(output_f):
-        cmd = "rm -f " + output_f
+    keys = list(info.keys())
+
+    temp = [info[key]["organism"] for key in keys]
+
+    temp = [i for t in temp for i in t]
+
+    all_v = list(Counter(temp))
+
+    if os.path.exists(output_full):
+        cmd = "rm -f " + output_full
         os.system(cmd)
 
-    with open(output_f, "w") as f:
+    if os.path.exists(output_virus):
+        cmd = "rm -f " + output_virus
+        os.system(cmd)
+
+
+    with open(output_full, "w") as f:
         json.dump(info, f, indent=4)
-    #for i in temp_info:
-        #parsed_data = ast.literal_eval(i)
 
-        #with open(output_f,"a") as f:
-            #json.dump(i, f, indent=4)
-
-
+    with open(output_virus, "w") as f_out:
+        for v in all_v:
+            f_out.write(v + "\n")
 
 
 

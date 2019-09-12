@@ -15,14 +15,13 @@ from collections import Counter
 
  '''
 
-def xml_data_grabber(input_file, output_full, output_virus):
+def xml_data_grabber(input_file, output_full):
     '''
     This will rip date from the XML and
     write it to a JSON file
     '''
     input_f = str(input_file)
     output_full = str(output_full)
-    output_virus = str(output_virus)
 
     ## in --> str | out --> str ##
     def name_fixer(string):
@@ -97,33 +96,16 @@ def xml_data_grabber(input_file, output_full, output_virus):
     info = {}
     for i in temp_info:
         info.update(i)
-    #info = [str(i) for i in temp_info]
 
     keys = list(info.keys())
-
     temp = [info[key]["organism"] for key in keys]
-
-    temp = [i for t in temp for i in t]
-
+    temp = [name_fixer(i) for t in temp for i in t]
     all_v = list(Counter(temp))
 
     if os.path.exists(output_full):
         cmd = "rm -f " + output_full
         os.system(cmd)
 
-    if os.path.exists(output_virus):
-        cmd = "rm -f " + output_virus
-        os.system(cmd)
-
-
     with open(output_full, "w") as f:
         json.dump(info, f, indent=4)
-
-    with open(output_virus, "w") as f_out:
-        for v in all_v:
-            f_out.write(v + "\n")
-
-
-
-
 

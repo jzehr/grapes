@@ -1,0 +1,23 @@
+xmlrole.lo: xmlrole.c \
+  /opt/aocc/AOCC-1.3.0-Compiler/lib/clang/7.0.0/include/stddef.h \
+  /opt/aocc/AOCC-1.3.0-Compiler/lib/clang/7.0.0/include/__stddef_max_align_t.h \
+  expat_config.h ../../ajax/core/config.h expat_external.h internal.h \
+  xmlrole.h xmltok.h ascii.h
+
+/opt/aocc/AOCC-1.3.0-Compiler/lib/clang/7.0.0/include/stddef.h:
+
+/opt/aocc/AOCC-1.3.0-Compiler/lib/clang/7.0.0/include/__stddef_max_align_t.h:
+
+expat_config.h:
+
+../../ajax/core/config.h:
+
+expat_external.h:
+
+internal.h:
+
+xmlrole.h:
+
+xmltok.h:
+
+ascii.h:

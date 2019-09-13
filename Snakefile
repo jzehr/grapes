@@ -3,13 +3,18 @@
 ## import all functions from python ##
 from python.parser import xml_data_grabber
 from python.json_to_json import virus_json
+from python.json_to_fasta import fasta_maker
 
-
+# parsing the full file of viruese to set them as variables #
 viruses = []
-with open("data/input/all_viruses.txt") as in_f:
+with open("data/all_viruses.txt") as in_f:
   data = in_f.readlines()
   for line in data:
     viruses.append(line.strip())
+
+
+#importants = ["leafroll_associated_virus_3","virus_A","Pinot_gris_virus"]
+importants = ["virus_A"]
 
 ####################################################################
 # This is the rule "all" which will run all the rules to produce
@@ -27,13 +32,10 @@ with open("data/input/all_viruses.txt") as in_f:
 ####################################################################
 rule xml_to_json:
     input:
-      #in_f = "data/input/temp_new.xml"
-      in_f = "data/input/total_viral_sequences_09-05-19.gbc.xml"
+      #name_fixer,
+      in_f = "rsrc/total_viral_sequences_09-05-19.gbc.xml",
     output:
       out_full = "data/total_viral_sequences_09-05-19.json"
-      #out_full = "data/temp.json",
-      ## need to add a file that will output all the virus names!!
-      
     run:
       xml_data_grabber(input.in_f, output.out_full)
 
@@ -46,7 +48,6 @@ rule json_to_json:
       in_f = rules.xml_to_json.output.out_full
     output:
      out_f = expand("data/{virus}.json", virus=viruses) 
-     #out_f = "data/total_viral_sequences_09-05-19.json"
     run:
       zipped = list(zip(viruses, output.out_f)) 
       for z in zipped:
@@ -63,5 +64,21 @@ rule json_to_json:
 # a codon cleaner AND ORF cleaner which will trim START and STOP
 # codons
 ####################################################################
+rule json_to_fasta:
+  input:
+    in_f = expand("data/Grapevine_{important}.json", important=importants)
+  output:
+    out_f = expand("data/fasta/Grapevine_{important}.fasta", important=importants)
+  run:
+    zipped = list(zip(input.in_f, output.out_f))
+    for z in zipped:
+      in_file = z[0]
+      out_file = z[1]
+      fasta_maker(in_file, out_file, importants)
+
+
+
+
+
 
 

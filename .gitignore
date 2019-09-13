@@ -6,5 +6,5 @@
 *.log.*
 
 data/*.json
-data/input/*.txt
+data/*.txt
 envs

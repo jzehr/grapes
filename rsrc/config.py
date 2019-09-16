@@ -7,6 +7,7 @@ at this point, these will be used as variables in the pipeline
 
 import os
 import json
+import argparse
 import xml.etree.ElementTree as et
 from collections import Counter
 
@@ -49,7 +50,14 @@ def get_virus(elem):
     return master
 
 
-tree = et.parse("total_viral_sequences_09-05-19.gbc.xml")
+parser = argparse.ArgumentParser()
+parser.add_argument("--file", help="path to your rsrc XML file", type=str)
+args = parser.parse_args()
+
+
+in_file = args.file
+#tree = et.parse("09-16-2019_grapevine.gbc.xml")
+tree = et.parse(in_file)
 root = tree.getroot()
 temp_info = list(map(get_virus, root.findall("INSDSeq")))
 
@@ -63,6 +71,7 @@ this = [name_fixer(t) for t in temp]
 payload = list(Counter(this))
 
 file_name = "../data/all_viruses.txt"
+print("Printing file to... ", file_name)
 with open(file_name, "w") as out:
     for p in payload:
         out.write(p + "\n")

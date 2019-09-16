@@ -33,9 +33,9 @@ importants = ["virus_A"]
 rule xml_to_json:
     input:
       #name_fixer,
-      in_f = "rsrc/total_viral_sequences_09-05-19.gbc.xml",
+      in_f = "rsrc/09-16-2019_grapevine.gbc.xml",
     output:
-      out_full = "data/total_viral_sequences_09-05-19.json"
+      out_full = "data/09-16-2019_grapevine.json"
     run:
       xml_data_grabber(input.in_f, output.out_full)
 

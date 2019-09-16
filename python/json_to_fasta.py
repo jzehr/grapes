@@ -28,13 +28,14 @@ def fasta_maker(inf, outf, imp_virs):
         3. grab indexed seqs and handle overlaps
         4. print those to a file
         '''
-
+    
     seq = ""
     with open(in_f, "r") as j_file:
         data = json.load(j_file)
         keys = list(data.keys())
-        for key in keys:
-            print(data[key])
+        print(keys)
+        #for key in keys:
+         #   print(data[key])
 
 
 

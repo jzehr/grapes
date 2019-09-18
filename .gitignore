@@ -5,7 +5,7 @@ rsrc/GPGV/*.json
 rsrc/GVA/*.json
 rsrc/GLRaV3/*.json
 
-
+*.snakemake*
 *.treefile
 *.tree
 

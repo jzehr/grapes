@@ -24,24 +24,24 @@ def xml_data_grabber(input_file, output_full):
     output_full = str(output_full)
 
     ## in --> str | out --> str ##
-    
+
     def name_fixer(string):
         new = []
-        bad_chars = [' ',',','.','/','-','(',')',':']
+        bad_chars = [" ",",",".","/","-","(",")",":","'"]
 
         def checker(char):
             if char in bad_chars:
-                return '_'
+                return "_"
             else:
                 return char
 
         for char in list(string):
             new.append(checker(char))
 
-        temp = ''.join(new)
-        name = temp.replace('__','_')
+        temp = "".join(new)
+        name = temp.replace("__","_")
         return name
-   
+
     ## in --> INSDSeq element | out --> dict ##
     def rip_info(elem):
 

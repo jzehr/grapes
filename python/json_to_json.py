@@ -1,8 +1,8 @@
 import json
 
 '''
-check for virus in master, 
-save it to a dict 
+check for virus in master,
+save it to a dict
 print that in json format to outf
 '''
 
@@ -11,13 +11,13 @@ def virus_json(input_full, virus, out_file):
     virus = str(virus)
     out_f = str(out_file)
 
-    
+
     def name_fixer(string):
         new = []
-        bad_chars = [' ',',','.','/','-','(',')',':']
+        bad_chars = [" ",",",".","/","-","(",")",":","'"]
         def checker(char):
             if char in bad_chars:
-                return '_'
+                return "_"
             else:
                 return char
         for char in list(string):
@@ -25,12 +25,12 @@ def virus_json(input_full, virus, out_file):
         temp = "".join(new)
         name = temp.replace("__","_")
         return name
-   
+
 
     with open(in_f, "r") as j_file:
         data = json.load(j_file)
         ## data is a dictionary ##
-        
+
         keys = list(data.keys())
         #print(keys)
 

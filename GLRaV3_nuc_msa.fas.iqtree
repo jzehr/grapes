@@ -1,0 +1,864 @@
+IQ-TREE 1.6.6 built Jul  1 2018
+
+Input file name: GLRaV3_nuc_msa.fas
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 92845
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 300 sequences with 714 nucleotide sites
+Number of constant sites: 308 (= 43.1373% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 308 (= 43.1373% of all sites)
+Number of parsimony informative sites: 312
+Number of distinct site patterns: 445
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVMe+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+TVMe+G4          -8664.0189  18532.0378 - 0.0047  25072.6864 - 0.0000  21283.7093 + 0.5841
+SYM+G4           -8661.3819  18528.7638 - 0.0241  25150.8002 - 0.0000  21285.0062 + 0.3054
+TVMe+I+G4        -8663.4345  18532.8690 - 0.0031  25154.9054 - 0.0000  21289.1114 - 0.0392
+TVMe+R3          -8657.0938  18524.1876 + 0.2372  25313.6320 - 0.0000  21289.5718 - 0.0312
+SYM+I+G4         -8661.2021  18530.4041 - 0.0106  25235.3582 - 0.0000  21291.2174 - 0.0137
+TIM2e+G4         -8671.1477  18544.2955 - 0.0000  25005.0455 - 0.0000  21291.3961 - 0.0125
+SYM+R3           -8655.2545  18522.5090 + 0.5490  25398.0604 - 0.0000  21292.4641 - 0.0073
+TIM3e+G4         -8672.1846  18546.3692 - 0.0000  25007.1192 - 0.0000  21293.4698 - 0.0044
+TIM2e+I+G4       -8671.1129  18546.2258 - 0.0000  25086.8744 - 0.0000  21297.8973 - 0.0005
+K3P+G4           -8677.8548  18555.7097 - 0.0000  24938.0106 - 0.0000  21298.2395 - 0.0004
+TIM3e+I+G4       -8671.6429  18547.2858 - 0.0000  25087.9345 - 0.0000  21298.9574 - 0.0003
+TIMe+G4          -8675.4051  18552.8101 - 0.0000  25013.5601 - 0.0000  21299.9108 - 0.0002
+TIM3e+R3         -8665.6592  18539.3183 - 0.0001  25244.2725 - 0.0000  21300.1316 - 0.0002
+K2P+G4           -8682.1364  18562.2729 - 0.0000  24867.5360 + 1.0000  21300.2318 - 0.0002
+TIM2e+R3         -8665.8681  18539.7362 - 0.0001  25244.6904 - 0.0000  21300.5495 - 0.0001
+TNe+G4           -8679.6336  18559.2673 - 0.0000  24941.5682 - 0.0000  21301.7971 - 0.0001
+GTR+F+G4         -8660.0414  18532.0827 - 0.0046  25407.6341 - 0.0000  21302.0378 - 0.0001
+TVMe+R4          -8657.0639  18528.1278 - 0.0331  25491.4485 - 0.0000  21302.6538 - 0.0000
+K3P+I+G4         -8676.9830  18555.9659 - 0.0000  25016.7159 - 0.0000  21303.0666 - 0.0000
+TIM3+F+G4        -8667.8262  18543.6524 - 0.0000  25248.6065 - 0.0000  21304.4657 - 0.0000
+K2P+I+G4         -8681.3117  18562.6233 - 0.0000  24944.9242 - 0.0000  21305.1531 - 0.0000
+K3P+R3           -8671.5745  18549.1489 - 0.0000  25171.1853 - 0.0000  21305.3913 - 0.0000
+TIMe+I+G4        -8674.9255  18553.8511 - 0.0000  25094.4997 - 0.0000  21305.5226 - 0.0000
+SYM+R4           -8655.2524  18526.5048 + 0.0745  25579.3048 - 0.0000  21305.6016 - 0.0000
+TIM2+F+G4        -8668.5017  18545.0034 - 0.0000  25249.9575 - 0.0000  21305.8167 - 0.0000
+TNe+I+G4         -8679.2381  18560.4762 - 0.0000  25021.2262 - 0.0000  21307.5768 - 0.0000
+GTR+F+I+G4       -8659.6555  18533.3110 - 0.0025  25496.6317 - 0.0000  21307.8369 - 0.0000
+K2P+R3           -8676.1007  18556.2014 - 0.0000  25096.8500 - 0.0000  21307.8729 - 0.0000
+TIMe+R3          -8669.8941  18547.7882 - 0.0000  25252.7423 - 0.0000  21308.6015 - 0.0000
+TIM+F+G4         -8670.0437  18548.0874 - 0.0000  25253.0415 - 0.0000  21308.9007 - 0.0000
+TIM3+F+I+G4      -8667.0108  18544.0215 - 0.0000  25333.4660 - 0.0000  21309.4057 - 0.0000
+TNe+R3           -8673.9672  18553.9343 - 0.0000  25175.9707 - 0.0000  21310.1768 - 0.0000
+TN+F+G4          -8674.0484  18554.0968 - 0.0000  25176.1332 - 0.0000  21310.3392 - 0.0000
+GTR+F+R3         -8654.6685  18527.3370 - 0.0491  25671.3754 - 0.0000  21311.0047 - 0.0000
+TIM2+F+I+G4      -8668.1885  18546.3770 - 0.0000  25335.8214 - 0.0000  21311.7612 - 0.0000
+TIM3+F+R3        -8661.6964  18537.3928 - 0.0003  25500.7135 - 0.0000  21311.9187 - 0.0000
+TIM3e+R4         -8665.6484  18543.2969 - 0.0000  25418.8483 - 0.0000  21313.2520 - 0.0000
+TIM2e+R4         -8665.8584  18543.7167 - 0.0000  25419.2681 - 0.0000  21313.6718 - 0.0000
+TIM+F+I+G4       -8669.3371  18548.6743 - 0.0000  25338.1187 - 0.0000  21314.0585 - 0.0000
+TN+F+I+G4        -8673.3919  18554.7837 - 0.0000  25259.7378 - 0.0000  21315.5970 - 0.0000
+TIM2+F+R3        -8663.8021  18541.6042 - 0.0000  25504.9249 - 0.0000  21316.1301 - 0.0000
+K3P+R4           -8671.5334  18553.0667 - 0.0000  25342.5112 - 0.0000  21318.4509 - 0.0000
+TVMe+R2          -8678.1098  18562.2195 - 0.0000  25184.2559 - 0.0000  21318.4620 - 0.0000
+TIM+F+R3         -8665.0270  18544.0539 - 0.0000  25507.3747 - 0.0000  21318.5799 - 0.0000
+TN+F+R3          -8668.8156  18549.6311 - 0.0000  25425.1825 - 0.0000  21319.5862 - 0.0000
+K2P+R4           -8675.9919  18559.9838 - 0.0000  25264.9379 - 0.0000  21320.7971 - 0.0000
+TIMe+R4          -8669.8876  18551.7751 - 0.0000  25427.3265 - 0.0000  21321.7302 - 0.0000
+SYM+R2           -8676.6961  18561.3922 - 0.0000  25266.3464 - 0.0000  21322.2055 - 0.0000
+TNe+R4           -8673.9651  18557.9302 - 0.0000  25347.3747 - 0.0000  21323.3144 - 0.0000
+GTR+F+R4         -8654.6224  18531.2449 - 0.0070  25863.2449 - 0.0000  21324.0544 - 0.0000
+TIM3+F+R4        -8661.6956  18541.3913 - 0.0000  25685.4297 - 0.0000  21325.0590 - 0.0000
+TIM2e+R2         -8686.6642  18577.3283 - 0.0000  25117.9770 - 0.0000  21328.9999 - 0.0000
+TIM2+F+R4        -8663.7863  18545.5727 - 0.0000  25689.6111 - 0.0000  21329.2404 - 0.0000
+TIM3e+R2         -8687.4155  18578.8310 - 0.0000  25119.4797 - 0.0000  21330.5026 - 0.0000
+TIM+F+R4         -8664.9972  18547.9945 - 0.0000  25692.0329 - 0.0000  21331.6622 - 0.0000
+TN+F+R4          -8668.8027  18553.6055 - 0.0000  25606.4055 - 0.0000  21332.7023 - 0.0000
+TVM+F+G4         -8679.0647  18568.1294 - 0.0000  25357.5739 - 0.0000  21333.5136 - 0.0000
+K3P+R2           -8692.7784  18587.5567 - 0.0000  25048.3067 - 0.0000  21334.6574 - 0.0000
+TPM3u+F+G4       -8686.6329  18579.2657 - 0.0000  25201.3021 - 0.0000  21335.5082 - 0.0000
+TPM3+F+G4        -8686.6376  18579.2751 - 0.0000  25201.3115 - 0.0000  21335.5175 - 0.0000
+K2P+R2           -8696.7048  18593.4096 - 0.0000  24975.7104 - 0.0000  21335.9393 - 0.0000
+TPM2u+F+G4       -8687.1875  18580.3749 - 0.0000  25202.4113 - 0.0000  21336.6173 - 0.0000
+TPM2+F+G4        -8687.1907  18580.3814 - 0.0000  25202.4178 - 0.0000  21336.6239 - 0.0000
+TVM+F+I+G4       -8677.6860  18567.3719 - 0.0000  25442.9233 - 0.0000  21337.3270 - 0.0000
+TVM+F+R3         -8671.4731  18558.9461 - 0.0000  25611.7461 - 0.0000  21338.0429 - 0.0000
+TIMe+R2          -8691.3323  18586.6646 - 0.0000  25127.3133 - 0.0000  21338.3362 - 0.0000
+TPM3u+F+I+G4     -8684.8239  18577.6478 - 0.0000  25282.6019 - 0.0000  21338.4611 - 0.0000
+TPM3+F+I+G4      -8684.8276  18577.6553 - 0.0000  25282.6094 - 0.0000  21338.4686 - 0.0000
+TPM3u+F+R3       -8678.3182  18568.6365 - 0.0000  25444.1879 - 0.0000  21338.5916 - 0.0000
+TPM3+F+R3        -8678.4025  18568.8050 - 0.0000  25444.3564 - 0.0000  21338.7601 - 0.0000
+K3Pu+F+G4        -8688.5002  18583.0005 - 0.0000  25205.0368 - 0.0000  21339.2429 - 0.0000
+TNe+R2           -8695.2152  18592.4304 - 0.0000  25053.1804 - 0.0000  21339.5310 - 0.0000
+TPM2u+F+I+G4     -8685.8282  18579.6564 - 0.0000  25284.6105 - 0.0000  21340.4697 - 0.0000
+TPM2+F+I+G4      -8685.8300  18579.6600 - 0.0000  25284.6142 - 0.0000  21340.4733 - 0.0000
+HKY+F+G4         -8692.5360  18589.0720 - 0.0000  25129.7206 - 0.0000  21340.7435 - 0.0000
+K3Pu+F+I+G4      -8686.7697  18581.5394 - 0.0000  25286.4935 - 0.0000  21342.3527 - 0.0000
+TPM2u+F+R3       -8680.4468  18572.8937 - 0.0000  25448.4451 - 0.0000  21342.8487 - 0.0000
+TPM2+F+R3        -8680.5191  18573.0381 - 0.0000  25448.5895 - 0.0000  21342.9932 - 0.0000
+GTR+F+R2         -8677.5358  18569.0717 - 0.0000  25532.3924 - 0.0000  21343.5976 - 0.0000
+HKY+F+I+G4       -8690.7940  18587.5880 - 0.0000  25209.6243 - 0.0000  21343.8304 - 0.0000
+TIM3+F+R2        -8684.8780  18579.7560 - 0.0000  25369.2004 - 0.0000  21345.1402 - 0.0000
+K3Pu+F+R3        -8681.6669  18575.3337 - 0.0000  25450.8851 - 0.0000  21345.2888 - 0.0000
+HKY+F+R3         -8685.8076  18581.6151 - 0.0000  25371.0596 - 0.0000  21346.9993 - 0.0000
+TIM2+F+R2        -8686.1447  18582.2895 - 0.0000  25371.7339 - 0.0000  21347.6736 - 0.0000
+TVM+F+R4         -8671.3626  18562.7252 - 0.0000  25799.8126 - 0.0000  21350.9638 - 0.0000
+TIM+F+R2         -8687.8468  18585.6936 - 0.0000  25375.1380 - 0.0000  21351.0777 - 0.0000
+TPM3u+F+R4       -8678.3172  18572.6344 - 0.0000  25625.4344 - 0.0000  21351.7313 - 0.0000
+TN+F+R2          -8691.5208  18591.0417 - 0.0000  25295.9958 - 0.0000  21351.8550 - 0.0000
+TPM3+F+R4        -8678.3820  18572.7639 - 0.0000  25625.5639 - 0.0000  21351.8608 - 0.0000
+TPM2u+F+R4       -8680.4147  18576.8295 - 0.0000  25629.6295 - 0.0000  21355.9263 - 0.0000
+TPM2+F+R4        -8680.4630  18576.9260 - 0.0000  25629.7260 - 0.0000  21356.0228 - 0.0000
+K3Pu+F+R4        -8681.5660  18579.1321 - 0.0000  25631.9321 - 0.0000  21358.2289 - 0.0000
+HKY+F+R4         -8685.6341  18585.2683 - 0.0000  25548.5890 - 0.0000  21359.7942 - 0.0000
+TVM+F+R2         -8693.8395  18599.6789 - 0.0000  25475.2303 - 0.0000  21369.6340 - 0.0000
+TPM3u+F+R2       -8701.6242  18611.2483 - 0.0000  25316.2024 - 0.0000  21372.0616 - 0.0000
+TPM3+F+R2        -8701.6290  18611.2579 - 0.0000  25316.2121 - 0.0000  21372.0712 - 0.0000
+TPM2u+F+R2       -8702.2306  18612.4613 - 0.0000  25317.4154 - 0.0000  21373.2746 - 0.0000
+TPM2+F+R2        -8702.2327  18612.4653 - 0.0000  25317.4194 - 0.0000  21373.2786 - 0.0000
+K3Pu+F+R2        -8704.2177  18616.4354 - 0.0000  25321.3896 - 0.0000  21377.2488 - 0.0000
+HKY+F+R2         -8707.9964  18621.9928 - 0.0000  25244.0292 - 0.0000  21378.2352 - 0.0000
+TVMe+I           -8821.8323  18847.6646 - 0.0000  25388.3132 - 0.0000  21599.3361 - 0.0000
+K3P+I            -8829.5250  18859.0499 - 0.0000  25241.3508 - 0.0000  21601.5797 - 0.0000
+K2P+I            -8832.9273  18863.8545 - 0.0000  25169.1177 - 0.0000  21601.8134 - 0.0000
+TIM2e+I          -8827.7857  18857.5714 - 0.0000  25318.3214 - 0.0000  21604.6720 - 0.0000
+SYM+I            -8821.7100  18849.4201 - 0.0000  25471.4564 - 0.0000  21605.6625 - 0.0000
+TIM3e+I          -8828.5885  18859.1771 - 0.0000  25319.9271 - 0.0000  21606.2778 - 0.0000
+TIMe+I           -8829.3697  18860.7395 - 0.0000  25321.4895 - 0.0000  21607.8401 - 0.0000
+TNe+I            -8832.7597  18865.5194 - 0.0000  25247.8203 - 0.0000  21608.0491 - 0.0000
+TN+F+I           -8827.6379  18861.2758 - 0.0000  25483.3122 - 0.0000  21617.5183 - 0.0000
+TIM2+F+I         -8824.5199  18857.0398 - 0.0000  25561.9939 - 0.0000  21617.8531 - 0.0000
+TIM3+F+I         -8824.5959  18857.1918 - 0.0000  25562.1459 - 0.0000  21618.0051 - 0.0000
+TIM+F+I          -8824.6095  18857.2190 - 0.0000  25562.1731 - 0.0000  21618.0323 - 0.0000
+GTR+F+I          -8819.7659  18851.5317 - 0.0000  25727.0831 - 0.0000  21621.4868 - 0.0000
+TPM2+F+I         -8836.3212  18878.6424 - 0.0000  25500.6787 - 0.0000  21634.8848 - 0.0000
+TPM2u+F+I        -8836.3236  18878.6471 - 0.0000  25500.6835 - 0.0000  21634.8895 - 0.0000
+HKY+F+I          -8839.6954  18883.3907 - 0.0000  25424.0394 - 0.0000  21635.0623 - 0.0000
+TPM3u+F+I        -8836.6548  18879.3097 - 0.0000  25501.3460 - 0.0000  21635.5521 - 0.0000
+TPM3+F+I         -8836.6597  18879.3194 - 0.0000  25501.3558 - 0.0000  21635.5618 - 0.0000
+K3Pu+F+I         -8836.7010  18879.4021 - 0.0000  25501.4384 - 0.0000  21635.6445 - 0.0000
+TVM+F+I          -8831.6242  18873.2484 - 0.0000  25662.6928 - 0.0000  21638.6325 - 0.0000
+TVMe             -9255.3221  19712.6443 - 0.0000  26173.3943 - 0.0000  22459.7449 - 0.0000
+K2P              -9266.0827  19728.1654 - 0.0000  25957.7654 - 0.0000  22461.5534 - 0.0000
+TIM3e            -9259.8847  19719.7693 - 0.0000  26102.0702 - 0.0000  22462.2991 - 0.0000
+K3P              -9263.1862  19724.3723 - 0.0000  26029.6355 - 0.0000  22462.3312 - 0.0000
+SYM              -9255.3049  19714.6097 - 0.0000  26255.2584 - 0.0000  22466.2813 - 0.0000
+TNe              -9266.0420  19730.0841 - 0.0000  26035.3472 - 0.0000  22468.0430 - 0.0000
+TIM2e            -9263.0956  19726.1911 - 0.0000  26108.4920 - 0.0000  22468.7209 - 0.0000
+TIMe             -9263.1614  19726.3228 - 0.0000  26108.6236 - 0.0000  22468.8525 - 0.0000
+TIM3+F           -9256.2016  19718.4032 - 0.0000  26340.4396 - 0.0000  22474.6456 - 0.0000
+TN+F             -9261.3505  19726.7010 - 0.0000  26267.3496 - 0.0000  22478.3725 - 0.0000
+TIM+F            -9258.6644  19723.3289 - 0.0000  26345.3652 - 0.0000  22479.5713 - 0.0000
+GTR+F            -9252.9744  19715.9487 - 0.0000  26505.3932 - 0.0000  22481.3329 - 0.0000
+TIM2+F           -9259.6752  19725.3504 - 0.0000  26347.3867 - 0.0000  22481.5928 - 0.0000
+TPM3u+F          -9265.9360  19735.8720 - 0.0000  26276.5207 - 0.0000  22487.5436 - 0.0000
+TPM3+F           -9265.9406  19735.8811 - 0.0000  26276.5298 - 0.0000  22487.5526 - 0.0000
+HKY+F            -9271.0051  19744.0102 - 0.0000  26204.7602 - 0.0000  22491.1109 - 0.0000
+K3Pu+F           -9268.3483  19740.6966 - 0.0000  26281.3452 - 0.0000  22492.3681 - 0.0000
+TPM2+F           -9269.2316  19742.4633 - 0.0000  26283.1119 - 0.0000  22494.1348 - 0.0000
+TPM2u+F          -9269.2318  19742.4636 - 0.0000  26283.1123 - 0.0000  22494.1352 - 0.0000
+TVM+F            -9262.6642  19733.3284 - 0.0000  26438.2825 - 0.0000  22494.1417 - 0.0000
+F81+F+G4         -9310.4475  19822.8950 - 0.0000  26283.6450 - 0.0000  22569.9956 - 0.0000
+F81+F+I+G4       -9309.9090  19823.8180 - 0.0000  26364.4666 - 0.0000  22575.4895 - 0.0000
+F81+F+R3         -9304.9687  19817.9374 - 0.0000  26522.8915 - 0.0000  22578.7507 - 0.0000
+JC+G4            -9327.5564  19851.1128 - 0.0000  26080.7128 - 0.0000  22584.5008 - 0.0000
+JC+I+G4          -9326.6647  19851.3294 - 0.0000  26156.5925 - 0.0000  22589.2883 - 0.0000
+F81+F+R4         -9304.9438  19821.8875 - 0.0000  26697.4389 - 0.0000  22591.8426 - 0.0000
+JC+R3            -9321.6620  19845.3240 - 0.0000  26306.0740 - 0.0000  22592.4246 - 0.0000
+F81+F+R2         -9319.9584  19843.9167 - 0.0000  26384.5654 - 0.0000  22595.5883 - 0.0000
+JC+R4            -9321.5675  19849.1349 - 0.0000  26471.1713 - 0.0000  22605.3774 - 0.0000
+JC+R2            -9336.1499  19870.2998 - 0.0000  26175.5629 - 0.0000  22608.2587 - 0.0000
+F81+F+I          -9437.8323  20077.6647 - 0.0000  26538.4147 - 0.0000  22824.7653 - 0.0000
+JC+I             -9453.1575  20102.3150 - 0.0000  26331.9150 - 0.0000  22835.7030 - 0.0000
+F81+F            -9849.4202  20898.8405 - 0.0000  27281.1414 - 0.0000  23641.3703 - 0.0000
+JC               -9863.5530  20921.1061 - 0.0000  27076.3820 - 0.0000  23649.9232 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVMe+G4
+
+Rate parameter R:
+
+  A-C: 0.9701
+  A-G: 10.9656
+  A-T: 2.3384
+  C-G: 0.8148
+  C-T: 10.9656
+  G-T: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  A    -1.055   0.07172    0.8106    0.1729
+  C   0.07172   -0.9426   0.06024    0.8106
+  G    0.8106   0.06024   -0.9448   0.07392
+  T    0.1729    0.8106   0.07392    -1.057
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.4066
+
+ Category  Relative_rate  Proportion
+  1         0.01767        0.25
+  2         0.1866         0.25
+  3         0.7383         0.25
+  4         3.057          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -8574.8245 (s.e. 304.5839)
+Unconstrained log-likelihood (without tree): -3899.0649
+Number of free parameters (#branches + #model parameters): 602
+Akaike information criterion (AIC) score: 18353.6491
+Corrected Akaike information criterion (AICc) score: 24894.2977
+Bayesian information criterion (BIC) score: 21105.3206
+
+Total tree length (sum of branch lengths): 2.9951
+Sum of internal branch lengths: 1.6786 (56.0424% of tree length)
+
+WARNING: 233 near-zero internal branches (<0.0014) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AF037268_2_35_kDa_coat_protein_28_APR_1998_no_value_no_value_NY1_no_value_3' is drawn at root
+
++--AF037268_2_35_kDa_coat_protein_28_APR_1998_no_value_no_value_NY1_no_value_3
+|
+|                                               +--AY753208_1_coat_protein_13_OCT_2004_Brazil_grapevine_no_value_Pet_4_1
+|                                            +--|
+|                                            |  +--MF677862_1_35_kDa_coat_protein_May_2014_Hungary_Tokaj_Mad_grapevine_cultivar_Harslevelu_no_value_GLAV3_HUMK3_1
+|                                         +--|
+|                                         |  +**MF446631_1_35_kDa_coat_protein_May_2014_Hungary_Tokaj_Mad_grapevine_cultivar_Furmint_no_value_GLAV3_HUMK1_1
+|                                      +**|
+|                                      |  |     +**JX088154_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_10_1
+|                                      |  |  +**|
+|                                      |  |  |  +**JX088158_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_9_1
+|                                      |  +--|
+|                                      |     |  +**JX088155_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_6_1
+|                                      |     +**|
+|                                      |        |  +**JX088156_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_8_1
+|                                      |        +**|
+|                                      |           +**JX088157_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_3_1
+|                                   +**|
+|                                   |  +**HQ130285_1_coat_protein_16_Jun_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_3_7_1
+|                                +**|
+|                                |  |           +--HM059034_1_coat_protein_21_Sep_2009_Brazil_grapevine_cv_Isabel_no_value_IS2_1
+|                                |  |        +**|
+|                                |  |        |  +**KX701860_1_35_kDa_coat_protein_18_Aug_2014_Brazil_Vitis_labrusca_cv_Isabel_grapevine__no_value_ISAB_BR_1
+|                                |  |     +**|
+|                                |  |     |  +--JF421777_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Chardonnay_no_value_14_3_1
+|                                |  |  +**|
+|                                |  |  |  +--KT213520_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_SLO1_11_39_2
+|                                |  +**|
+|                                |     +--KC953900_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Brancellao_no_value_F31BR3_1
+|                             +**|
+|                             |  |     +**GQ352632_1_coat_protein_01_AUG_2010_South_Africa_Vitis_vinifera_cultivar_Ruby_Cabernet_no_value_623_75
+|                             |  |  +**|
+|                             |  |  |  +**MH521115_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Merlot_no_value_Mer240_1
+|                             |  +**|
+|                             |     |     +**HQ130283_1_coat_protein_16_Jun_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_3_3_2
+|                             |     |  +**|
+|                             |     |  |  +**HQ130294_1_coat_protein_16_Jun_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_3_23_1
+|                             |     +**|
+|                             |        |     +**JX088133_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_2_1
+|                             |        |  +**|
+|                             |        |  |  +--KC953884_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Tempranillo_no_value_MC34_1
+|                             |        +**|
+|                             |           |              +**JX088170_1_coat_protein_14_AUG_2012_China_grapevine_no_value_WHZH37_1_1
+|                             |           |           +**|
+|                             |           |           |  +**JX088171_1_coat_protein_14_AUG_2012_China_grapevine_no_value_WHZH37_3_1
+|                             |           |        +**|
+|                             |           |        |  +**JX088172_1_coat_protein_14_AUG_2012_China_grapevine_no_value_WHZH37_2_1
+|                             |           |     +--|
+|                             |           |     |  +**JX088177_1_coat_protein_14_AUG_2012_China_grapevine_no_value_43_5_4
+|                             |           |  +**|
+|                             |           |  |  +--KC953882_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Mencia_no_value_MP4_11_1
+|                             |           +**|
+|                             |              +--KY821093_1_coat_protein_Jul_2016_Pakistan_Vitis_vinifera_cultivar_Sugra_one_no_value_AK6_1
+|                          +**|
+|                          |  |        +**JX088167_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_17_1
+|                          |  |     +**|
+|                          |  |     |  +--JX088190_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GQ10_12_1
+|                          |  |  +**|
+|                          |  |  |  +--KP658172_1_coat_protein_11_Jul_2014_Spain_Vitis_vinifera_cv_Caino_Tinto_no_value_F38CA11_1
+|                          |  +**|
+|                          |     |     +--JX481787_1_coat_protein_12_Sep_2010_China_grape_cultivar_Auguste_no_value_GS_3_1
+|                          |     |  +--|
+|                          |     |  |  +--KC477147_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_3_1
+|                          |     +**|
+|                          |        +--KC477135_1_coat_protein_15_Jun_2011_China_grape__cultivar_Gongniang_No_1_no_value_JL_1_1
+|                       +**|
+|                       |  +--EU259806_1_coat_protein_28_MAR_2008_South_Africa_no_value_no_value_GP18_2
+|                    +--|
+|                    |  |     +**KJ174518_1_CP_28_FEB_2015_no_value_no_value_no_value_no_value_1
+|                    |  |  +**|
+|                    |  |  |  |  +--JF421904_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_10_1
+|                    |  |  |  +--|
+|                    |  |  |     +**JF421908_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_14_2
+|                    |  +**|
+|                    |     +--KT213471_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_AMEL7_5_2_1
+|                 +--|
+|                 |  +--JF421808_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_11_2
+|              +**|
+|              |  |           +**AJ606339_1_coat_protein_21_DEC_2004_Austria_grapevine_no_value_AUSG_5_2_3
+|              |  |        +**|
+|              |  |        |  |  +--AJ606341_1_coat_protein_21_DEC_2004_Nigeria_grapevine_no_value_NIG_3_1_1
+|              |  |        |  +**|
+|              |  |        |     |  +--HG931889_1_coat_protein_08_DEC_2014_Algeria_Dattier_de_Beyrouth_no_value_ALG2_2
+|              |  |        |     +**|
+|              |  |        |        |  +**HG931891_1_coat_protein_08_DEC_2014_Algeria_Gros_noir_des_Beni_Abbes_no_value_ALG25_1
+|              |  |        |        +**|
+|              |  |        |           |     +--HG931893_1_coat_protein_08_DEC_2014_Algeria_King_s_Ruby_no_value_ALG68_1
+|              |  |        |           |  +**|
+|              |  |        |           |  |  +--KC953888_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_no_value_3_4285_1
+|              |  |        |           +**|
+|              |  |        |              +--HG931896_1_coat_protein_08_DEC_2014_Algeria_cardinal_no_value_ALG114_1
+|              |  |     +**|
+|              |  |     |  +--KP658162_1_coat_protein_11_Jul_2014_Spain_Vitis_vinifera_cv_Caino_Tinto_no_value_F10CAS14_1
+|              |  |  +**|
+|              |  |  |  +--AJ606345_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_TA_3_1_1
+|              |  +--|
+|              |     +--AJ606340_1_coat_protein_21_DEC_2004_Tromelin_Island_grapevine_no_value_USA_1
+|           +--|
+|           |  +--JX088168_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_12_1
+|        +--|
+|        |  +--KC953898_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Brancellao_no_value_F31BR8_1
+|     +--|
+|     |  +**JX088191_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GQ10_17_1
+|  +--|
+|  |  |              +**EU344894_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_817_1
+|  |  |           +**|
+|  |  |           |  +**MH521102_2_coat_protein_18_Jun_2017_no_value_Vitis_vinifera_no_value_185_1
+|  |  |        +**|
+|  |  |        |  |  +--JX088146_1_coat_protein_14_AUG_2012_China_grapevine_no_value_Y73_45_1_1
+|  |  |        |  +**|
+|  |  |        |     +--KY940821_1_coat_protein_Jul_2016_Pakistan_Vitis_vinifera_cultivar_Vitro_Black_no_value_AK1_1
+|  |  |     +**|
+|  |  |     |  +--HQ401016_1_coat_protein_Feb_2009_Portugal_Vitis_vinifera__cultivar_Trincadeira_no_value_Trincadeira_12_1
+|  |  |  +--|
+|  |  |  |  |  +--JX088182_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ALGT13_15_1
+|  |  |  |  +--|
+|  |  |  |     +**JX088183_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ALGT13_10_20
+|  |  +--|
+|  |     +--KT213491_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI2_7_8_1
++**|
+|  +**KC477122_1_coat_protein_05_Sep_2009_China_grape__cultivar_Red_Globe_no_value_HB_11_1
+|
+|              +**DQ062152_1_coat_protein_12_JUN_2005_Brazil_no_value_no_value_Pet_3_46
+|           +**|
+|           |  +**KX499443_1_coat_protein_20_Jan_2016_Brazil_Sao_Roque_SP_Vitis_labrusca_cv_Niagara_Rosada_no_value_NR_BR_2
+|        +**|
+|        |  |  +**KX499447_1_coat_protein_27_Jan_2016_Brazil_Sao_Roque_SP_hybrid_grapevine_cv_BRS_Violeta_no_value_VI_BR_1
+|        |  +**|
+|        |     +--JF421886_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_35_6_3
+|     +**|
+|     |  +**JN546587_1_coat_protein_29_Sep_2010_Poland_Vitis_vinifera_no_value_G11_1
+|  +**|
+|  |  |                                                        +**DQ119574_1_coat_protein_06_AUG_2005_China_no_value_no_value_Dawanhong_No_2_23
+|  |  |                                                     +**|
+|  |  |                                                     |  +**JX088150_1_coat_protein_14_AUG_2012_China_grapevine_no_value_AFH77_3_1
+|  |  |                                                  +**|
+|  |  |                                                  |  |  +--JX088164_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_6_1
+|  |  |                                                  |  +**|
+|  |  |                                                  |     +**JX088166_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_11_2
+|  |  |                                               +**|
+|  |  |                                               |  +**MH521088_1_coat_protein_18_Jun_2017_Spain_Vitis_vinifera_AU_33_057_no_value_AU173_2
+|  |  |                                            +**|
+|  |  |                                            |  |        +**HQ130295_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_6_5
+|  |  |                                            |  |     +**|
+|  |  |                                            |  |     |  |  +--HQ130297_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_11_1
+|  |  |                                            |  |     |  +**|
+|  |  |                                            |  |     |     +**HQ130304_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_115_2
+|  |  |                                            |  |  +**|
+|  |  |                                            |  |  |  +**HQ130313_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_8_1_5
+|  |  |                                            |  +**|
+|  |  |                                            |     +**HQ130329_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_9_33_1
+|  |  |                                         +**|
+|  |  |                                         |  |     +**JX088142_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ATBG72_10_1
+|  |  |                                         |  |  +**|
+|  |  |                                         |  |  |  |  +--KC477182_1_coat_protein_14_Sep_2010_China_grape__cultivar_Jinxiu_no_value_YN_2_1
+|  |  |                                         |  |  |  +**|
+|  |  |                                         |  |  |     +--KC477183_1_coat_protein_14_Sep_2010_China_grape__cultivar_Venus_Seedless_no_value_YN_3_1
+|  |  |                                         |  +**|
+|  |  |                                         |     |     +**JX088192_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_15_8
+|  |  |                                         |     |  +**|
+|  |  |                                         |     |  |  +**JX088196_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HG19_2_1
+|  |  |                                         |     +**|
+|  |  |                                         |        +**KC477151_1_coat_protein_18_Sep_2009_China_grape__cultivar_Muscat_x_Alicanfe_Bouschet_no_value_NX_1_1
+|  |  |                                      +**|
+|  |  |                                      |  |     +**JX088211_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_14_1
+|  |  |                                      |  |  +**|
+|  |  |                                      |  |  |  +--KC477143_1_coat_protein_06_Jul_2011_China_grape__cultivar_Gold_Finger_no_value_JS_1_1
+|  |  |                                      |  +**|
+|  |  |                                      |     |        +--KC477103_1_coat_protein_15_Aug_2009_China_grape__cultivar_Flame_Seedless_no_value_BJ_3_1
+|  |  |                                      |     |     +**|
+|  |  |                                      |     |     |  +--KC477186_1_coat_protein_20_Jul_2011_China_grape__cultivar_Gold_Finger_no_value_ZJ_1_1
+|  |  |                                      |     |  +**|
+|  |  |                                      |     |  |  +**KC477188_1_coat_protein_05_Jul_2011_China_grape__cultivar_Thompson_Seedless_no_value_ZJ_3_1
+|  |  |                                      |     +**|
+|  |  |                                      |        +**KC477128_1_coat_protein_15_Oct_2009_China_grape__cultivar_Aligote_no_value_HN_4_1
+|  |  |                                   +**|
+|  |  |                                   |  |     +**EU344895_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_664_1
+|  |  |                                   |  |  +**|
+|  |  |                                   |  |  |  |        +**KC477154_1_coat_protein_18_Sep_2009_China_grape__cultivar_Cabernet_Sauvignon_no_value_NX_7_1
+|  |  |                                   |  |  |  |     +**|
+|  |  |                                   |  |  |  |     |  +**KC477155_1_coat_protein_18_Sep_2009_China_grape__cultivar_Italian_Riesling_no_value_NX_8_2
+|  |  |                                   |  |  |  |  +**|
+|  |  |                                   |  |  |  |  |  +**KC477162_1_coat_protein_05_Sep_2009_China_grape__cultivar_Cabernet_Sauvignon_no_value_SD_2_1
+|  |  |                                   |  |  |  +**|
+|  |  |                                   |  |  |     +**KC477156_1_coat_protein_18_Sep_2009_China_grape__cultivar_Carmenere_no_value_NX_9_1
+|  |  |                                   |  +**|
+|  |  |                                   |     |  +--KC477170_1_coat_protein_25_Aug_2010_China_grape__cultivar_Triumph_no_value_TJ_2_1
+|  |  |                                   |     +**|
+|  |  |                                   |        +--KC477176_1_coat_protein_10_Sep_2010_China_grape__cultivar_Red_Globe_no_value_XJ_3_1
+|  |  |                                +**|
+|  |  |                                |  |        +**HQ130299_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_15_1
+|  |  |                                |  |     +**|
+|  |  |                                |  |     |  +**JX088212_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_1_1
+|  |  |                                |  |  +**|
+|  |  |                                |  |  |  +**JX088206_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSBD85_2_1
+|  |  |                                |  +**|
+|  |  |                                |     +**KC477121_1_coat_protein_05_Sep_2009_China_grape__cultivar_60_1_no_value_HB_10_1
+|  |  |                             +**|
+|  |  |                             |  +**GQ352631_1_coat_protein_01_AUG_2010_South_Africa_Vitis_vinifera_cultivar_Cabernet_Sauvignon_no_value_621_35
+|  |  |                          +**|
+|  |  |                          |  |        +--DQ911148_1_coat_protein_25_SEP_2006_China_vitis_no_value_SL10_1
+|  |  |                          |  |     +**|
+|  |  |                          |  |     |  |        +**JX088130_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_7_1
+|  |  |                          |  |     |  |     +**|
+|  |  |                          |  |     |  |     |  |  +**JX088132_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_8_1
+|  |  |                          |  |     |  |     |  +**|
+|  |  |                          |  |     |  |     |     +**JX088242_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_5_1
+|  |  |                          |  |     |  |  +**|
+|  |  |                          |  |     |  |  |  +**KC477116_1_coat_protein_05_Sep_2009_China_grape__cultivar_Red_Globe_no_value_HB_5_1
+|  |  |                          |  |     |  +**|
+|  |  |                          |  |     |     |  +--KC477115_1_coat_protein_05_Sep_2009_China_grape__cultivar_Augusta_no_value_HB_4_1
+|  |  |                          |  |     |     +**|
+|  |  |                          |  |     |        +--KX499448_1_coat_protein_12_Feb_2016_Brazil_Sao_Roque_SP_Vitis_vinifera_cv_Moscato_Setubal_no_value_MS_BR_1
+|  |  |                          |  |  +**|
+|  |  |                          |  |  |  +**JX088215_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_2_1
+|  |  |                          |  +**|
+|  |  |                          |     |  +--KC477119_1_coat_protein_05_Sep_2009_China_grape__cultivar_Carmenere_no_value_HB_8_1
+|  |  |                          |     +**|
+|  |  |                          |        +**MH521090_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Black_Muscat_Alexandria_no_value_Bla223_1
+|  |  |                       +**|
+|  |  |                       |  |           +**EU344893_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_766_1
+|  |  |                       |  |        +--|
+|  |  |                       |  |        |  +--EU344896_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_765_1
+|  |  |                       |  |     +**|
+|  |  |                       |  |     |  +**KY821094_1_coat_protein_Sep_2016_Pakistan_Vitis_vinifera_cultivar_Italia_no_value_SL37_3_1
+|  |  |                       |  |  +**|
+|  |  |                       |  |  |  |     +--JX088174_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_8_1
+|  |  |                       |  |  |  |  +**|
+|  |  |                       |  |  |  |  |  +**KC477150_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_6_1
+|  |  |                       |  |  |  +**|
+|  |  |                       |  |  |     +--KC477184_1_coat_protein_14_Sep_2010_China_grape__cultivar_Rose_Honey_no_value_YN_4_1
+|  |  |                       |  +**|
+|  |  |                       |     |  +**KC477102_1_coat_protein_15_Aug_2009_China_grape__cultivar_Aranele_no_value_BJ_2_1
+|  |  |                       |     +**|
+|  |  |                       |        |     +**KC477164_1_coat_protein_05_Sep_2009_China_grape__cultivar_Kyoho_no_value_SD_4_1
+|  |  |                       |        |  +**|
+|  |  |                       |        |  |  +**MH521110_2_coat_protein_18_Jun_2016_Hungary_Vitis_vinifera_Kishmish_Vatkana_no_value_Kis24_1
+|  |  |                       |        +**|
+|  |  |                       |           |  +**AJ606346_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_TA_3_3_2
+|  |  |                       |           +--|
+|  |  |                       |              +--AJ606354_1_coat_protein_21_DEC_2004_Israel_grapevine_no_value_IL_1_2_1
+|  |  |                    +**|
+|  |  |                    |  |           +**JX088134_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_6_2
+|  |  |                    |  |        +**|
+|  |  |                    |  |        |  |  +**JX088137_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_1_1
+|  |  |                    |  |        |  +**|
+|  |  |                    |  |        |     +**JX088138_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_4_1
+|  |  |                    |  |     +**|
+|  |  |                    |  |     |  +**JX088139_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_8_1
+|  |  |                    |  |  +**|
+|  |  |                    |  |  |  |  +**JX088173_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_3_1
+|  |  |                    |  |  |  +**|
+|  |  |                    |  |  |     +--KC477131_1_coat_protein_15_Oct_2009_China_grape__cultivar_Gold_Finger_no_value_HN_7_1
+|  |  |                    |  +**|
+|  |  |                    |     |              +**JX088194_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_9_2
+|  |  |                    |     |           +**|
+|  |  |                    |     |           |  +**JX088199_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GFMG18_1_1
+|  |  |                    |     |        +**|
+|  |  |                    |     |        |  +**KC477181_1_coat_protein_14_Sep_2010_China_grape__cultivar_8612_no_value_YN_1_1
+|  |  |                    |     |     +**|
+|  |  |                    |     |     |  +**KC477180_1_coat_protein_10_Sep_2010_China_grape__unknown_cultivar_no_value_XJ_7_1
+|  |  |                    |     |  +**|
+|  |  |                    |     |  |  |     +--KC477110_1_coat_protein_16_Aug_2010_China_grape__cultivar_Takatsuma_no_value_GS_2_1
+|  |  |                    |     |  |  |  +**|
+|  |  |                    |     |  |  |  |  +**KC477169_1_coat_protein_25_Aug_2010_China_grape__cultivar_Rosario_Bianco_no_value_TJ_1_1
+|  |  |                    |     |  |  +**|
+|  |  |                    |     |  |     +**KC477158_1_coat_protein_18_Sep_2009_China_grape__cultivar_Pinot_Gris_no_value_NX_11_1
+|  |  |                    |     +**|
+|  |  |                    |        |     +**JX088200_1_coat_protein_14_AUG_2012_China_grapevine_no_value_MP52_1_2
+|  |  |                    |        |  +**|
+|  |  |                    |        |  |  +**JX088208_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HTS29_2_1
+|  |  |                    |        +**|
+|  |  |                    |           |     +**KC477104_1_coat_protein_15_Aug_2009_China_grape__cultivar_Rizamat_no_value_BJ_4_1
+|  |  |                    |           |  +**|
+|  |  |                    |           |  |  |  +**KC477105_1_coat_protein_15_Aug_2009_China_grape__cultivar_Rizamat_no_value_BJ_5_3
+|  |  |                    |           |  |  +**|
+|  |  |                    |           |  |     |  +--KC477178_1_coat_protein_10_Sep_2010_China_grape__cultivar_Manicure_Finger_no_value_XJ_5_1
+|  |  |                    |           |  |     +**|
+|  |  |                    |           |  |        +--KC477185_1_coat_protein_14_Sep_2010_China_grape__cultivar_Merlot_no_value_YN_5_1
+|  |  |                    |           +**|
+|  |  |                    |              +**KX499446_1_coat_protein_26_Jan_2016_Brazil_Sao_Roque_SP_Vitis_vinifera_cv_Touriga_Nacional_no_value_TN_BR_1
+|  |  |                 +**|
+|  |  |                 |  |              +**JX088175_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_11_1
+|  |  |                 |  |           +**|
+|  |  |                 |  |           |  |  +**JX088176_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_12_1
+|  |  |                 |  |           |  +**|
+|  |  |                 |  |           |     +--AJ606338_1_coat_protein_21_DEC_2004_Austria_grapevine_no_value_AUSG_5_1_1
+|  |  |                 |  |        +**|
+|  |  |                 |  |        |  +--KC477134_1_coat_protein_15_Oct_2009_China_grape__cultivar_Summer_Black_no_value_HN_10_1
+|  |  |                 |  |     +**|
+|  |  |                 |  |     |  +--AJ606353_1_coat_protein_21_DEC_2004_Tunisia_grapevine_no_value_TU_16_1
+|  |  |                 |  |  +**|
+|  |  |                 |  |  |  +**JX088213_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_20_1
+|  |  |                 |  +**|
+|  |  |                 |     +**KC477123_1_coat_protein_05_Sep_2009_China_grape__cultivar_Carmenere_no_value_HB_12_1
+|  |  |              +**|
+|  |  |              |  |              +**JX088152_1_coat_protein_14_AUG_2012_China_grapevine_no_value_AFH77_8_1
+|  |  |              |  |           +**|
+|  |  |              |  |           |  +--JX088153_1_coat_protein_14_AUG_2012_China_grapevine_no_value_AFH77_1_1
+|  |  |              |  |        +**|
+|  |  |              |  |        |  +**KC477163_1_coat_protein_05_Sep_2009_China_grape__cultivar_Blue_French_no_value_SD_3_1
+|  |  |              |  |     +**|
+|  |  |              |  |     |  |  +--JF421794_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_17_8_1
+|  |  |              |  |     |  +**|
+|  |  |              |  |     |     +**KC953902_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Mencia_no_value_MAC1_9_2
+|  |  |              |  |  +**|
+|  |  |              |  |  |  +**KC477130_1_coat_protein_15_Oct_2009_China_grape__cultivar_Hongjiu_no_value_HN_6_1
+|  |  |              |  +**|
+|  |  |              |     |  +**JX088217_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_18_1
+|  |  |              |     +**|
+|  |  |              |        +--JX559645_1_coat_protein_Sep_2011_Canada_Vitis_vinifera_no_value_3138_07_1
+|  |  |           +**|
+|  |  |           |  +**JX088216_1_coat_protein_14_AUG_2012_China_grapevine_no_value_S1_31_2_1
+|  |  |        +**|
+|  |  |        |  +--KY940822_1_coat_protein_Sep_2016_Pakistan_Vitis_vinifera_cultivar_zi_de_qv_no_value_SL45_3_1
+|  |  |     +**|
+|  |  |     |  |  +**HQ130303_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_114_1
+|  |  |     |  +**|
+|  |  |     |     +--KC477160_1_coat_protein_18_Sep_2009_China_grape__cultivar_Sauvignon_Blanc_no_value_NX_13_1
+|  |  |  +**|
+|  |  |  |  |  +--JQ267586_1_coat_protein_2010_Slovakia_Vitis_vinifera_no_value_SK04_1
+|  |  |  |  +**|
+|  |  |  |     |     +--JX481786_1_coat_protein_01_Sep_2010_China_grape_cultivar_Yatomi_no_value_BJ_9_2
+|  |  |  |     |  +**|
+|  |  |  |     |  |  +**MH521101_2_coat_protein_18_Jun_2018_no_value_Vitis_vinifera_DK03_no_value_Dk256_1
+|  |  |  |     +**|
+|  |  |  |        +--KC477111_1_coat_protein_16_Aug_2010_China_grape__cultivar_Zinfandel_no_value_GS_4_1
+|  |  +**|
+|  |     |           +**DQ680141_1_coat_protein_24_JUL_2006_Brazil_no_value_no_value_Pet_1_13
+|  |     |        +**|
+|  |     |        |  |  +**JX088180_1_coat_protein_14_AUG_2012_China_grapevine_no_value_43_11_1
+|  |     |        |  +**|
+|  |     |        |     |        +--KC477125_1_coat_protein_10_Oct_2009_China_grape__cultivar_Ardeleanca_no_value_HN_1_1
+|  |     |        |     |     +**|
+|  |     |        |     |     |  +--KP658175_1_coat_protein_11_Jul_2014_Spain_Vitis_vinifera_cv_Caino_Tinto_no_value_F38CA17_1
+|  |     |        |     |  +--|
+|  |     |        |     |  |  +**JF421798_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Franc_no_value_19_13_4
+|  |     |        |     +--|
+|  |     |        |        +**KJ463740_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Mencia_no_value_V5_2_18_1
+|  |     |     +**|
+|  |     |     |  |     +**DQ680142_1_coat_protein_24_JUL_2006_Brazil_no_value_no_value_Pet_2_1
+|  |     |     |  |  +**|
+|  |     |     |  |  |  |           +**JX088163_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_8_1
+|  |     |     |  |  |  |        +**|
+|  |     |     |  |  |  |        |  |  +**JX088186_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ADLG26_2_1
+|  |     |     |  |  |  |        |  +**|
+|  |     |     |  |  |  |        |     +**JX088219_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GQ10_2_1
+|  |     |     |  |  |  |     +**|
+|  |     |     |  |  |  |     |  +**KJ704369_1_coat_protein_05_Nov_2012_Brazil_Vitis_vinifera_cv_Ruby_Cabernet_no_value_RC_PE_1
+|  |     |     |  |  |  |  +**|
+|  |     |     |  |  |  |  |  +**KC477138_1_coat_protein_15_Jun_2011_China_grape__cultivar_Shuanghong_no_value_JL_4_2
+|  |     |     |  |  |  +**|
+|  |     |     |  |  |     +**KC477145_1_coat_protein_10_Jul_2009_China_grape__cultivar_No_27_no_value_LN_1_1
+|  |     |     |  +**|
+|  |     |     |     |  +**KC477196_1_coat_protein_Sep_2009_China_grape__cultivar_Red_Italia_no_value_NX_3_1
+|  |     |     |     +**|
+|  |     |     |        |  +**MH521106_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Italia_no_value_Ita218_4
+|  |     |     |        +**|
+|  |     |     |           +--KT213515_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_SLO1_9_27_2
+|  |     |  +**|
+|  |     |  |  |     +**HQ130300_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_18_1
+|  |     |  |  |  +**|
+|  |     |  |  |  |  |        +**KC477118_1_coat_protein_05_Sep_2009_China_grape__cultivar_Merlot_no_value_HB_7_1
+|  |     |  |  |  |  |     +**|
+|  |     |  |  |  |  |     |  |        +**KC477124_1_coat_protein_05_Sep_2009_China_grape__cultivar_Exotic_no_value_HB_13_2
+|  |     |  |  |  |  |     |  |     +**|
+|  |     |  |  |  |  |     |  |     |  |  +--KC477161_1_coat_protein_05_Sep_2009_China_grape__cultivar_Cow_s_Nipple_no_value_SD_1_1
+|  |     |  |  |  |  |     |  |     |  +**|
+|  |     |  |  |  |  |     |  |     |     +--AJ606357_1_coat_protein_21_DEC_2004_China_grapevine_no_value_CH_5_2_1
+|  |     |  |  |  |  |     |  |  +**|
+|  |     |  |  |  |  |     |  |  |  +--KP658166_1_coat_protein_17_Jul_2014_Spain_Vitis_vinifera_cv_Mencia_no_value_V5_4_35_1
+|  |     |  |  |  |  |     |  +**|
+|  |     |  |  |  |  |     |     +--AJ606344_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_TA_3_2_2
+|  |     |  |  |  |  |  +**|
+|  |     |  |  |  |  |  |  +**KC477171_1_coat_protein_25_Aug_2010_China_grape__cultivar_Red_Globe_no_value_TJ_3_3
+|  |     |  |  |  |  +**|
+|  |     |  |  |  |     +--KC477144_1_coat_protein_06_Jul_2011_China_grape__cultivar_Thompson_Seedless_no_value_JS_2_1
+|  |     |  |  +**|
+|  |     |  |     |  +**HQ130308_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_7_3_1
+|  |     |  |     +**|
+|  |     |  |        +--JF421831_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_22_6_1
+|  |     +**|
+|  |        |                                               +--GQ352633_1_coat_protein_01_AUG_2010_South_Africa_no_value_no_value_PL_20_1
+|  |        |                                            +**|
+|  |        |                                            |  +--KC477174_1_coat_protein_10_Sep_2010_China_grape__cultivar_Munage_no_value_XJ_1_2
+|  |        |                                         +**|
+|  |        |                                         |  |                 +**HQ130296_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_8_6
+|  |        |                                         |  |              +**|
+|  |        |                                         |  |              |  |  +--JF421903_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_1_1
+|  |        |                                         |  |              |  +**|
+|  |        |                                         |  |              |     +--JF421906_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_12_1
+|  |        |                                         |  |           +**|
+|  |        |                                         |  |           |  +**JQ423939_1_coat_protein_2009_China_Vitis_vinifera_cv_Venus_Seedless_no_value_LN_1
+|  |        |                                         |  |        +**|
+|  |        |                                         |  |        |  |     +**HQ130298_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_12_50
+|  |        |                                         |  |        |  |  +**|
+|  |        |                                         |  |        |  |  |  |  +**HQ130323_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_8_26_1
+|  |        |                                         |  |        |  |  |  +**|
+|  |        |                                         |  |        |  |  |     +**JF421836_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Franc_no_value_23_3_3
+|  |        |                                         |  |        |  +**|
+|  |        |                                         |  |        |     |        +**HQ130314_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_8_5_3
+|  |        |                                         |  |        |     |     +**|
+|  |        |                                         |  |        |     |     |  |     +**HQ130327_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_9_18_1
+|  |        |                                         |  |        |     |     |  |  +**|
+|  |        |                                         |  |        |     |     |  |  |  |     +**JF421772_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_13_5_5
+|  |        |                                         |  |        |     |     |  |  |  |  +**|
+|  |        |                                         |  |        |     |     |  |  |  |  |  +--KT213500_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI7_24_12_1
+|  |        |                                         |  |        |     |     |  |  |  +--|
+|  |        |                                         |  |        |     |     |  |  |     +--KT213499_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI7_4_2_1
+|  |        |                                         |  |        |     |     |  +**|
+|  |        |                                         |  |        |     |     |     +--JF421813_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_4_1
+|  |        |                                         |  |        |     |  +**|
+|  |        |                                         |  |        |     |  |  +--JF421767_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_13_14_1
+|  |        |                                         |  |        |     +**|
+|  |        |                                         |  |        |        |  +**JF421778_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Chardonnay_no_value_14_4_3
+|  |        |                                         |  |        |        +--|
+|  |        |                                         |  |        |           +--KT213467_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_AMEL1_14_28_1
+|  |        |                                         |  |     +**|
+|  |        |                                         |  |     |  |        +--HQ130307_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_124_1
+|  |        |                                         |  |     |  |     +--|
+|  |        |                                         |  |     |  |     |  +**JF421858_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_29_4_4
+|  |        |                                         |  |     |  |  +**|
+|  |        |                                         |  |     |  |  |  +**KC477127_1_coat_protein_15_Oct_2009_China_grape__cultivar_Daban_no_value_HN_3_1
+|  |        |                                         |  |     |  +**|
+|  |        |                                         |  |     |     |  +--KY886362_1_coat_protein_2014_USA_grape_no_value_GLRaV_3_I_LR101_2
+|  |        |                                         |  |     |     +**|
+|  |        |                                         |  |     |        +--JF421762_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_11_15_2
+|  |        |                                         |  |  +**|
+|  |        |                                         |  |  |  |                 +--HQ130326_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_9_14_3
+|  |        |                                         |  |  |  |              +**|
+|  |        |                                         |  |  |  |              |  |     +**AJ606342_1_coat_protein_21_DEC_2004_Greece_grapevine_no_value_GR_1_1_1
+|  |        |                                         |  |  |  |              |  |  +--|
+|  |        |                                         |  |  |  |              |  |  |  |  +--AJ606347_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_SS_5_2_1
+|  |        |                                         |  |  |  |              |  |  |  +**|
+|  |        |                                         |  |  |  |              |  |  |     +--HG931894_1_coat_protein_08_DEC_2014_Algeria_King_s_Ruby_no_value_ALG71_1
+|  |        |                                         |  |  |  |              |  +**|
+|  |        |                                         |  |  |  |              |     +--JF421768_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_13_15_2
+|  |        |                                         |  |  |  |           +**|
+|  |        |                                         |  |  |  |           |  |  +--JF421823_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_22_10_4
+|  |        |                                         |  |  |  |           |  +**|
+|  |        |                                         |  |  |  |           |     +--JF421940_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_41_17_3
+|  |        |                                         |  |  |  |        +**|
+|  |        |                                         |  |  |  |        |  +--JF421959_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_44_7_1
+|  |        |                                         |  |  |  |     +**|
+|  |        |                                         |  |  |  |     |  |  +**KC953890_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Albarino_no_value_GA2_3
+|  |        |                                         |  |  |  |     |  +--|
+|  |        |                                         |  |  |  |     |     +--KP658158_1_coat_protein_15_Jul_2014_Spain_Vitis_vinifera_cv_Albarino_no_value_1B15_1
+|  |        |                                         |  |  |  |  +**|
+|  |        |                                         |  |  |  |  |  |  +--JF421810_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_13_1
+|  |        |                                         |  |  |  |  |  +--|
+|  |        |                                         |  |  |  |  |     +**JF421844_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_25_1_2
+|  |        |                                         |  |  |  +**|
+|  |        |                                         |  |  |     +--JF421878_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_34_11_2
+|  |        |                                         |  +**|
+|  |        |                                         |     |  +**MH521104_2_coat_protein_18_Jun_2018_France_Vitis_vinifera_Goron_de_Bovernier_no_value_Gor259_1
+|  |        |                                         |     +**|
+|  |        |                                         |        +--KC953879_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Tempranillo_no_value_MC20_1
+|  |        |                                      +**|
+|  |        |                                      |  +**MF991951_1_coat_protein_Aug_2015_Croatia_Vitis_vinifera_cv_Babica_no_value_VB_108_1
+|  |        |                                   +**|
+|  |        |                                   |  |  +**HQ401018_1_coat_protein_Jan_2008_Portugal_Vitis_vinifera__cultivar_Carrega_Tinto_no_value_Carrega_Tinto_4b_1
+|  |        |                                   |  +**|
+|  |        |                                   |     +--JF421776_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Chardonnay_no_value_14_10_5
+|  |        |                                +**|
+|  |        |                                |  +--HQ185605_1_coat_protein_2008_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_no_value_1
+|  |        |                             +**|
+|  |        |                             |  |        +--JX088229_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_50_3
+|  |        |                             |  |     +**|
+|  |        |                             |  |     |  +**JX088236_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JMG93_2_1
+|  |        |                             |  |  +**|
+|  |        |                             |  |  |  |  +**JX088231_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_20_2
+|  |        |                             |  |  |  +**|
+|  |        |                             |  |  |     +--JF421929_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_40_12_2
+|  |        |                             |  +**|
+|  |        |                             |     +**JX088230_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_19_6
+|  |        |                          +--|
+|  |        |                          |  |  +--JX088240_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GF28_2_1
+|  |        |                          |  +**|
+|  |        |                          |     |     +**JF421763_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_11_2_14
+|  |        |                          |     |  +**|
+|  |        |                          |     |  |  |  +--JF421790_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_17_2_1
+|  |        |                          |     |  |  +**|
+|  |        |                          |     |  |     +--JF421856_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_29_1_1
+|  |        |                          |     +--|
+|  |        |                          |        +--KT213468_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_AMEL5_18_4_1
+|  |        |                       +--|
+|  |        |                       |  +--JF421868_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_30_9_1
+|  |        |                    +--|
+|  |        |                    |  +**JX088129_1_coat_protein_14_AUG_2012_China_grapevine_no_value_S3_33_2_1
+|  |        |                 +--|
+|  |        |                 |  +**JX088220_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_60_9
+|  |        |              +--|
+|  |        |              |  |        +**HQ130309_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_7_110_4
+|  |        |              |  |     +--|
+|  |        |              |  |     |  |  +**KC477106_1_coat_protein_15_Aug_2009_China_grape__cultivar_Manicure_Finger_no_value_BJ_6_2
+|  |        |              |  |     |  +--|
+|  |        |              |  |     |     |  +**KC477113_1_coat_protein_15_Oct_2009_China_grape__unknown_cultivar_no_value_HB_2_1
+|  |        |              |  |     |     +**|
+|  |        |              |  |     |        +--KC477114_1_coat_protein_15_Oct_2009_China_grape__unknown_cultivar_no_value_HB_3_1
+|  |        |              |  |  +--|
+|  |        |              |  |  |  +--HQ401015_1_coat_protein_Feb_2009_Portugal_Vitis_vinifera__cultivar_Terrantez_da_Terceira_no_value_Terrantez_da_Terceira_2_1
+|  |        |              |  +--|
+|  |        |              |     +--KC953880_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Tempranillo_no_value_TAC3_4_1
+|  |        |           +--|
+|  |        |           |  +**KT213501_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI8_60_18_1
+|  |        |        +--|
+|  |        |        |  |     +**JX088165_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_7_1
+|  |        |        |  |  +--|
+|  |        |        |  |  |  +--JX088185_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ADLG26_3_1
+|  |        |        |  +--|
+|  |        |        |     |  +--JX088241_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_9_1
+|  |        |        |     +**|
+|  |        |        |        +--KC477157_1_coat_protein_18_Sep_2009_China_grape__cultivar_Garnacha_Tinta_no_value_NX_10_1
+|  |        |     +**|
+|  |        |     |  |                                                +**JQ655295_1_coat_protein_12_JUN_2012_South_Africa_Vitis_vinifera_cv_Cabernet_no_value_GH11_1
+|  |        |     |  |                                             +--|
+|  |        |     |  |                                             |  +--JQ655296_1_coat_protein_12_JUN_2012_South_Africa_Vitis_vinifera_cv_Cabernet_no_value_GH30_1
+|  |        |     |  |                                          +--|
+|  |        |     |  |                                          |  |    +--JX220900_2_coat_protein_2009_New_Zealand_Vitis_vinifera_cv_Syrah_no_value_NZ1_B_1
+|  |        |     |  |                                          |  +----|
+|  |        |     |  |                                          |       +**EF508151_1_coat_protein_21_APR_2007_New_Zealand_no_value_no_value_NZ_1_1
+|  |        |     |  |                                       +--|
+|  |        |     |  |                                       |  |  +**MH521105_2_coat_protein_18_Jun_2018_Germany_Vitis_vinifera_Green_Veltliner_no_value_Gre233_1
+|  |        |     |  |                                       |  +--|
+|  |        |     |  |                                       |     +**MH521114_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Marzemino_no_value_Mar239_1
+|  |        |     |  |                                +------|
+|  |        |     |  |                                |      |      +--JQ796828_1_coat_protein_06_NOV_2012_USA_CA_no_value_no_value_no_value_3
+|  |        |     |  |                                |      |   +--|
+|  |        |     |  |                                |      |   |  |  +--JF421818_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_21_12_1
+|  |        |     |  |                                |      |   |  +**|
+|  |        |     |  |                                |      |   |     +**JF421819_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_21_13_18
+|  |        |     |  |                                |      +---|
+|  |        |     |  |                                |          +--KT213524_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_SLO3_78_18_1
+|  |        |     |  |                            +---|
+|  |        |     |  |                            |   |               +--JX220899_2_coat_protein_2009_New_Zealand_Vitis_vinifera_cv_Pinot_noir_no_value_NZ2_1
+|  |        |     |  |                            |   |            +**|
+|  |        |     |  |                            |   |            |  +**KY764332_1_coat_protein_03_Jan_2017_USA_Vitis_vinifera_cv_Chardonnay_no_value_Trc139_3
+|  |        |     |  |                            |   +------------|
+|  |        |     |  |                            |                +**MH521097_2_coat_protein_18_Jun_2017_USA_Vitis_vinifera_Chardonnay_no_value_Cha141_1
+|  |        |     |  |                     +------|
+|  |        |     |  |                     |      |                                  +**KM058745_1_coat_protein_01_Nov_2012_South_Africa_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_GH24_1
+|  |        |     |  |                     |      |                           +------|
+|  |        |     |  |                     |      |                           |      +**EF445655_1_major_coat_protein_13_MAR_2007_France_Vitis_vinifera_cv_Muskat_Blume_Metis_Oberlin_no_value_CB19_1
+|  |        |     |  |                     |      |                        +--|
+|  |        |     |  |                     |      |                        |  +--KY707826_1_coat_protein_06_Aug_2016_Italy_Vitis_vinifera_cv_Nero_d_Avola_no_value_NdA121_1
+|  |        |     |  |                     |      |          +-------------|
+|  |        |     |  |                     |      |          |             +------------KY073323_1_coat_protein_07_Nov_2014_Canada_Vitis_vinifera_cv_Riesling_no_value_8415A_1
+|  |        |     |  |                     |      +----------|
+|  |        |     |  |                     |                 +--------------------LC387466_1_coat_protein_2016_06_South_Korea_Vitis_spp__KG3_no_value_1
+|  |        |     |  |                  +--|
+|  |        |     |  |                  |  +-----------KY073324_1_coat_protein_07_Nov_2014_Canada_Vitis_vinifera_cv_Riesling_no_value_8415B_1
+|  |        |     |  |        +---------|
+|  |        |     |  |        |         |               +--KY707824_2_coat_protein_07_Dec_2016_USA_Vitis_vinifera_cv_11184_no_value_Pro95_1
+|  |        |     |  |        |         |         +-----|
+|  |        |     |  |        |         |         |     |        +**KY707825_2_coat_protein_07_Dec_2016_Greece_Vitis_vinifera_cv_Roditis_no_value_Rod96_2
+|  |        |     |  |        |         |         |     |     +**|
+|  |        |     |  |        |         |         |     |     |  |     +**MH521091_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Cabernet_Sauvignon_no_value_Cab248_1
+|  |        |     |  |        |         |         |     |     |  |  +--|
+|  |        |     |  |        |         |         |     |     |  |  |  +--MH521117_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Pinot_Noir_no_value_Pin244b_1
+|  |        |     |  |        |         |         |     |     |  +**|
+|  |        |     |  |        |         |         |     |     |     +**MH521098_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Chardonnay_no_value_Cha246_1
+|  |        |     |  |        |         |         |     |  +**|
+|  |        |     |  |        |         |         |     |  |  +**MH521103_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_no_value_245_1
+|  |        |     |  |        |         |         |     +**|
+|  |        |     |  |        |         |         |        +--KY764333_1_coat_protein_03_Jan_2017_USA_Vitis_vinifera_cv_Chardonnay_no_value_Trc138_1
+|  |        |     |  |        |         +---------|
+|  |        |     |  |        |                   +--MH521109_2_coat_protein_18_Jun_2018_Canada_Vitis_vinifera_Katelin_no_value_Kat255b_1
+|  |        |     |  |     +--|
+|  |        |     |  |     |  +**HQ676995_1_coat_protein_2008_USA_Vitis_californica_no_value_2008_114_1
+|  |        |     |  |  +--|
+|  |        |     |  |  |  +**MK804765_1_35_kDa_coat_protein_19_Mar_2018_Brazil_Vitis_sp_cv_BRS_Nubia_hybrid_grapevine__no_value_GLRaV_3_NUB_BR_1
+|  |        |     |  +**|
+|  |        |     |     +--JF421814_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_5_1
+|  |        |  +**|
+|  |        |  |  |        +**HG931892_1_coat_protein_08_DEC_2014_Algeria_King_s_Ruby_no_value_ALG63_1
+|  |        |  |  |     +--|
+|  |        |  |  |     |  +--KC953891_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Albarino_no_value_69A_1
+|  |        |  |  |  +--|
+|  |        |  |  |  |  +**HG931895_1_coat_protein_08_DEC_2014_Algeria_Muscat_d_Alexandrie_no_value_ALG112_1
+|  |        |  |  +**|
+|  |        |  |     +--KP658165_1_coat_protein_17_Jul_2014_Spain_Vitis_vinifera_cv_Mencia_no_value_V5_4_33_1
+|  |        +**|
+|  |           |        +**KC417451_1_coat_protein_10_Aug_2010_China_grape_cultivar_Red_Fuji_no_value_AH_1_6
+|  |           |     +**|
+|  |           |     |  |     +**KC477107_1_coat_protein_20_Sep_2009_China_grape__cultivar_Victoria_no_value_BJ_7_1
+|  |           |     |  |  +**|
+|  |           |     |  |  |  +**KC477137_1_coat_protein_15_Jun_2011_China_grape__cultivar_Shangfeng_no_value_JL_3_1
+|  |           |     |  +**|
+|  |           |     |     |  +**KC477136_1_coat_protein_15_Jun_2011_China_grape__cultivar_Gongniang_No_2_no_value_JL_2_1
+|  |           |     |     +**|
+|  |           |     |        +--KC477148_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_4_1
+|  |           |  +**|
+|  |           |  |  |  +**KC477141_1_coat_protein_15_Jun_2011_China_grape__cultivar_Zuoshan_No_2_no_value_JL_7_1
+|  |           |  |  +**|
+|  |           |  |     +--KC477149_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_5_1
+|  |           +**|
+|  |              +**MH521119_2_coat_protein_18_Jun_2018_Portugal_Vitis_vinifera_Touriga_Franca_no_value_Tou260_1
++**|
+   +**KC477108_1_coat_protein_20_Sep_2009_China_grape__cultivar_Yatomi_Rosa_no_value_BJ_8_1
+
+Tree in newick format:
+
+(AF037268_2_35_kDa_coat_protein_28_APR_1998_no_value_no_value_NY1_no_value_3:0.0041661929,((((((((((((((((AY753208_1_coat_protein_13_OCT_2004_Brazil_grapevine_no_value_Pet_4_1:0.0095214919,MF677862_1_35_kDa_coat_protein_May_2014_Hungary_Tokaj_Mad_grapevine_cultivar_Harslevelu_no_value_GLAV3_HUMK3_1:0.0083708360):0.0045224610,MF446631_1_35_kDa_coat_protein_May_2014_Hungary_Tokaj_Mad_grapevine_cultivar_Furmint_no_value_GLAV3_HUMK1_1:0.0000020534):0.0017084920,((JX088154_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_10_1:0.0013784224,JX088158_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_9_1:0.0000024064):0.0013783919,(JX088155_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_6_1:0.0000023680,(JX088156_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_8_1:0.0013781862,JX088157_1_coat_protein_14_AUG_2012_China_grapevine_no_value_DHP6_3_1:0.0013777660):0.0000029590):0.0000022878):0.0028794392):0.0012806320,HQ130285_1_coat_protein_16_Jun_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_3_7_1:0.0013784827):0.0000022529,((((HM059034_1_coat_protein_21_Sep_2009_Brazil_grapevine_cv_Isabel_no_value_IS2_1:0.0098925371,KX701860_1_35_kDa_coat_protein_18_Aug_2014_Brazil_Vitis_labrusca_cv_Isabel_grapevine__no_value_ISAB_BR_1:0.0000026883):0.0000020345,JF421777_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Chardonnay_no_value_14_3_1:0.0026284932):0.0011743051,KT213520_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_SLO1_11_39_2:0.0026272515):0.0002002154,KC953900_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Brancellao_no_value_F31BR3_1:0.0026148867):0.0000026712):0.0000023523,((GQ352632_1_coat_protein_01_AUG_2010_South_Africa_Vitis_vinifera_cultivar_Ruby_Cabernet_no_value_623_75:0.0000023680,MH521115_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Merlot_no_value_Mer240_1:0.0013786831):0.0000022520,((HQ130283_1_coat_protein_16_Jun_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_3_3_2:0.0013784833,HQ130294_1_coat_protein_16_Jun_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_3_23_1:0.0013787125):0.0000026473,((JX088133_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_2_1:0.0013775339,KC953884_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Tempranillo_no_value_MC34_1:0.0052688541):0.0000012644,(((((JX088170_1_coat_protein_14_AUG_2012_China_grapevine_no_value_WHZH37_1_1:0.0013782810,JX088171_1_coat_protein_14_AUG_2012_China_grapevine_no_value_WHZH37_3_1:0.0000025964):0.0000023783,JX088172_1_coat_protein_14_AUG_2012_China_grapevine_no_value_WHZH37_2_1:0.0013778180):0.0013778115,JX088177_1_coat_protein_14_AUG_2012_China_grapevine_no_value_43_5_4:0.0000013653):0.0027759324,KC953882_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Mencia_no_value_MP4_11_1:0.0026138284):0.0000014437,KY821093_1_coat_protein_Jul_2016_Pakistan_Vitis_vinifera_cultivar_Sugra_one_no_value_AK6_1:0.0041601255):0.0000016976):0.0000027456):0.0000021628):0.0000021118):0.0000021338,(((JX088167_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_17_1:0.0000023962,JX088190_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GQ10_12_1:0.0027674554):0.0013778047,KP658172_1_coat_protein_11_Jul_2014_Spain_Vitis_vinifera_cv_Caino_Tinto_no_value_F38CA11_1:0.0026134932):0.0000029251,((JX481787_1_coat_protein_12_Sep_2010_China_grape_cultivar_Auguste_no_value_GS_3_1:0.0055664136,KC477147_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_3_1:0.0027631149):0.0027715565,KC477135_1_coat_protein_15_Jun_2011_China_grape__cultivar_Gongniang_No_1_no_value_JL_1_1:0.0027651752):0.0000023528):0.0000021761):0.0000029419,EU259806_1_coat_protein_28_MAR_2008_South_Africa_no_value_no_value_GP18_2:0.0055883259):0.0000023213,((KJ174518_1_CP_28_FEB_2015_no_value_no_value_no_value_no_value_1:0.0000016535,(JF421904_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_10_1:0.0026276286,JF421908_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_14_2:0.0000023032):0.0026276805):0.0000047472,KT213471_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_AMEL7_5_2_1:0.0026300531):0.0013725349):0.0136530978,JF421808_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_11_2:0.0019874048):0.0190828787,((((AJ606339_1_coat_protein_21_DEC_2004_Austria_grapevine_no_value_AUSG_5_2_3:0.0000023680,(AJ606341_1_coat_protein_21_DEC_2004_Nigeria_grapevine_no_value_NIG_3_1_1:0.0025030553,(HG931889_1_coat_protein_08_DEC_2014_Algeria_Dattier_de_Beyrouth_no_value_ALG2_2:0.0024834068,(HG931891_1_coat_protein_08_DEC_2014_Algeria_Gros_noir_des_Beni_Abbes_no_value_ALG25_1:0.0000023680,((HG931893_1_coat_protein_08_DEC_2014_Algeria_King_s_Ruby_no_value_ALG68_1:0.0149181159,KC953888_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_no_value_3_4285_1:0.0026142599):0.0000020475,HG931896_1_coat_protein_08_DEC_2014_Algeria_cardinal_no_value_ALG114_1:0.0024813207):0.0000025364):0.0000027639):0.0000027912):0.0000025356):0.0000025583,KP658162_1_coat_protein_11_Jul_2014_Spain_Vitis_vinifera_cv_Caino_Tinto_no_value_F10CAS14_1:0.0026181075):0.0000020747,AJ606345_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_TA_3_1_1:0.0025051691):0.0003257229,AJ606340_1_coat_protein_21_DEC_2004_Tromelin_Island_grapevine_no_value_USA_1:0.0025011085):0.0045176680):0.0000026205,JX088168_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_12_1:0.0061079544):0.0015557278,KC953898_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Brancellao_no_value_F31BR8_1:0.0080894875):0.0050140641,JX088191_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GQ10_17_1:0.0000023375):0.0282278745,(((((EU344894_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_817_1:0.0013770098,MH521102_2_coat_protein_18_Jun_2017_no_value_Vitis_vinifera_no_value_185_1:0.0013768037):0.0000027626,(JX088146_1_coat_protein_14_AUG_2012_China_grapevine_no_value_Y73_45_1_1:0.0027623201,KY940821_1_coat_protein_Jul_2016_Pakistan_Vitis_vinifera_cultivar_Vitro_Black_no_value_AK1_1:0.0041508228):0.0000022835):0.0000022255,HQ401016_1_coat_protein_Feb_2009_Portugal_Vitis_vinifera__cultivar_Trincadeira_no_value_Trincadeira_12_1:0.0027728853):0.0000022586,(JX088182_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ALGT13_15_1:0.0027617461,JX088183_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ALGT13_10_20:0.0000021265):0.0027607412):0.0028259580,KT213491_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI2_7_8_1:0.0023543105):0.0428498991):0.0085709033,KC477122_1_coat_protein_05_Sep_2009_China_grape__cultivar_Red_Globe_no_value_HB_11_1:0.0000023538):0.0013813656,(((((DQ062152_1_coat_protein_12_JUN_2005_Brazil_no_value_no_value_Pet_3_46:0.0000029220,KX499443_1_coat_protein_20_Jan_2016_Brazil_Sao_Roque_SP_Vitis_labrusca_cv_Niagara_Rosada_no_value_NR_BR_2:0.0013814192):0.0000020373,(KX499447_1_coat_protein_27_Jan_2016_Brazil_Sao_Roque_SP_hybrid_grapevine_cv_BRS_Violeta_no_value_VI_BR_1:0.0013353209,JF421886_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_35_6_3:0.0026483090):0.0000457721):0.0013814310,JN546587_1_coat_protein_29_Sep_2010_Poland_Vitis_vinifera_no_value_G11_1:0.0013823860):0.0000022231,(((((((((((((((((((DQ119574_1_coat_protein_06_AUG_2005_China_no_value_no_value_Dawanhong_No_2_23:0.0000020296,JX088150_1_coat_protein_14_AUG_2012_China_grapevine_no_value_AFH77_3_1:0.0013813018):0.0013857680,(JX088164_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_6_1:0.0027683605,JX088166_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_11_2:0.0000026054):0.0013851373):0.0013845017,MH521088_1_coat_protein_18_Jun_2017_Spain_Vitis_vinifera_AU_33_057_no_value_AU173_2:0.0013817097):0.0000023130,(((HQ130295_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_6_5:0.0000027665,(HQ130297_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_11_1:0.0027723584,HQ130304_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_115_2:0.0013818406):0.0000021414):0.0013811933,HQ130313_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_8_1_5:0.0000024845):0.0013811602,HQ130329_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_9_33_1:0.0000021176):0.0013813964):0.0000023514,((JX088142_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ATBG72_10_1:0.0013823474,(KC477182_1_coat_protein_14_Sep_2010_China_grape__cultivar_Jinxiu_no_value_YN_2_1:0.0027814494,KC477183_1_coat_protein_14_Sep_2010_China_grape__cultivar_Venus_Seedless_no_value_YN_3_1:0.0056104658):0.0013765970):0.0000029070,((JX088192_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_15_8:0.0000023515,JX088196_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HG19_2_1:0.0013817340):0.0013814005,KC477151_1_coat_protein_18_Sep_2009_China_grape__cultivar_Muscat_x_Alicanfe_Bouschet_no_value_NX_1_1:0.0013812791):0.0000022516):0.0000023510):0.0000022547,((JX088211_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_14_1:0.0013810354,KC477143_1_coat_protein_06_Jul_2011_China_grape__cultivar_Gold_Finger_no_value_JS_1_1:0.0055693391):0.0000022418,(((KC477103_1_coat_protein_15_Aug_2009_China_grape__cultivar_Flame_Seedless_no_value_BJ_3_1:0.0069742636,KC477186_1_coat_protein_20_Jul_2011_China_grape__cultivar_Gold_Finger_no_value_ZJ_1_1:0.0041622330):0.0000021897,KC477188_1_coat_protein_05_Jul_2011_China_grape__cultivar_Thompson_Seedless_no_value_ZJ_3_1:0.0000020654):0.0013812146,KC477128_1_coat_protein_15_Oct_2009_China_grape__cultivar_Aligote_no_value_HN_4_1:0.0013817061):0.0000023191):0.0000023481):0.0000020093,((EU344895_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_664_1:0.0013812052,(((KC477154_1_coat_protein_18_Sep_2009_China_grape__cultivar_Cabernet_Sauvignon_no_value_NX_7_1:0.0013814685,KC477155_1_coat_protein_18_Sep_2009_China_grape__cultivar_Italian_Riesling_no_value_NX_8_2:0.0000023680):0.0000023469,KC477162_1_coat_protein_05_Sep_2009_China_grape__cultivar_Cabernet_Sauvignon_no_value_SD_2_1:0.0013811028):0.0013808805,KC477156_1_coat_protein_18_Sep_2009_China_grape__cultivar_Carmenere_no_value_NX_9_1:0.0013927505):0.0013817838):0.0000022852,(KC477170_1_coat_protein_25_Aug_2010_China_grape__cultivar_Triumph_no_value_TJ_2_1:0.0027697890,KC477176_1_coat_protein_10_Sep_2010_China_grape__cultivar_Red_Globe_no_value_XJ_3_1:0.0027775508):0.0013868173):0.0000023460):0.0000013872,(((HQ130299_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_15_1:0.0000024224,JX088212_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_1_1:0.0013808519):0.0013810734,JX088206_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSBD85_2_1:0.0013817227):0.0000022853,KC477121_1_coat_protein_05_Sep_2009_China_grape__cultivar_60_1_no_value_HB_10_1:0.0013812898):0.0000022912):0.0000018180,GQ352631_1_coat_protein_01_AUG_2010_South_Africa_Vitis_vinifera_cultivar_Cabernet_Sauvignon_no_value_621_35:0.0000023680):0.0000021279,(((DQ911148_1_coat_protein_25_SEP_2006_China_vitis_no_value_SL10_1:0.0041643208,(((JX088130_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_7_1:0.0013820280,(JX088132_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_8_1:0.0013820312,JX088242_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_5_1:0.0013819383):0.0000028281):0.0000022459,KC477116_1_coat_protein_05_Sep_2009_China_grape__cultivar_Red_Globe_no_value_HB_5_1:0.0000023680):0.0000020004,(KC477115_1_coat_protein_05_Sep_2009_China_grape__cultivar_Augusta_no_value_HB_4_1:0.0027707539,KX499448_1_coat_protein_12_Feb_2016_Brazil_Sao_Roque_SP_Vitis_vinifera_cv_Moscato_Setubal_no_value_MS_BR_1:0.0041655454):0.0000022900):0.0000022485):0.0013816911,JX088215_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_2_1:0.0013813291):0.0000029318,(KC477119_1_coat_protein_05_Sep_2009_China_grape__cultivar_Carmenere_no_value_HB_8_1:0.0027810844,MH521090_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Black_Muscat_Alexandria_no_value_Bla223_1:0.0013817304):0.0000022708):0.0000022907):0.0000024473,((((EU344893_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_766_1:0.0000023258,EU344896_1_35_kDa_coat_protein_29_MAY_2008_Chile_grapevine_no_value_Cl_765_1:0.0041830436):0.0027694768,KY821094_1_coat_protein_Sep_2016_Pakistan_Vitis_vinifera_cultivar_Italia_no_value_SL37_3_1:0.0000020859):0.0013817279,((JX088174_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_8_1:0.0027692021,KC477150_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_6_1:0.0000021825):0.0000020508,KC477184_1_coat_protein_14_Sep_2010_China_grape__cultivar_Rose_Honey_no_value_YN_4_1:0.0041626932):0.0013811411):0.0000012590,(KC477102_1_coat_protein_15_Aug_2009_China_grape__cultivar_Aranele_no_value_BJ_2_1:0.0013810907,((KC477164_1_coat_protein_05_Sep_2009_China_grape__cultivar_Kyoho_no_value_SD_4_1:0.0000023356,MH521110_2_coat_protein_18_Jun_2016_Hungary_Vitis_vinifera_Kishmish_Vatkana_no_value_Kis24_1:0.0013813330):0.0000011747,(AJ606346_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_TA_3_3_2:0.0000022814,AJ606354_1_coat_protein_21_DEC_2004_Israel_grapevine_no_value_IL_1_2_1:0.0155762338):0.0025183157):0.0013803435):0.0000022205):0.0000023759):0.0000023478,((((JX088134_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_6_2:0.0000023680,(JX088137_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_1_1:0.0013814691,JX088138_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_4_1:0.0013825118):0.0000022464):0.0000022756,JX088139_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ZDQ70_8_1:0.0013818805):0.0013814627,(JX088173_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_3_1:0.0013816822,KC477131_1_coat_protein_15_Oct_2009_China_grape__cultivar_Gold_Finger_no_value_HN_7_1:0.0041641686):0.0000022464):0.0000022650,(((((JX088194_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_9_2:0.0000023472,JX088199_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GFMG18_1_1:0.0013819275):0.0013814976,KC477181_1_coat_protein_14_Sep_2010_China_grape__cultivar_8612_no_value_YN_1_1:0.0013810803):0.0000023967,KC477180_1_coat_protein_10_Sep_2010_China_grape__unknown_cultivar_no_value_XJ_7_1:0.0013833384):0.0000023078,((KC477110_1_coat_protein_16_Aug_2010_China_grape__cultivar_Takatsuma_no_value_GS_2_1:0.0027711355,KC477169_1_coat_protein_25_Aug_2010_China_grape__cultivar_Rosario_Bianco_no_value_TJ_1_1:0.0000025832):0.0013814556,KC477158_1_coat_protein_18_Sep_2009_China_grape__cultivar_Pinot_Gris_no_value_NX_11_1:0.0013813367):0.0000021686):0.0000021848,((JX088200_1_coat_protein_14_AUG_2012_China_grapevine_no_value_MP52_1_2:0.0013813312,JX088208_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HTS29_2_1:0.0013814225):0.0000022740,((KC477104_1_coat_protein_15_Aug_2009_China_grape__cultivar_Rizamat_no_value_BJ_4_1:0.0013813628,(KC477105_1_coat_protein_15_Aug_2009_China_grape__cultivar_Rizamat_no_value_BJ_5_3:0.0000023680,(KC477178_1_coat_protein_10_Sep_2010_China_grape__cultivar_Manicure_Finger_no_value_XJ_5_1:0.0027702816,KC477185_1_coat_protein_14_Sep_2010_China_grape__cultivar_Merlot_no_value_YN_5_1:0.0027690381):0.0000025335):0.0000020906):0.0013812538,KX499446_1_coat_protein_26_Jan_2016_Brazil_Sao_Roque_SP_Vitis_vinifera_cv_Touriga_Nacional_no_value_TN_BR_1:0.0013814202):0.0000022446):0.0000022786):0.0000022939):0.0000020934):0.0000020715,(((((JX088175_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_11_1:0.0000023680,(JX088176_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JX96_12_1:0.0013832625,AJ606338_1_coat_protein_21_DEC_2004_Austria_grapevine_no_value_AUSG_5_1_1:0.0050737838):0.0000020883):0.0000020723,KC477134_1_coat_protein_15_Oct_2009_China_grape__cultivar_Summer_Black_no_value_HN_10_1:0.0027711668):0.0000013295,AJ606353_1_coat_protein_21_DEC_2004_Tunisia_grapevine_no_value_TU_16_1:0.0025188410):0.0013790475,JX088213_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_20_1:0.0013812361):0.0000028563,KC477123_1_coat_protein_05_Sep_2009_China_grape__cultivar_Carmenere_no_value_HB_12_1:0.0013814331):0.0000022555):0.0000022748,(((((JX088152_1_coat_protein_14_AUG_2012_China_grapevine_no_value_AFH77_8_1:0.0000020413,JX088153_1_coat_protein_14_AUG_2012_China_grapevine_no_value_AFH77_1_1:0.0055849556):0.0013810224,KC477163_1_coat_protein_05_Sep_2009_China_grape__cultivar_Blue_French_no_value_SD_3_1:0.0000022244):0.0013840442,(JF421794_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_17_8_1:0.0026427447,KC953902_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Mencia_no_value_MAC1_9_2:0.0000022743):0.0000023030):0.0013816638,KC477130_1_coat_protein_15_Oct_2009_China_grape__cultivar_Hongjiu_no_value_HN_6_1:0.0013832951):0.0000022531,(JX088217_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BJLB2_18_1:0.0013817465,JX559645_1_coat_protein_Sep_2011_Canada_Vitis_vinifera_no_value_3138_07_1:0.0027707889):0.0000024297):0.0000025154):0.0000021898,JX088216_1_coat_protein_14_AUG_2012_China_grapevine_no_value_S1_31_2_1:0.0013811220):0.0000022547,KY940822_1_coat_protein_Sep_2016_Pakistan_Vitis_vinifera_cultivar_zi_de_qv_no_value_SL45_3_1:0.0055686580):0.0013817255,(HQ130303_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_114_1:0.0013824311,KC477160_1_coat_protein_18_Sep_2009_China_grape__cultivar_Sauvignon_Blanc_no_value_NX_13_1:0.0041761084):0.0000023987):0.0000024224,(JQ267586_1_coat_protein_2010_Slovakia_Vitis_vinifera_no_value_SK04_1:0.0027785124,((JX481786_1_coat_protein_01_Sep_2010_China_grape_cultivar_Yatomi_no_value_BJ_9_2:0.0027705266,MH521101_2_coat_protein_18_Jun_2018_no_value_Vitis_vinifera_DK03_no_value_Dk256_1:0.0013819026):0.0000023261,KC477111_1_coat_protein_16_Aug_2010_China_grape__cultivar_Zinfandel_no_value_GS_4_1:0.0027697640):0.0013818450):0.0000022297):0.0000021783,((((DQ680141_1_coat_protein_24_JUL_2006_Brazil_no_value_no_value_Pet_1_13:0.0000023680,(JX088180_1_coat_protein_14_AUG_2012_China_grapevine_no_value_43_11_1:0.0013824186,(((KC477125_1_coat_protein_10_Oct_2009_China_grape__cultivar_Ardeleanca_no_value_HN_1_1:0.0027832393,KP658175_1_coat_protein_11_Jul_2014_Spain_Vitis_vinifera_cv_Caino_Tinto_no_value_F38CA17_1:0.0053357175):0.0000027865,JF421798_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Franc_no_value_19_13_4:0.0000023523):0.0027897424,KJ463740_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Mencia_no_value_V5_2_18_1:0.0000020301):0.0027825816):0.0000021747):0.0000022573,((DQ680142_1_coat_protein_24_JUL_2006_Brazil_no_value_no_value_Pet_2_1:0.0013821254,((((JX088163_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_8_1:0.0013810859,(JX088186_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ADLG26_2_1:0.0013816470,JX088219_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GQ10_2_1:0.0013814656):0.0000023489):0.0013834202,KJ704369_1_coat_protein_05_Nov_2012_Brazil_Vitis_vinifera_cv_Ruby_Cabernet_no_value_RC_PE_1:0.0013817748):0.0000023445,KC477138_1_coat_protein_15_Jun_2011_China_grape__cultivar_Shuanghong_no_value_JL_4_2:0.0000023680):0.0000022433,KC477145_1_coat_protein_10_Jul_2009_China_grape__cultivar_No_27_no_value_LN_1_1:0.0013817817):0.0013817754):0.0000022461,(KC477196_1_coat_protein_Sep_2009_China_grape__cultivar_Red_Italia_no_value_NX_3_1:0.0013821899,(MH521106_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Italia_no_value_Ita218_4:0.0000024478,KT213515_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_SLO1_9_27_2:0.0026439703):0.0013818011):0.0000022738):0.0000020479):0.0000022659,((HQ130300_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_18_1:0.0013819953,(((KC477118_1_coat_protein_05_Sep_2009_China_grape__cultivar_Merlot_no_value_HB_7_1:0.0013843399,(((KC477124_1_coat_protein_05_Sep_2009_China_grape__cultivar_Exotic_no_value_HB_13_2:0.0000023680,(KC477161_1_coat_protein_05_Sep_2009_China_grape__cultivar_Cow_s_Nipple_no_value_SD_1_1:0.0027707447,AJ606357_1_coat_protein_21_DEC_2004_China_grapevine_no_value_CH_5_2_1:0.0025230300):0.0000022194):0.0000012305,KP658166_1_coat_protein_17_Jul_2014_Spain_Vitis_vinifera_cv_Mencia_no_value_V5_4_35_1:0.0026340381):0.0000021058,AJ606344_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_TA_3_2_2:0.0025240860):0.0013822260):0.0000021597,KC477171_1_coat_protein_25_Aug_2010_China_grape__cultivar_Red_Globe_no_value_TJ_3_3:0.0000024952):0.0000023705,KC477144_1_coat_protein_06_Jul_2011_China_grape__cultivar_Thompson_Seedless_no_value_JS_2_1:0.0027743222):0.0013824165):0.0000023099,(HQ130308_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_7_3_1:0.0013386653,JF421831_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_22_6_1:0.0026484001):0.0000427062):0.0000021978):0.0000020072,((((((((((((((((GQ352633_1_coat_protein_01_AUG_2010_South_Africa_no_value_no_value_PL_20_1:0.0027671547,KC477174_1_coat_protein_10_Sep_2010_China_grape__cultivar_Munage_no_value_XJ_1_2:0.0041584602):0.0000023829,((((((HQ130296_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_8_6:0.0000023773,(JF421903_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_1_1:0.0026422686,JF421906_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_38_12_1:0.0026438973):0.0000023092):0.0013793000,JQ423939_1_coat_protein_2009_China_Vitis_vinifera_cv_Venus_Seedless_no_value_LN_1:0.0013777508):0.0000022133,((HQ130298_1_coat_protein_08_Jul_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_12_50:0.0000023680,(HQ130323_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_8_26_1:0.0013816976,JF421836_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Franc_no_value_23_3_3:0.0000026172):0.0013796537):0.0000022856,(((HQ130314_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_8_5_3:0.0000021863,((HQ130327_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_9_18_1:0.0013758181,((JF421772_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_13_5_5:0.0000023680,KT213500_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI7_24_12_1:0.0026448426):0.0000027579,KT213499_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI7_4_2_1:0.0026453058):0.0026439514):0.0000010558,JF421813_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_4_1:0.0026468549):0.0000012175):0.0000026083,JF421767_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_13_14_1:0.0026415919):0.0000555736,(JF421778_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Chardonnay_no_value_14_4_3:0.0000025528,KT213467_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_AMEL1_14_28_1:0.0026415281):0.0026414083):0.0013258491):0.0000021144):0.0000020407,(((HQ130307_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_6_124_1:0.0036956416,JF421858_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_29_4_4:0.0000022977):0.0018432116,KC477127_1_coat_protein_15_Oct_2009_China_grape__cultivar_Daban_no_value_HN_3_1:0.0013783714):0.0000028922,(KY886362_1_coat_protein_2014_USA_grape_no_value_GLRaV_3_I_LR101_2:0.0027622049,JF421762_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_11_15_2:0.0026422094):0.0000024180):0.0000023602):0.0000023449,((((((HQ130326_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_9_14_3:0.0022661827,((AJ606342_1_coat_protein_21_DEC_2004_Greece_grapevine_no_value_GR_1_1_1:0.0000023680,(AJ606347_1_coat_protein_21_DEC_2004_Italy_grapevine_no_value_SS_5_2_1:0.0050551456,HG931894_1_coat_protein_08_DEC_2014_Algeria_King_s_Ruby_no_value_ALG71_1:0.0067267963):0.0000028413):0.0032910586,JF421768_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_13_15_2:0.0026414198):0.0000373768):0.0000013848,(JF421823_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_22_10_4:0.0043688040,JF421940_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_41_17_3:0.0025148309):0.0010653973):0.0000020750,JF421959_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_44_7_1:0.0026431459):0.0000013075,(KC953890_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Albarino_no_value_GA2_3:0.0000022564,KP658158_1_coat_protein_15_Jul_2014_Spain_Vitis_vinifera_cv_Albarino_no_value_1B15_1:0.0026262500):0.0026506637):0.0000011946,(JF421810_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_13_1:0.0026429856,JF421844_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_25_1_2:0.0000022877):0.0026430800):0.0000051149,JF421878_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_34_11_2:0.0026439470):0.0004847338):0.0013783819,(MH521104_2_coat_protein_18_Jun_2018_France_Vitis_vinifera_Goron_de_Bovernier_no_value_Gor259_1:0.0013726161,KC953879_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Tempranillo_no_value_MC20_1:0.0026498638):0.0013877874):0.0000025728):0.0000023830,MF991951_1_coat_protein_Aug_2015_Croatia_Vitis_vinifera_cv_Babica_no_value_VB_108_1:0.0000023680):0.0000023502,(HQ401018_1_coat_protein_Jan_2008_Portugal_Vitis_vinifera__cultivar_Carrega_Tinto_no_value_Carrega_Tinto_4b_1:0.0013774918,JF421776_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Chardonnay_no_value_14_10_5:0.0026419116):0.0000023492):0.0013829791,HQ185605_1_coat_protein_2008_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_no_value_1:0.0017859676):0.0000014854,(((JX088229_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_50_3:0.0027627968,JX088236_1_coat_protein_14_AUG_2012_China_grapevine_no_value_JMG93_2_1:0.0013780212):0.0000021047,(JX088231_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_20_2:0.0013759842,JF421929_1_coat_protein_22_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_40_12_2:0.0026421765):0.0000014570):0.0000020411,JX088230_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_19_6:0.0000023680):0.0000024467):0.0000023410,(JX088240_1_coat_protein_14_AUG_2012_China_grapevine_no_value_GF28_2_1:0.0022314266,((JF421763_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Pinot_Noir_no_value_11_2_14:0.0000029420,(JF421790_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_17_2_1:0.0026439715,JF421856_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_29_1_1:0.0053188946):0.0000025415):0.0000022575,KT213468_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_AMEL5_18_4_1:0.0026448559):0.0026410153):0.0005318368):0.0028739544,JF421868_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_30_9_1:0.0025738945):0.0173256360,JX088129_1_coat_protein_14_AUG_2012_China_grapevine_no_value_S3_33_2_1:0.0000025560):0.0112885844,JX088220_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BSJSK8_60_9:0.0000024048):0.0173187695,(((HQ130309_1_coat_protein_03_Aug_2009_USA_California_Napa_Valley_Vitis_vinifera_cv_Merlot_no_value_7_110_4:0.0011653426,(KC477106_1_coat_protein_15_Aug_2009_China_grape__cultivar_Manicure_Finger_no_value_BJ_6_2:0.0000023680,(KC477113_1_coat_protein_15_Oct_2009_China_grape__unknown_cultivar_no_value_HB_2_1:0.0013810633,KC477114_1_coat_protein_15_Oct_2009_China_grape__unknown_cultivar_no_value_HB_3_1:0.0041638206):0.0000024020):0.0029868370):0.0028357696,HQ401015_1_coat_protein_Feb_2009_Portugal_Vitis_vinifera__cultivar_Terrantez_da_Terceira_no_value_Terrantez_da_Terceira_2_1:0.0030466958):0.0449513153,KC953880_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Tempranillo_no_value_TAC3_4_1:0.0023747551):0.0036842915):0.0199318422,KT213501_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_LODI8_60_18_1:0.0000027183):0.0079751714,((JX088165_1_coat_protein_14_AUG_2012_China_grapevine_no_value_HDQ56_7_1:0.0013719096,JX088185_1_coat_protein_14_AUG_2012_China_grapevine_no_value_ADLG26_3_1:0.0041933145):0.0020500324,(JX088241_1_coat_protein_14_AUG_2012_China_grapevine_no_value_BZ15_9_1:0.0142460412,KC477157_1_coat_protein_18_Sep_2009_China_grape__cultivar_Garnacha_Tinta_no_value_NX_10_1:0.0027967584):0.0007449090):0.0165475633):0.0083619309,(((((((((((JQ655295_1_coat_protein_12_JUN_2012_South_Africa_Vitis_vinifera_cv_Cabernet_no_value_GH11_1:0.0000024674,JQ655296_1_coat_protein_12_JUN_2012_South_Africa_Vitis_vinifera_cv_Cabernet_no_value_GH30_1:0.0083366996):0.0244342052,(JX220900_2_coat_protein_2009_New_Zealand_Vitis_vinifera_cv_Syrah_no_value_NZ1_B_1:0.0025815309,EF508151_1_coat_protein_21_APR_2007_New_Zealand_no_value_no_value_NZ_1_1:0.0000021372):0.0613800233):0.0059271386,(MH521105_2_coat_protein_18_Jun_2018_Germany_Vitis_vinifera_Green_Veltliner_no_value_Gre233_1:0.0013641799,MH521114_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Marzemino_no_value_Mar239_1:0.0013861890):0.0431986280):0.0128744162,((JQ796828_1_coat_protein_06_NOV_2012_USA_CA_no_value_no_value_no_value_3:0.0026391526,(JF421818_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_21_12_1:0.0026457158,JF421819_1_coat_protein_09_Oct_2009_USA_Vitis_vinifera_cv_Merlot_no_value_21_13_18:0.0000023680):0.0000025658):0.0050980909,KT213524_1_coat_protein_01_Oct_2010_USA_Vitis_vinifera_GLRaV_3_SLO3_78_18_1:0.0244771016):0.0499758279):0.0889161865,((JX220899_2_coat_protein_2009_New_Zealand_Vitis_vinifera_cv_Pinot_noir_no_value_NZ2_1:0.0027695850,KY764332_1_coat_protein_03_Jan_2017_USA_Vitis_vinifera_cv_Chardonnay_no_value_Trc139_3:0.0000028850):0.0000021653,MH521097_2_coat_protein_18_Jun_2017_USA_Vitis_vinifera_Chardonnay_no_value_Cha141_1:0.0013731965):0.1527764927):0.0565952201,((((KM058745_1_coat_protein_01_Nov_2012_South_Africa_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_GH24_1:0.0000022478,EF445655_1_major_coat_protein_13_MAR_2007_France_Vitis_vinifera_cv_Muskat_Blume_Metis_Oberlin_no_value_CB19_1:0.0013822906):0.0822884288,KY707826_1_coat_protein_06_Aug_2016_Italy_Vitis_vinifera_cv_Nero_d_Avola_no_value_NdA121_1:0.0258694154):0.0458902835,KY073323_1_coat_protein_07_Nov_2014_Canada_Vitis_vinifera_cv_Riesling_no_value_8415A_1:0.1617468408):0.1647667688,LC387466_1_coat_protein_2016_06_South_Korea_Vitis_spp__KG3_no_value_1:0.2470418381):0.1293060105):0.0914146485,KY073324_1_coat_protein_07_Nov_2014_Canada_Vitis_vinifera_cv_Riesling_no_value_8415B_1:0.1451185411):0.0203428737,((KY707824_2_coat_protein_07_Dec_2016_USA_Vitis_vinifera_cv_11184_no_value_Pro95_1:0.0035475364,(((KY707825_2_coat_protein_07_Dec_2016_Greece_Vitis_vinifera_cv_Roditis_no_value_Rod96_2:0.0000028152,((MH521091_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Cabernet_Sauvignon_no_value_Cab248_1:0.0000027846,MH521117_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Pinot_Noir_no_value_Pin244b_1:0.0027781195):0.0041753915,MH521098_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_Chardonnay_no_value_Cha246_1:0.0013837899):0.0000029449):0.0013843759,MH521103_2_coat_protein_18_Jun_2018_USA_Vitis_vinifera_no_value_245_1:0.0000021209):0.0000022333,KY764333_1_coat_protein_03_Jan_2017_USA_Vitis_vinifera_cv_Chardonnay_no_value_Trc138_1:0.0027771017):0.0006256147):0.0722529577,MH521109_2_coat_protein_18_Jun_2018_Canada_Vitis_vinifera_Katelin_no_value_Kat255b_1:0.0239258059):0.1200085725):0.1211303378,HQ676995_1_coat_protein_2008_USA_Vitis_californica_no_value_2008_114_1:0.0000025635):0.0030248755,MK804765_1_35_kDa_coat_protein_19_Mar_2018_Brazil_Vitis_sp_cv_BRS_Nubia_hybrid_grapevine__no_value_GLRaV_3_NUB_BR_1:0.0000028238):0.0027954272,JF421814_1_coat_protein_25_Sep_2009_USA_Vitis_vinifera_cv_Cabernet_Sauvignon_no_value_20_5_1:0.0026456169):0.0000122877):0.0013576479,(((HG931892_1_coat_protein_08_DEC_2014_Algeria_King_s_Ruby_no_value_ALG63_1:0.0000020283,KC953891_1_coat_protein_15_Aug_2011_Spain_Vitis_vinifera_cv_Albarino_no_value_69A_1:0.0026310614):0.0024977310,HG931895_1_coat_protein_08_DEC_2014_Algeria_Muscat_d_Alexandrie_no_value_ALG112_1:0.0000021245):0.0024877089,KP658165_1_coat_protein_17_Jul_2014_Spain_Vitis_vinifera_cv_Mencia_no_value_V5_4_33_1:0.0052844698):0.0000167797):0.0000025429,(((KC417451_1_coat_protein_10_Aug_2010_China_grape_cultivar_Red_Fuji_no_value_AH_1_6:0.0000023680,((KC477107_1_coat_protein_20_Sep_2009_China_grape__cultivar_Victoria_no_value_BJ_7_1:0.0013814674,KC477137_1_coat_protein_15_Jun_2011_China_grape__cultivar_Shangfeng_no_value_JL_3_1:0.0013816927):0.0000023920,(KC477136_1_coat_protein_15_Jun_2011_China_grape__cultivar_Gongniang_No_2_no_value_JL_2_1:0.0013817719,KC477148_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_4_1:0.0027696533):0.0000023680):0.0000023955):0.0000021233,(KC477141_1_coat_protein_15_Jun_2011_China_grape__cultivar_Zuoshan_No_2_no_value_JL_7_1:0.0013813750,KC477149_1_coat_protein_05_Sep_2010_China_grape__unknown_cultivar_no_value_LN_5_1:0.0041637609):0.0000022766):0.0013892323,MH521119_2_coat_protein_18_Jun_2018_Portugal_Vitis_vinifera_Touriga_Franca_no_value_Tou260_1:0.0013824428):0.0000023266):0.0000022695):0.0000022731):0.0000023640):0.0000021875,KC477108_1_coat_protein_20_Sep_2009_China_grape__cultivar_Yatomi_Rosa_no_value_BJ_8_1:0.0013816670):0.0000022476);
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 19 10:41:49 2019
+Total CPU time used: 2142.75 seconds (0h:35m:42s)
+Total wall-clock time used: 1077.13 seconds (0h:17m:57s)
+

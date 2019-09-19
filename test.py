@@ -21,18 +21,18 @@ for i in CDS:
     second = [i for j in second for i in j]
     second = "".join(second)
     second = int(second)
-    
+
     cds = (first,second)
     new_cds.append(cds)
 
 '''
-acc_num --> static 
- ~ lets enumerate these and add the pos to the protein ~ 
+acc_num --> static
+ ~ lets enumerate these and add the pos to the protein ~
         * duplicates *
 list for products --> index with "c"
 date (create date and collection date) --> static
 country --> static
-host --> static 
+host --> static
 strain --> static
 isolate --> static
 '''
@@ -47,7 +47,7 @@ products = ["this","that","these","those"]
 #trans_4 = "MDDPSFLAGRSTYAKRRRARRMNVCRCGAIMHNNKDCKSSSISGHKLDRLRFVKEGRVALTGETPVYRTWVKWVETEYHIYVLETSDDEE"
 
 #new_cds = ["0..20"]
-#products = ["some"]
+#products = ["CP"]
 
 def is_one(acc_num, prod, ):
     header = "%s_%s" % (acc_num, products[0])
@@ -60,28 +60,29 @@ want to grab:
     1. full gene
     2. pre-overlapping portion
     3. overlapping portion
-    4. post-overlapping portion 
+    4. post-overlapping portion
 '''
 with open("test.fasta", "w") as out:
     print("there is/are ", len(new_cds), " ORF(s) here")
     print("these are the CDSs: ", new_cds)
-    
+
     # when there is only one element in the CDS, just print it #
-    if len(new_cds) == 1:
+    good = ["35 kDa coat protein", "major coat protein", "CP", "coat protein"]
+    if len(new_cds) == 1 and products[0] in good:
         out.write(">{}\n{}\n".format(is_one(acc_num, products),nuc_seq))
-    
+
     # otherwise #
     else:
         print(len(new_cds))
         print(range(len(new_cds)))
-        
+
 
         print("~ Checking for overlapping ORFs ~")
         # just writing full ORF here #
         for c, item_1 in enumerate(new_cds):
             base_header = "%s_%s" % (acc_num, products[c])
-            orf1_s, orf1_e = new_cds[c][0], new_cds[c][1] 
-        
+            orf1_s, orf1_e = new_cds[c][0], new_cds[c][1]
+
             header = base_header + "_orf" + str(c+1) + "_full"
             seq = nuc_seq[orf1_s: orf1_e]
             out.write(">{}\n{}\n".format(header,seq))
@@ -114,7 +115,7 @@ with open("test.fasta", "w") as out:
                         '''
                         info = " ** found an overlap between orf" + str(c+1) + " and orf" + str(i+1) + " **"
                         print(info)
-                        
+
                         ## have a non of first ##
                         non_header_orf1 = "_orf" + str(c+1) + "_non"
                         header = base_header + non_header_orf1
@@ -130,29 +131,29 @@ with open("test.fasta", "w") as out:
                         ## have a non overlap second ##
                         '''
                         need to add logic to:
-                        1. check the overlap of the next of the next ORF to 
-                        make sure there are no more overlaps to watch out for 
+                        1. check the overlap of the next of the next ORF to
+                        make sure there are no more overlaps to watch out for
                         before writing it to a file
                         '''
-                        
+
                         # if you are NOT penultimate index #
                         if c+2 < len(new_cds):
                             next_orf = c+2
-                            
+
                             print("these are the amount of indicies left to compare: ", len(new_cds) - next_orf)
-                                
-                                
+
+
                                 #orf_next_s = new_cds[next_orf][0]
                                 #r_next = orf2_e - orf_next_s
-                            
+
                                 #print("this is c ", c, " and these are then next ORFs to check", orf_next_s)
                                 #print("this is r_next ", r_next)
-                            
+
                                 # NOT penultimate but DO have overlap #
                                 #if r_next > 0:
                                     #print("I am not the pen and DO have another overlap")
-                                
-                                
+
+
                                 # NOT penultimate and DO NOT overlap #
                                 #else:
                                     #print("I am not the pen and DO NOT have another overlap")
@@ -161,7 +162,7 @@ with open("test.fasta", "w") as out:
                             header = base_header + non_header_orf2
                             seq = nuc_seq[orf2_s + r: orf2_e]
                             out.write(">{}\n{}\n".format(header,seq))
-                        
+
                         # if you are penultimate, just
                         else:
                             print("I am pen")
@@ -170,9 +171,9 @@ with open("test.fasta", "w") as out:
                         print("\n")
 
                     else:
-                        continue 
-            
-            print("\n") 
+                        continue
+
+            print("\n")
 
 
 

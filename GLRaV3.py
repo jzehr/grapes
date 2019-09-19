@@ -67,6 +67,7 @@ for file in files:
 
                         ## write the instance you have found ##
                         header = "%s_%s_%s_%s_%s_%s_%s" % (name_fixer(acc_num), name_fixer(item), name_fixer(date), name_fixer(country), name_fixer(host), name_fixer(strain), name_fixer(isolate))
+                        header = header.replace("__","_")
                         out.write(">{}\n{}\n".format(header,seq))
 
                     else:

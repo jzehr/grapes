@@ -5,6 +5,5 @@
 *.log
 *.log.*
 
-data/*.json
-data/*.txt
+data/*
 envs

@@ -14,7 +14,7 @@ with open("data/all_viruses.txt") as in_f:
 
 
 #importants = ["leafroll_associated_virus_3","virus_A","Pinot_gris_virus"]
-importants = ["virus_A"]
+importants = ["leafroll_associated_virus_3"]
 
 ####################################################################
 # This is the rule "all" which will run all the rules to produce
@@ -32,7 +32,6 @@ importants = ["virus_A"]
 ####################################################################
 rule xml_to_json:
     input:
-      #name_fixer,
       in_f = "rsrc/09-16-2019_grapevine.gbc.xml",
     output:
       out_full = "data/09-16-2019_grapevine.json"
@@ -47,7 +46,7 @@ rule json_to_json:
     input:
       in_f = rules.xml_to_json.output.out_full
     output:
-     out_f = expand("data/{virus}.json", virus=viruses) 
+     out_f = expand("data/json/{virus}.json", virus=viruses) 
     run:
       zipped = list(zip(viruses, output.out_f)) 
       for z in zipped:
@@ -66,15 +65,18 @@ rule json_to_json:
 ####################################################################
 rule json_to_fasta:
   input:
-    in_f = expand("data/Grapevine_{important}.json", important=importants)
+    in_f = expand("data/json/Grapevine_{important}.json", important=importants)
   output:
-    out_f = expand("data/fasta/Grapevine_{important}.fasta", important=importants)
+    out_f = expand("data/fasta/Grapevine_{important}.fasta", important=importants), 
+    out_csv = expand("data/csv/Grapevine_{important}.csv", important=importants)
   run:
-    zipped = list(zip(input.in_f, output.out_f))
+    zipped = list(zip(input.in_f, output.out_f, output.out_csv))
     for z in zipped:
-      in_file = z[0]
-      out_file = z[1]
-      fasta_maker(in_file, out_file, importants)
+      	in_file = z[0]
+      	out_fasta = z[1]
+        out_csv = z[2]
+
+      	fasta_maker(in_file, out_fasta, out_csv)
 
 
 

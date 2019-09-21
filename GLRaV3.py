@@ -3,37 +3,40 @@ import csv
 import re
 
 ## get it for GPGV, GVA, and GLRaV3 ##
-files = ["data/Grapevine_leafroll_associated_virus_3.json", "data/Grapevine_virus_A.json", "data/Grapevine_Pinot_gris_virus.json"]
+#files = ["data/Grapevine_leafroll_associated_virus_3.json", "data/Grapevine_virus_A.json", "data/Grapevine_Pinot_gris_virus.json"]
 #files = ["data/Grapevine_leafroll_associated_virus_3.json"]
 
 
-
-def name_fixer(string):
-    new = []
-    bad_chars = [" ",",",".","/","-","(",")",":","'"]
-    def checker(char):
-        if char in bad_chars:
-            return "_"
-        else:
-            return char
-
-    for char in list(string):
-        new.append(checker(char))
-
-    temp = "".join(new)
-    name = temp.replace("__", "_")
-    return name
-
-def cds_fixer():
-    pass
+def fasta_maker(in_file, out_fasta, out_csv):
+    f = str(in_file)
+    out_fas = str(out_fasta)
+    out_csv = str(out_csv)
+    
 
 
-for file in files:
-    with open(file) as json_f:
-        new_fasta = file.split("/")[1].split(".")[0] + ".fasta"
-        new_csv = file.split("/")[1].split(".")[0] + ".csv"
+    def name_fixer(string):
+        new = []
+        bad_chars = [" ",",",".","/","-","(",")",":","'"]
+        def checker(char):
+            if char in bad_chars:
+                return "_"
+            else:
+                return char
+
+        for char in list(string):
+            new.append(checker(char))
+
+        temp = "".join(new)
+        name = temp.replace("__", "_")
+        return name
+
+    def cds_fixer():
+        pass
+
+
+    with open(f) as json_f:
         data = json.load(json_f)
-        with open(new_csv, "w") as csv_file, open(new_fasta, "w") as out:
+        with open(out_csv, "w") as csv_file, open(out_fas, "w") as out:
                 writer = csv.writer(csv_file)
                 row_header =  ["acc_num", "protein", "date", "country", "host", "strain", "isolate"]
                 writer.writerow(row_header)

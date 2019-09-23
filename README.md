@@ -47,7 +47,8 @@ ___
 - from the base grapes directory ```cd rsrc/```
 - then run this python script:
 
-```python config.py --file 09-16-2019_grapevine.gbc.xml ```
+```bash starter.sh```
+
 
 - then
 ```snakemake all ```

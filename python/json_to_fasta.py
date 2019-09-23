@@ -16,7 +16,7 @@ def fasta_maker(in_file, out_fasta, out_csv):
 
     def name_fixer(string):
         new = []
-        bad_chars = [" ",",",".","/","-","(",")",":","'"]
+        bad_chars = [" ",",",".","/","-","(",")",":","'", ";"]
         def checker(char):
             if char in bad_chars:
                 return "_"

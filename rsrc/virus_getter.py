@@ -7,6 +7,7 @@ at this point, these will be used as variables in the pipeline
 
 import os
 import json
+import csv
 import argparse
 import xml.etree.ElementTree as et
 from collections import Counter
@@ -14,7 +15,7 @@ from collections import Counter
 
 def name_fixer(string):
     new = []
-    bad_chars = [" ",",",".","/","-","(",")",":","'"]
+    bad_chars = [" ",",",".","/","-","(",")",":","'",";"]
     def checker(char):
         if char in bad_chars:
             return "_"
@@ -68,15 +69,16 @@ for i in temp_info:
 temp = info.values()
 temp = [i for j in temp for i in j]
 this = [name_fixer(t) for t in temp]
-payload = list(Counter(this))
+counter = Counter(this)
+payload = list(sorted(counter.items()))
 
-file_name = "../data/all_viruses.txt"
-print("Printing file to... ", file_name)
+file_name = "../data/all_viruses.csv"
+print("Writing all the Viruses from NCBI alphabetically with assocaited frequencies to --> ", file_name)
 with open(file_name, "w") as out:
+    writer = csv.writer(out)
     for p in payload:
-        out.write(p + "\n")
-
-
+        row = [p[0], p[1]]
+        writer.writerow(row)
 
 
 

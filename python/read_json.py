@@ -20,7 +20,7 @@ def json_to_fasta(infile, outfile, viruses):
     def name_fixer(count):
         old = count
         new = []
-        bad = [' ',',','.','/','-','(',')',':']
+        bad = [" ",",",".","/","-","(",")",":",";"]
         for char in list(count):
             if not char in bad:
                 new.append(char)

@@ -76,6 +76,8 @@ file_name = "../data/all_viruses.csv"
 print("Writing all the Viruses from NCBI alphabetically with assocaited frequencies to --> ", file_name)
 with open(file_name, "w") as out:
     writer = csv.writer(out)
+    header = ["virus","freq"]
+    writer.writerow(header)
     for p in payload:
         row = [p[0], p[1]]
         writer.writerow(row)

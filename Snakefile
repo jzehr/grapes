@@ -1,17 +1,15 @@
 #import pdb; pdb.set_trace()
+import pandas as pd
 
 ## import all functions from python ##
 from python.parser import xml_data_grabber
 from python.json_to_json import virus_json
 from python.json_to_fasta import fasta_maker
+from python.fasta_to_country import country
 
-# parsing the full file of viruese to set them as variables #
-viruses = []
-with open("data/all_viruses.txt") as in_f:
-  data = in_f.readlines()
-  for line in data:
-    viruses.append(line.strip())
-
+## getting all viruses, and countries associated with GLRaV3 and the CP
+df_v, df_c = pd.read_csv("data/all_viruses.csv"),  pd.read_csv("data/GLRaV3_countries.csv")
+viruses, countries = df_v["virus"].to_list(), df_c["country"].to_list(), 
 
 #importants = ["leafroll_associated_virus_3","virus_A","Pinot_gris_virus"]
 importants = ["leafroll_associated_virus_3"]
@@ -78,6 +76,51 @@ rule json_to_fasta:
 
       	fasta_maker(in_file, out_fasta, out_csv)
 
+
+####################################################################
+# This rule will read in the fasta file from the previous rule and 
+# separate out sequences based on location of where they were collected
+####################################################################
+rule country_fasta:
+  input:
+    in_fs = rules.json_to_fasta.input.in_f
+  output:
+    out_fs = expand("data/fasta/{country}_Grapevine_{important}.fasta", country=countries, important=importants)
+  run:
+    country(input.in_fs, output.out_fs, countries)
+
+####################################################################
+# This rule will read in the fasta file from the previous rule
+# and run it through the HYPHYMP pre-msa.bf which outputs a
+# codon aware, translated protein sequence
+####################################################################
+
+
+####################################################################
+# This rule will read in the fasta file from the previous rule
+# and align the nucleotide file with MAFFT
+####################################################################
+
+
+####################################################################
+# This rule will read in the aligned nuc fasta file from the previous 
+# rule ALONG WITH the protein fasta and run it through the 
+# HYPHYMP post-msa.bf 
+####################################################################
+
+
+####################################################################
+# !! This rule will read in the aligned nuc fasta file from the previous 
+# rule ALONG WITH the protein fasta and run it through the 
+# HYPHYMP post-msa.bf 
+####################################################################
+
+
+####################################################################
+# !! This rule will read in the aligned nuc fasta file from the previous 
+# rule ALONG WITH the protein fasta and run it through the 
+# HYPHYMP post-msa.bf 
+####################################################################
 
 
 

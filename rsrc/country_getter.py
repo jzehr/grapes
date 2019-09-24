@@ -80,6 +80,8 @@ file_name = "../data/GLRaV3_countries.csv"
 print("Writing all Countries and their frequencies associated with GLRaV3 and CP alphabetically to --> ", file_name)
 with open(file_name, "w") as out:
     writer = csv.writer(out)
+    header = ["country","freq"]
+    writer.writerow(header)
     for p in payload:
         row = [p[0], p[1]]
         writer.writerow(row)

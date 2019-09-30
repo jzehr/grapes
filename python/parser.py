@@ -4,6 +4,10 @@ import xml.etree.ElementTree as et
 import ast
 from collections import Counter
 
+from python.helper import name_fixer
+
+
+
 '''
     ** The data structure used will be a dictionary **
 
@@ -24,7 +28,7 @@ def xml_data_grabber(input_file, output_full):
     output_full = str(output_full)
 
     ## in --> str | out --> str ##
-
+    '''
     def name_fixer(string):
         new = []
         bad_chars = [" ",",",".","/","-","(",")",":","'",";"]
@@ -41,7 +45,7 @@ def xml_data_grabber(input_file, output_full):
         temp = "".join(new)
         name = temp.replace("__","_")
         return name
-
+    '''
     ## in --> INSDSeq element | out --> dict ##
     def rip_info(elem):
 

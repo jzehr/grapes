@@ -5,5 +5,7 @@
 *.log
 *.log.*
 
-data/*
+data/csv/*
+data/fasta/*
+data/json/*
 envs

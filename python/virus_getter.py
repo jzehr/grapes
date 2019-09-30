@@ -13,20 +13,7 @@ import xml.etree.ElementTree as et
 from collections import Counter
 
 
-def name_fixer(string):
-    new = []
-    bad_chars = [" ",",",".","/","-","(",")",":","'",";"]
-    def checker(char):
-        if char in bad_chars:
-            return "_"
-        else:
-            return char
-    for char in list(string):
-        new.append(checker(char))
-
-    temp = "".join(new)
-    name = temp.replace("__","_")
-    return name
+from helper import name_fixer
 
 def get_virus(elem):
     master = {}
@@ -52,7 +39,7 @@ def get_virus(elem):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--file", help="path to your rsrc XML file", type=str)
+parser.add_argument("-f", "--file", help="path to your rsrc XML file", type=str)
 args = parser.parse_args()
 
 
@@ -72,7 +59,7 @@ this = [name_fixer(t) for t in temp]
 counter = Counter(this)
 payload = list(sorted(counter.items()))
 
-file_name = "../data/all_viruses.csv"
+file_name = "../data/csv/all_viruses.csv"
 print("Writing all the Viruses from NCBI alphabetically with assocaited frequencies to --> ", file_name)
 with open(file_name, "w") as out:
     writer = csv.writer(out)

@@ -2,6 +2,8 @@
 
 In this repo you will find data from pathogens that impact grapevines. The goal of this repo is to use this data to analyze and examine pathogen diversity.
 
+This repo was made by scraping NCBI with the following search term ```virus[ORGN] grapevine``` and downloading these results as an XML file. This XML file is placed in the ```rsrc``` folder of the pipeline and the rest is history. This pipeline works to compare selectio of these viruses across different locations throughout the world.
+
 To get a quick overview of how the pipeline works, click on the `pipeline.svg` file!
 ___
 ### Dependencies:
@@ -44,13 +46,14 @@ ___
 ___
 ### To Run
 
-- from the base grapes directory ```cd rsrc/```
+- from the base grapes directory ```cd python/```
 - then run this python script:
 
 ```bash starter.sh```
 
 
 - then
+```cd .. ```
 ```snakemake all ```
 
 - you can spice this up by adding a ```-j #``` flag after that command to provide snakemake with the available number of cores to run on.

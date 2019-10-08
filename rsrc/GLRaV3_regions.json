@@ -1,0 +1,73 @@
+{
+  "EUROPE": [
+    "Albania",
+    "Algeria_Alger",
+    "Algeria_Boumerdes",
+    "Austria",
+    "Croatia",
+    "Czech_Republic",
+    "France",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Hungary_Tokaj_Mad",
+    "Italy",
+    "Poland",
+    "Portugal",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Spain_Andalusia",
+    "Spain_Balearic_Islands",
+    "Spain_Palma_de_Mallorca",
+    "Switzerland"
+  ],
+  "SOUTH_AMERICA": [
+    "Brazil",
+    "Brazil_Sao_Roque_SP",
+    "Chile"
+  ],
+  "NORTH_AMERICA": [
+    "Canada",
+    "USA",
+    "USA_Benton_County_WA",
+    "USA_CA",
+    "USA_California_Napa_Valley",
+    "USA_Idaho",
+    "USA_Texas",
+    "USA_Virginia"
+  ],
+  "MIDDLE_EAST": [
+    "Egypt_Alexandria",
+    "Israel",
+    "Jordan",
+    "Pakistan",
+    "Syria",
+    "Turkey",
+    "Turkey_Bekilli_Denizli",
+    "Turkey_Esme_Usak",
+    "Turkey_Kemalpasa_Izmir",
+    "Turkey_Menderes_Izmir",
+    "Turkey_Salihli_Manisa"
+  ],
+  "NORTH_AFRICA": [
+    "Algeria",
+    "Nigeria",
+    "Tunisia"
+  ],
+  "SOUTH_AFRICA": [
+    "South_Africa",
+    "Tromelin_Island"
+  ],
+  "ASIA": [
+    "China",
+    "India",
+    "India_Himachal_Pradesh",
+    "Japan_Hiroshima_Higashi_hiroshima",
+    "South_Korea",
+    "South_Korea_Chuncheon_Gangwon_do"
+  ],
+  "OCEANIA": [
+    "New_Zealand"
+  ]
+}

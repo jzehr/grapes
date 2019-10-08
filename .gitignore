@@ -2,6 +2,7 @@
 *.treefile
 *.tree
 
+
 mafft*
 *.log
 *.log.*

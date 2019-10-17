@@ -1,8 +1,6 @@
 {
   "EUROPE": [
     "Albania",
-    "Algeria_Alger",
-    "Algeria_Boumerdes",
     "Austria",
     "Croatia",
     "Czech_Republic",
@@ -38,7 +36,6 @@
     "USA_Virginia"
   ],
   "MIDDLE_EAST": [
-    "Egypt_Alexandria",
     "Israel",
     "Jordan",
     "Pakistan",
@@ -52,6 +49,9 @@
   ],
   "NORTH_AFRICA": [
     "Algeria",
+    "Algeria_Alger",
+    "Algeria_Boumerdes",
+    "Egypt_Alexandria",
     "Nigeria",
     "Tunisia"
   ],
@@ -69,5 +69,8 @@
   ],
   "OCEANIA": [
     "New_Zealand"
+  ],
+  "no_value": [
+    "no_value"
   ]
 }

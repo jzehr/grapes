@@ -9,7 +9,7 @@ from python.helper import write_fasta
 
 def country_fasta(in_file, out_fasta, countries):
     in_f = str(in_file)
-    out_fas = out_fasta 
+    out_fas = out_fasta
     countries = countries
 
     with open(in_f) as json_f:
@@ -25,7 +25,7 @@ def country_fasta(in_file, out_fasta, countries):
 
                     this_c = name_fixer(data[p]["country"][0])
                     that_c = name_fixer(country)
-                    
+
                     for pos, item in enumerate(prods):
                         if item in good and that_c == this_c:
                             results = write_fasta(data, p, pos, item)
@@ -33,5 +33,5 @@ def country_fasta(in_file, out_fasta, countries):
                             out_fasta.write(">{}\n{}\n".format(header,seq))
                         else:
                             continue
-                            
+
 

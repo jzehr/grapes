@@ -2,6 +2,9 @@
 
 ```Snakefile_all ``` is for all the viruses from ncbi, i am currently working with only GLRaV3
 
+```python python/all_country_json.py --file rsrc/GLRaV3_10-2-19_sequence.gbc.xml ```
+``` python python/region_protein.py -x rsrc/GLRaV3_10-2-19_sequence.gbc.xml -j rsrc/GLRaV3_regions.json ```
+
 In this repo you will find data from pathogens that impact grapevines. The goal of this repo is to use this data to analyze and examine pathogen diversity.
 
 This repo was made by scraping NCBI with the following search term ```virus[ORGN] grapevine``` and downloading these results as an XML file. This XML file is placed in the ```rsrc``` folder of the pipeline and the rest is history. This pipeline works to compare selectio of these viruses across different locations throughout the world.

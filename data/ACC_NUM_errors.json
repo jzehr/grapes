@@ -1,0 +1,1019 @@
+{
+   "GQ849395_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_E_7_nonfunctional_coat_protein_gene_partial_sequence",
+      "create_date": "28_OCT_2009",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "nonfunctional coat protein due to mutation; cp"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "E-7"
+      ],
+      "country": [
+         "China"
+      ],
+      "host": [
+         "Vitis vinifera cv. Zi tao"
+      ],
+      "collection_date": [
+         "05-Nov-2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "aaagtaggttaaggacgggacacaggcggaattaacgggaatcgccgtactgcccgaaaaatacgtattcgccacagcagctttggctacagcggcgcaggagccacctaggcagccaccagcgcaagtggtggaaccacaggaaaccgatataggggtagtgccggaatctgagactctcacaccaaataagttggttttcgagaaagatccaaactagttcttgaatactatgggcaagggaatagctttggacttgacgggagttacccacgaaccgaaagttattaacgagccatggaaagtatcattacaggtggcaatgaaaattaatgctgcgttgatggatctgtgtaagaaggttatgggcgccgatgacgcagcaactaagacaaaattcttcttgtacgtgatgcagattgcttgcacgttctttacatcgtcttcgacggagttcaaagagtttgactacctataaaccgatgatggaaagaagatatatgcggtgtgggtatatgattgcattaaacaagctgctgcttcgacgggttatgaaaacccggtaaggcagtatctagcgtacttcacaccaaccttcatcacggcgaccct"
+   },
+   "HM245755_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_Manisa_Merkez_16a_heat_shock_protein_70_like_protein_like_gene_partial_sequence",
+      "create_date": "28_SEP_2010",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein 70-like protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "Manisa-Merkez-16a"
+      ],
+      "country": [
+         "Turkey"
+      ],
+      "host": [
+         "grapevine"
+      ],
+      "collection_date": [
+         "2010"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "ccggccgcccggcgccgcgcagacgggccgcggtagaaaacacaagggcgtgtggaagaattctgctagccggggcaacatatgttgtggccggtttaacacatatatctcagggtgtgatcaacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtagtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaagtaaagaatgaatatctggtacccgggacaacataattgttccgctacaggacagaattctccagctccagagcaaattatagctgctcccgggacaaaaatttctgcaccgcggaaaaacatttcgggnccgcggacaacctattctgtccctgtaaattatattccccgnnngcaanaanctttcct"
+   },
+   "HM245756_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_Manisa_Merkez_19_heat_shock_protein_70_like_protein_like_gene_partial_sequence",
+      "create_date": "28_SEP_2010",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein 70-like protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "Manisa-Merkez-19"
+      ],
+      "country": [
+         "Turkey"
+      ],
+      "host": [
+         "grapevine"
+      ],
+      "collection_date": [
+         "2010"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "ggcgcggggagggggagaaggggtctggcggcgggggggcgcgcggggggggaagggagagggaaaaaaagatagtgttggtggaacatttcgcttggcctgtggaacttttcgctaggttggtgaaatcattcggttgggttttcgatgttcgggtgccggggcataaaggatctagtgtgatattcttgccggttcgaaccggtactgaaactgatcatagcgttgccgaggttcctcatggacgggccgttgctcttacgatctgtggtaattttcacaacaggtagtccaataccctgttcatacactcacagatacacagtgggtagtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaagtaaagaatgaatatctggtacccgggacaacataattcttccacatctttaacgactccccccgcagccgaggaaacttttccccaccctaaaaaaatcttctttctccagtgtctcccttccagcggggggaggtgacaaccccatcttagaagcacctttttttcttcgggagtaatcgggtgagccaaaggttacnacgcctccagacgccctc"
+   },
+   "HM636872_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_5226_LR3_HSP70_like_protein_like_gene_partial_sequence",
+      "create_date": "17_JUL_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to HSP70-like protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "5226-LR3"
+      ],
+      "country": [
+         "Chile"
+      ],
+      "host": [
+         "Vitis vinifera cv. Red Globe"
+      ],
+      "collection_date": [
+         "Feb-2009"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tcgctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaatacgctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccagtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaatatctggtacccgggacaacatga"
+   },
+   "HQ185602_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis californica hybrid"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tcgtcgtagtgccggaaagtatgtattcgccacggcagcattagctacagcggcacaggagccacctaagctgccacaagcgcaagtggcggaaccacctgaagctgaaataggggtagtaccggaatcagagactcttacgccaaataagttggttttcgagaaagatccagacaagttcttgaagaccatgggcaagggaatagctttggatttaacgggagttacccataaaccgaaagttattaacgagccagggaaagtatcggtagaggtggcaatgaagattaacgccgcattgatggagttgtgtaagaaggttatgggcgctgatgacgcagcaactaagacgaagttcttcttgtacgtgatgcagatcgcttgcacgttcttcacatcgtcttcgacagagttcaaagagttcgactatatagagactgatgatggaaagaagatatacgcggtatgggtgtatgattgcattaaacaagctgcggcttcgacgggctacraaaacccggtaaggcagtatctagcttactttacaccaaccttcatcacggcga"
+   },
+   "HQ185606_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis vinifera cv. Chenin Blanc"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tcgtcgtagtgccggaaagtatgtattcgccacggcagcattagctacagcggcacaggagccacytaagctgccacaagcgcaagtggcggaaccacctgaaactgaaataggggtagtaccggaatcagagaatcttacgccaaataagttgattttcgagaaagatccagacaagttcttgaagaccatgggcaagggaatagctttggatttaacgggagttacccataaaccgaaagttattaacgagccagggaaagtatcggtagaggtggcaatgaagattaacgccgcattgatggagttgtgtaagaaggttatgggcgctgatgacgcagcaactaagacgaagttcttcttgtacgtgatgcaratcgcttgcacgttcttcacatcgtcttcgacagagttcaaagagttcgactatatagagactgatgatggaaagaaratatacgcggtatgggtgtatgattgcattaaacaagctgcggcttcgacgggctacraaaacccggtaaggcagtatctagcttactttacaccaaccttcatcacgg"
+   },
+   "HQ185607_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis vinifera cv. Merlot"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "acgtattccgccacagcagctttggctacagcggcgcaggagccacctaggcagccaccagcgcaagtggtggaaccacaggaaaccgatataggggtagtgccggaatctgagactctcacaccaaataagttggttttcgagaaagatccagacaagttcttgaagactatgggcaagggaatagctttggacttgacgggagttacccacaaaccgaaagttattaacgagccagggaaagtatcagtagaggtggcaatgaagattaatgctgcattgatggagctgtgtaagaaggttatgggcgccgatgacgcagcaactaagacaaaattcttcttgtacgtgatgcagattgcttgcacgttctttacatcgtcttcgacggagttcaaagagtttgactacatagaaaccgatgatggaaagaagatatatgcggtgtgggtatatgattgcattaaacaagctgctgcttcgacgggttatgaaaacccggtaaggcagtatctagcgtacttcacaccaaccttcatcacgr"
+   },
+   "HQ185609_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis rupestris"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "gtagtgcccgaaatacgtattcgccacagcagctttggctacagcggcgcaggagccacctaggcagccaccagcgcaagtggtggaaccacaggaaaccgatataggggtagtgccggaatctgagactctcacaccaaataagttggttttcgagaaagatccagacaagttcttgaagactatgggcaagggaatagctttggacttgacgggagttacccacaaaccgaaagttattaacgagccagggaaagtatcagtagaggtggcaatgaagattaatgccgcattgatggagctgtgtaagaaggttatgggcgccgatgacgcagcaactaagacaaaattcttcttgtacgtgatgcagattgcttgcacgttctttacatcgtcttcgacggagttcaaagagtttgactacatagaaaccgatgatggaaagaagatatatgcggtgtgggtatatgattgcattaaacaagctgctgcttcgacgggttatgaaaacccggtaaggcagtatctagcgtacttcacaccaaccttcatcacggcg"
+   },
+   "HQ185610_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis californica hybrid"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tagtgcccgaaatacgtattcgccacagcagctttggctacagcggcgcaggagccacctaggcagccaccagcgcaagtggtggaaccacaggaaaccgatataggggtagtgccggaatctgagactctcacaccaaataagttggttttcgagaaagatccagacaagttcttgaagactatgggcaagggaatagctttggacttgacgggagttacccacaaaccgaaagttattaacgagccagggaaagtatcagtagaggtggcaatgaagattaatgccgcattgatggagctgtgtaagaaggttatgggcgccgatgacgcagcaactaagacaaaattcttcttgtacgtgatgcagattgcttgcacgttctttacatcgtcttcgacggagttcaaagagtttgactacatagaaaccgatgatggaaagaagatatatgcggtgtgggtatatgattgcattaaacaagctgctgcttcgacgggttatgaaaacccggtaaggcagtatctagcgtacttcacaccaaccttcatcacg"
+   },
+   "HQ185611_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis vinifera x Vitis rupestris"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tcgccgtagtgcccgaaaatacgtattcgccacagcagctttggctacagcggcgcaggagccacctaggcagccaccagcgcaagtggtggaaccacaggaaaccgatataggggtagtgccggaatctgagactctcacaccaaataagttggttttcgagaaagatccagacaagttcttgaagactatgggcaagggaatagctttggacttgacgggagttacccacaaaccgaaagttattaacgagccagggaaagtatcagtagaggtggcaatgaagattaatgccgcattgatggagctgtgtaagaaggttatgggcgccgatgacgcagcaactaagacaaaattcttcttgtacgtgatgcagattgcttgcacgttctttacatcgtcttcgacggagttcaaagagtttgactacatagaaaccgatgatggaaagaagatatatgcggtgtgggtatatgattgcattaaacaagctgctgcttcgacgggttatgaaaacccggtaaggcagtatctagcgtacttcacaccaaccttcatcacggcgacc"
+   },
+   "HQ185612_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis vinifera cv. Cabernet Sauvignon"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgtcgtagtgccggaaagtatatattcgccacggcagcattagctacagcggcacaggagccacctaagcagccacaagcgcaagtggcggaaccacctgaagctgaaataggggtagtaccggaatcagagactcttacgccaaataagttggttttcgagaaagatccagacaagttcttgaagaccatgggcaagggaatagctttggatttaacgggagttacccataaaccgaaagttattaacgagccagggaaagtatcggtagaggtggcaatgaagattaacgccgcattgatggagttgtgtaagaaggttatgggcgctgatgacgcagcaactaagacgaagttcttcttgtacgtgatgcagatcgcttgcacgttcttcacatcgtcttcgacagagttcaaagagttcgactatatagagactgatgatggaaagaagatatacgcggtatgggtgtatgattgcattaaacaagctgcggcttcgacgggctacgaaaacccggtaaggcagtatctagcttactttacaccaaccttcatcacggcgacc"
+   },
+   "HQ185613_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "19_MAR_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis vinifera cv. Cabernet Sauvignon"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tcgtagtgccggaaagtatgtattcgccacggcagcattagctacagcggcacaggagccatctaagctgccacaagcgcaagtggcggaaccacctgaagctgaaataggggtagtaccggaatcagagactcttacgccaaataagttggttttcgagaaagatccagacaagttcttgaagaccatgggcaagggaatagctttggatttaacgggagttacccataaaccgaaagttattaacgagccagggaaagtatcggtagaggtggcaatgaagattaacgccgcattgatggagttgtgtaagaaggttatgggcgctgatgacgcagcaactaagacgaagttcttcttgtacgtgatgcagatcgcttgcacgttcttcacatcgtcttcgacagagttcaaagagttcgactatatagagactgatgatggaaagaagatatacgcggtatgggtgtatgattgcattaaacaagctgcggcttcgacgggctacgaaaacccggtaaggcagtatctagcttactttacaccaaccttcatcacggcgaaccc"
+   },
+   "HQ676994_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_2008_113_coat_protein_like_CP_gene_partial_sequence",
+      "create_date": "31_JUL_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to coat protein"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "2008-113"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "Vitis californica"
+      ],
+      "collection_date": [
+         "2008"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "tattcgccacagcagctttggctacagcggcgcaggagccacctaggcagccaccagcgcaagtggtggaaccacaggaaaccgatataggggtagtgccggaatctgagactctcacaccaaataagttggttttcgagaaagatccagacaagttcttgaagactatgggcaagggaatagctttggacttgacgggagttacccacaaaccgaaagttattaacgagccagggaaagtatcagtagaggtggcaatgaagattaatgccgcattgatggagctgtgtaagaaggttatgggcgccgatgactcaagcamctaagacaaaattcttcttgtacrtgttgcagattgcttt"
+   },
+   "HQ711307_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_VIS_29_RNA_dependent_RNA_polymerase_like_RdRp_gene_partial_sequence",
+      "create_date": "01_JUN_2011",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to RNA-dependent RNA polymerase"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "VIS 29"
+      ],
+      "country": [
+         "USA"
+      ],
+      "host": [
+         "no_value"
+      ],
+      "collection_date": [
+         "no_value"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "gtaaaacccaagttggacaatacgccattgtcgagtacgtgactgggcagaatatagtttaccatgataggtgtgtgacagcgcttttttcttgtatttttactgcctgcgtagagcgtttaaaatacgtagtagatgaaaggtggctcttttaccacgggatggacactgcggagttggcggctacattgaggaataacttgggggatatccggcagtactacacctatgaactggacatcagtaagtatgacaaatctcagagtgcacttatgaaacaggtggaggagttaatactcttgacgcttggtgttgatagtgaagttttgtctactttcttttgtggtgagtacgacagtgttgtgagaacgatgacgaaggagttggtgttgtccgtcggctcccagaggcgcagtggtggtgctaacacgtggttagggaatagtttaatcttgtgtaccttgttgtccgtagtacttaggggattagattatagctatatcgtagttagcggcgatgatagcctcatatttagtcggcagccgttagatatcgatacgtcggtcctgagcgataattttggttttgacgtaaaggtattcaaccaag"
+   },
+   "JRRC01457661_1": {
+      "viral_source": "Gossypium_arboreum_cultivar_AKA8401_contig_61723_1_whole_genome_shotgun_sequence",
+      "create_date": "25_NOV_2014",
+      "organism": [
+         "Gossypium arboreum"
+      ],
+      "product": [
+         "Replicase 1a",
+         "Replicase 1a"
+      ],
+      "note": [
+         "authority: Gossypium arboreum L.",
+         "1a (Replicase 1a);\nSimilarity found in (Grapevine leafroll-associated virus 3 (isolate United States/NY1))"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "no_value"
+      ],
+      "country": [
+         "no_value"
+      ],
+      "host": [
+         "no_value"
+      ],
+      "collection_date": [
+         "no_value"
+      ],
+      "translation": [
+         "MPCPKHGFTLAHVSSQMPCLRHGLTLALVSMPMPCPRHGFTLALITLPMPCSKHGLTLALITLAMPCSKYGLTVALIMWPMLCPRHGLTLAHISPKCNGMDIQSIPMFNREFTTLNFIMH"
+      ],
+      "CDS": [
+         "complement(1057..1419)"
+      ],
+      "nuc_seq": "ttcttaattatgtgttcttaattcttgttttaatattccaggatattgattcaagttaatactcttatttagagcaggaatagaccctgtctaagagtaaatttgacataattaagtggagttgactgcacgcctagagatagggtgataagattttatcagattagggtgaaacctaataaggggatccatagatctagttaatgcaacactagggcgttaattagaaagagatttcaattaatcaacctagggttagacgttattagtctcgagagagataataatataacttagggatttctacggatcaagtcaaatgaataaatcgtctgattcagagtcaaataacaagtgaagtctagctagatttttccttaggtattgtcttaatcaatcgaattttctaaaatgttttttcccaaattttctatctgtacattcttagtttagtaattagtttagataatcaaatcacttaatttttaggctagataataaaaataaggtaattaccagtactcttggcttctttgggttcgacaatctgatcttgctaaagctatactactgtttgatgggtacacttgccttcatcgtgataatagttagtttcaagaacaattaattatacatatttaaaacctgtcgcgaatatcacgtgtcaggggtgttataaattgtgggctacttctagtatacaaagaattcagctaggcttggttagtaagaaaatttgataaaaatcgatttacaaacctaggggtaaaattgtaattttataatagtctaggggcaaatttttcattttaccaaaaatgtggtttataaaatctcttgattaatgtgatgatttaaactaataaattttatcgttatagatcaagatatacgaaatctggacctagactgggggaaagtcaagctagtggattaaaaaccaactagtcgcccaccttttgtatactgaggtaagttgtacgtaagtaaggcaactttatcgttattatgtgtggaatgattgattttgaaaaataatgttgaatatgcttatgattaatgcatgatgaaattcaatgtggtaaattcccggttgaacataggaatagattggatatccatgccattacatttaggtgatatgtgtgctagtgtaagaccatgtctgggacatagcatcggccacattatgagagccacggtaagaccatatttggaacatggcatcgccaatgttataagagctagtgtaagaccatgtttggaacatggcatcggcaatgttatgagagctagtgtaaaaccatgtctgggacatggcattggcattgagacgagagctagtgtaagaccatgtctgagacaaggcatctggctcgacacgtgagccagtgtaaaaccatgtttgggacatggcattaataatttaccctgttatgtgaggcttatcggatatcctttagtattccaaatggtttcacgggttattttaaagcttatgataaatatatggaatgatataatcatgttgtgagtggtataggtttttattcaaaactcatgagatatgagtctagttaggacgccttaatggtaagaatgacataagtaagctctagctatgaaaatggttttgggatgattttgtaatctttggcttatacttgtgatatataagcatgtagtgatatttacctttgttcactcaagaatgttgtgttgatttatattatactatgtttttaaacatgcatagttgatattgttacttatttatatgtaacttactaagccttatgcttactccatctcttttccatttctatatagtgccgtcaagctagcattaggaaccaaaggacgtcagaggcatcgatcacactatcacctgaaacttttggtataggtagtttaaatgttttgagtgtggcatgtatagggacttggtctttttgtctagtgtcatgttagtttagccacaagtgttggttcatatggatgtgatattcattttgtataggctattaatgttggctaatactgattattattaaatacatttgatgaaaattctcatggttgtggctgttttgattatgtgtgtttatgctaagattggttatgtttgatgttgtgtaggttggtacaaatgagggtggcaaaaaaatcttggtagataggcttgtttttgtccacacgggcagacacacaagtgtgtgtctagaccgtgtgtgacacacgatttgccccatgtttgtgtcgtcaggccatgtgtcccctacacttaaatttggcaaaacagaatgcctagtagcaaccacatagatagggacacagccgtgtgtcttcaccacgcgaaggacacggcctagtatatgagcgtgtactatggtcgtgtgcccttaaagggtttctgacatcagaaacagaatatcaaggtttttgtacacaggccgagacatgggcatgtcatggctgtgtgggagacacgggtcatggacacgggtgtgtgccaagccgtgtgaaaacccctgtaggttcaaatcgagaaataaattcgcatgggctagggacacaggtgtgtcccgatatgttcaggccatgtgagccacacgagccttaaacattgccatgttaaaaagacacacaggcgtgtcgccctttcacacgggcgtgtgcccctatttgttatgaaattttacaaagttttctaaagtgtttagtttattcttgaaccatttccaaagcatgttttggacctcataggtctatattagggtcattaagaggaagtttgaaagtttcaaaaatcgagcaaaatttatgactcaaaaatgattatgtgtatgtgtttaagcccagtaacatattgtatcctgttccggcatcgaactcgagtaaggggtgaaatatttagtggtatcagagttatgatttagtcgattcttggactaatgtagtgagtgtacaagtctaattatacatgacataaatacattgtgacagtgcgacgactcctgacctttaaattgtgttttcatataataaatgaatcccgacggagcagtggtaaatgatgtggaaagtaatgtgccggctccctctgaggggactgcgccattcgagagtgggtccatgacactaagtcagggcagaggggctagagaagcctacctccatatgacggatgcccagtattcggagttttttcgtgcaaatccaaacactccacctcccccaccctttccaatccctcagcctaaccccatagcagcctaaacggtggagatgttaagaagggagaaaccttcgattgatagaattaggaaccagagggctgaggaatttagagtgaatatagatgttgacccagagaaggcaaaattctggctagaaaataccaatagggtattcaatgagttgtcttgcacacctgaggagtgcatgaagtgtgttgtgtcacttctacgagactcgacctactagtggtggaacacctttgtatcgattgtaacaagcgaaaggattacatgagagttattccaagaggaatttcaaataaagtatattagttaaaggtttataaatcagaagagaaaggaaattctagaattgaagaaaggctgaatgacagtaacaaagtatgagcgtgagttcgtaaggctcaacaaatacgctagggagtgcatatctaccaaagccatcacgtgcaagagatttgaggatggattgaacgaagacatccgattattagtaggcatcttagagttaagggagtttgtggtgcttattgagagagcttgcaaggcagaagaattggtcaaagagaagagaaaagctaataacgagtctcgtgactcaaagaaaagacaagtaggaaaatcgtttcagacctcgtccaagagatcgagagaattcactactcgatcgaatggttcagtgggattctcgagaagaaataagaataagcagtacatagcgtttaaggcttaaaccacttctattgcgagtgttgatagtgctcgaccgaacaaactagaatattcacagtgttgtagatgccactttggtaagtgctgaggaaatgaaagaggttgtttcaaatgtgggtcgttagaccattttatctgaaactgtcttgaaattgatgagaaagacaaaaagcaagatgcgagagagagtaatgctcttttgagaggtagaccacaaaagaacctgggaagaggggctaatagcaaatgtgtgcctagagattccaccatgaggtccgagagtagagcgcctgcaaggacttatgccattcgtgttcacgaagaagcatcgtcactggatgtgattacgggtactttttctcttcacgatatttctattgtagctttgattgatctggggtctacctattcgtatgcttgtataaaattggtgtttaacatgaatatgcctgttgagtctacagaatttgtgataaaagtgtcaaacccgttaagcaagcatgtgttagttgacaaagtgtgtaaaaatcgtccgttgatgattagaggtcattattttctggctaacctcatgctactatcgtttgatgaatttgacctaattcttggcatagattggttgactgttcataacgtgttagtaaattgtggcagtaagtttattgagctgaaatgtgaaaatggggatattattcgggttaaatcaggtgaaccggatagctttcctgcaccaatttcttctatgactgttgtgaaatatatgagaaaagggtatgagtcttatctcacatttgtgttgaattcccaagtgttggaggtaaatattgaatcagtgttagtggtatgtgagttttcggatgtgtttccagaagagttttcaggactgtctccatctagggaagtcaagtttggtatcgagatagtctctggtactgcgcctatatcaattgccccatataggatggcaccgttggagttaaaagagttgaaggctcaactacaagagttaatggataagggttttacgagatcgagctattctctgtggggtgctatggtattttttgtgaaaaagaaagacgggtcaataaggttatgtatagactacagacagttcaacaaggtgactgtgaagaacaagtatcctttgccaaggatcgatgatctgtttaaccaattgaaaagagccacagtgttttctaaaatagacttaagatctgattattaccagctaagagttaaggagtaagatatgccgaaaacgacatttcggatgaggtatggtcattatgagttctttgtcatgccctttggcttaacaaatgcttccgccgtatttatgaacttaatgaactgtattttctgatcgtacttggataagttcgttgttgtttttatcgatgatatattaatctattctcataatgagagtgaacactcggagcatttgagaactattttatagactttaagagacaagtagttgtatgccaagtttagtgaaaatgagttttggcccctagaggtcagattcttaggacaaatcatgtcgggtgatggaattagagttgacctaagtaagatctcggctattactgagtggaaactaccgaggaatgtatcatagattagaagctttctaggcttagcgggttactacagactattcgttaaaggattctccatgattgctactctgatgacaaggttgctacagaaagatgtcaagttcgattggacgaaaaaatgccaatagagtttcgagaaacttaaggcgttgactgaagccccaattttagtacaaccggaactaggaaaagaattcatagtgtatagtgatgcatcctcgaatagattaggatgcgtgctcatgcaagaaggcaatatgatagcatatgcctcgagataactgaacccgcatgagaagaattatccgacacacgacttagagttagcagccatagtgttcgcacttaacatttggagaactacttatatggcgagagatgccgagtattcactgactataaaagtctaaagtatttgatgactcaaaaggaattgaaccttcaccaacggagatggctagagctcataaatggttacgaactggtgatcgactatcgcccggggaagactaatatggtcaccgatgctttaagtaggaaattcttattttccttgaaagctatgaatactcggttgactgtgtttgatgatggttcgatactagcgaagttgagagctagatcgacgtttcttcaagagatctgtgaagctcaaaaaggtgacagtgatttgcaaaaccaagagagttcaatgtaagttgggtattaaatcagattttcggataggtttcgatggttctttaatgttccaagataggatttgtgtacctagagatgatgagcttgttgggaaaattcttcatgaggcacatggtagttgtatgtcaatccatccgggtagtaccaagatgtatgacttgaaaaaattgtattggtggcctggtatgaaaagagacatctcagaatttgtgtcgaaatgtttaatttgtcaacaagtgaatgccaagcaccaagtacattcgagtttacttcagcctgtaatggttctcgagtggaaatgggatcgaattaccacggattttgtgacgagattgctgttgtcaccaagaaagaaagatgttgtttgggtcatagttgatcgattaacgaaatcagcttactttattttggtacgtaccggctactcacacgataagctagctgagtagtatatttctgagattgtaagactttatggagtacctttgtcgattattttggatagggatccaagattcaccttgcgattttcgaaaaagttacaagaagctttggtgacaaagttgaattttagcatggctttccatccacaaacctacggttagtcggaaagagtgattcagattcttgaagacatgttgcggtgttgtgtccttgaattccaaggcagttaggaaaagtatttatcgttggtaaagtttgccttcaacaatagctatcagtcaagtttgaaaatgacgccttatgaggctttatataggctataagtgccgaacgcctttgttttggaccgaactcagagacaattagattcacggggttgacttagtcaaagagactgaagaaaaagtaaaggtaattcgtgattatttgaaggccgcttctgatagacaaaaatcctacgcggatttgaaacgaaaagaaattgagtttcaagtcggtgataaggtgtttttaaaagtatccccgtggaagaaagtccttagatttggtaagaaaggaaaattaagtccacattttattaggtcttatgaggtgactgagagaattggaacaatagcttatcgactagccttgccatccaagttggagaagatccacaatgttttccatgtgtcaatgttgcactgttaccgttctgatccttcgcatgttctttcaccaacagagattgagattcggtcagatatgacttatggcgaagaaccaattaagattttggctcggaaggttaaacaattgaggaataaaagtatagcacttataaaggtattatggcatagacatgggatagaataagccacatgcgaacccgaggaggccatgagagaccaataccaaacctttttaacggtaagattttttgggacgaaaatccctaagggggagaattgtaacagcccgattttgggcctagtaagaacagtggtttcggaaccactaatctgaggccgtagaaattatttttaatattattttatgtgttattgtatgattatatgagtgcataaaaattttggtgaaataattttagcaattgcatgcttaattgcgaaaaaggactaaatcgcataaagtgcgaaagttttgttctaccagctaaaggtgtcaaatagctatggaacattaaagtataggtccttattgagtaaatagaccaataaaatattaatggttggacatggagccttaattcaagggatggtaaaatgttaagtgactaaattgataaaataataataaacctaaagactagctatcatctttttcatttcttctcttcaccatcgaaattatcagccattttaggggttttggggcttcaaaatttcatccactctttactcttgtaagtaagtgattttgatggtctttcttgatgatttttgtatttttgggacccttgtagcataagctaactaatggggg"
+   },
+   "KC113195_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_NV_heat_shock_protein_70_like_HSP70_gene_partial_sequence",
+      "create_date": "20_FEB_2013",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein 70"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "NV"
+      ],
+      "country": [
+         "USA: Benton County, WA"
+      ],
+      "host": [
+         "Vitis labruscana; cv. Concord"
+      ],
+      "collection_date": [
+         "28-Sep-2011"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "gctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaatacgctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccagtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaataactggtacccgggacaa"
+   },
+   "KC113196_1": {
+      "viral_source": "Grapevine_leafroll_associated_virus_3_isolate_OV_heat_shock_protein_70_like_HSP70_gene_partial_sequence",
+      "create_date": "20_FEB_2013",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein 70"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "OV"
+      ],
+      "country": [
+         "USA: Benton County, WA"
+      ],
+      "host": [
+         "Vitis labruscana; cv. Concord"
+      ],
+      "collection_date": [
+         "28-Sep-2011"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "gctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaatacgctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttcttaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccggtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaataactggtacccgggacaa"
+   },
+   "KY381143_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC1_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC1"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Gamay Noir"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaaccggtcttgacaacttttatccagaccctgttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtggtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaaaataaagaatcaataactggtacccggggacaac"
+   },
+   "KY381144_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC2_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC2"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Cabernet Franc"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctaggggctgtggaagtattcaaaaccggtcttgacaacttttatccagaccctgttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtggtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaaataaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381146_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC4_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC4"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Chardonnay"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaaccggtcttgacaacttttatccagaccctgttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtggtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaaaataaagaatcaataactggtacccggggacaac"
+   },
+   "KY381148_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC6_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC6"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Merlot"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaaccggtcttgacaacttttatccagaccctgttattgcctgttatgactggggggtcaagtgctctagttaagggtcaggaggtgatgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttccggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacggctaacggacgaggtggtggactttcaaccggtggtaattttcccgatagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcctttttaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccagtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381149_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC7_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC7"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Merlot"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaaccggtcttgacaacttttatccagaccctgttattgcctgttatgactggggggtcaagtgctctagttaagggtcaggaggtgatgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttccggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacggctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaggtagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccagtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381150_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC8_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC8"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Riesling"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaactggtcttgacaacttttacccagaccccggtcatgccggtaacaactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaatacgctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccagtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381151_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC9_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC9"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Chardonnay"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggcctgtggaagtattcaaaaaccggtcttgacaaacttttatccagaccctgttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtagtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaagtaaaagaatcaataactggtacccgggacaac"
+   },
+   "KY381152_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC10_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC10"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Tempranillo"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaaaccggtcttgacaacttttatccagaccctgttattgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgacgtggccaatttgccgcagatatctaaggttgtgttcgacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtagtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381153_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC11_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC11"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Riesling"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttatttgctgttatgactggggggggtccaagtgctctagttaaggtcaggagtgatgtggccaatttaccgcagatatctaaggttgtgttcgacaatactgattttaggtgttcggtagcctgtggggctaaggtttactgtgatattttggcaggtaatagcggactgagactggtggacactttgacgaatacgctaacggacgaggtggtggactttcaaccggtggtaattttcccgaaaggtagtccaataccctgttcatacactcacagatacacagtgggtagtggagatgtggtgtacggtatatttgaaggggagaataacagggcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccaaaagagaccgacgtagcgcaatttaatttatccacagacggtacggtatctgttattgttaacggtgaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381154_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC12_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC12"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Gewurztraminer"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttatttgctgttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaatacgctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatacacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccagtagagaccgacgtggcgcagtttaatctctccacggacggaacggtgtctgttatcgttaatggtgaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381156_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC14_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC14"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Merlot"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttattgctgtttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaatacgctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatatacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccggtagagaccgacgtggcgcagtttaatctctccacggacggaaacggtgtctgttattgtcgggaggaagtaaagaatgaatatctggtacccgggacaac"
+   },
+   "KY381157_1": {
+      "viral_source": "UNVERIFIED_Grapevine_leafroll_associated_virus_3_isolate_LR3BC15_heat_shock_protein_hsp70h_like_gene_partial_sequence",
+      "create_date": "06_MAR_2018",
+      "organism": [
+         "Grapevine leafroll-associated virus 3"
+      ],
+      "product": [
+         "no_value"
+      ],
+      "note": [
+         "similar to heat shock protein hsp70h; hsp70h"
+      ],
+      "strain": [
+         "no_value"
+      ],
+      "isolate": [
+         "LR3BC15"
+      ],
+      "country": [
+         "Canada"
+      ],
+      "host": [
+         "Vitis vinifera cultivar Gamay Noir"
+      ],
+      "collection_date": [
+         "Sep-2015"
+      ],
+      "translation": [
+         "no_value"
+      ],
+      "CDS": [
+         "no_value"
+      ],
+      "nuc_seq": "cgctagggctgtggaagtattcaaaactggtcttgacaacttttacccagacccggttattgctgtttatgactggggggtcaagtgctctagttaaggtcaggagtgatgtggctaatttgccgcagatatctaaggtcgtgttcgacagtaccgattttagatgttcggtggcttgtggggctaaggtttactgcgatattttggcaggtaatagcggactgagactggtggacactttaacgaataggctaacggacgaggtagtggattttcagccggtggtaattttcccgaaaggtagtccaataccctgttcatatactcatagatatacagtgggtggtggagatgtggtatacggtatatttgaaggggagaataacagagcttttctaaatgaaccgacgttccggggcgtatcgaaacgtaggggagacccggtagagaccgacgtggcgcagtttaatctctccacggacggaaacggtgtctgttattgtcgggaggaagtaaagaatgaatatctggtacccgggacaac"
+   }
+}

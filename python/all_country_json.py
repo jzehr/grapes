@@ -12,63 +12,40 @@ from collections import Counter
 import math
 from opencage.geocoder import OpenCageGeocode
 
-from helper import name_fixer
-
-
-def get_country(elem):
-    master = {}
-    data = {}
-    acc_num = name_fixer(str(elem.find("INSDSeq_accession-version").text))
-    master[acc_num] = data
-
-    def checker(lst):
-        temp = lst
-        if len(temp) == 0:
-            temp.append("no_value")
-        return temp
-
-    def get_qual(word):
-        temp = list(elem.iter("INSDQualifier"))
-        temp_word = filter(lambda x: x.find("INSDQualifier_name").text == word, temp)
-        new_word = list(map(lambda x: x.find("INSDQualifier_value").text, temp_word))
-        return new_word
-
-    good = ["35 kDa coat protein", "major coat protein", "CP", "coat protein"]
-    #print(checker(get_qual("organism"))[0])
-
-    if checker(get_qual("organism"))[0] == "Grapevine leafroll-associated virus 3":
-        ''' we now want more than just the CP gene, so grabbing it all
-        for i in checker(get_qual("product")):
-            if i in good:
-                #print("found one!!")
-        '''
-        data["country"] = checker(get_qual("country"))
-
-                #print(master)
-        return master
-
-## pass in two tuples (coords) and get the distance between them ##
-def distance(location_1, location_2):
-    lat1, lon1 = location_1
-    lat2, lon2 = location_2
-    radius = 6371
-
-    dlat = math.radians(lat2 - lat1)
-    dlon = math.radians(lon2 - lon1)
-
-    a = (math.sin(dlat / 2) * math.sin(dlat / 2) +
-            math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
-            math.sin(dlon / 2) * math.sin(dlon / 2))
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    d = radius * c
-
-    return d
+from helper import element_item, name_fixer, distance
 
 ## arg parse section ##
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--file", help="path to your rsrc XML file", type=str)
 args = parser.parse_args()
 in_file = args.file
+
+## getting tree object and parsing ##
+tree = et.parse(in_file)
+root = tree.getroot()
+temp_info = list(map(element_item, root.findall("INSDSeq")))
+info = {}
+for i in temp_info:
+    if i is not None:
+        info.update(i)
+
+temp = list(info.values())
+temp_country = [t["country"] for t in temp]
+country = [i for j in temp_country for i in j]
+counter_country = Counter(country)
+
+
+temp_prods = [t["product"] for t in temp]
+prods = [i for j in temp_prods for i in j]
+counter_prods = Counter(prods)
+
+payload = list(sorted(counter_country.items()))
+locations = [pa[0] for pa in payload]
+
+## opencage 2500 reqs per day##
+## api key ##
+key = "d8206078d64d423bbd9d85fd3d79cd8c"
+geocoder = OpenCageGeocode(key)
 
 ## data that will stay constant ##
 REGIONS = {
@@ -110,38 +87,15 @@ REGIONS = {
             "New Zealand": (-41.5000831 , 172.8344077)}
             }
 
-
-## getting tree object and parsing ##
-tree = et.parse(in_file)
-root = tree.getroot()
-temp_info = list(map(get_country, root.findall("INSDSeq")))
-info = {}
-for i in temp_info:
-    #print(i)
-    if i is not None:
-        info.update(i)
-temp = list(info.values())
-temp = [t["country"] for t in temp]
-temp = [i for j in temp for i in j]
-#this = [name_fixer(t) for t in temp]
-#counter = Counter(this)
-counter = Counter(temp)
-payload = list(sorted(counter.items()))
-
-locations = [pa[0] for pa in payload]
-
-
-## opencage 2500 reqs per day##
-## api key ##
-key = "d8206078d64d423bbd9d85fd3d79cd8c"
-geocoder = OpenCageGeocode(key)
-
 info = []
 for location in locations:
     all_ds = []
     if location != "no_value":
         print(location)
-        results = geocoder.geocode(location)
+        if ":" in location:
+            results = geocoder.geocode(location.split(":")[0])
+        else:
+            results = geocoder.geocode(location)
         local = (results[0]['geometry']['lat'], results[0]['geometry']['lng'])
         for key in REGIONS:
             country_dict = REGIONS[key]
@@ -153,14 +107,11 @@ for location in locations:
             smallest = sum(temp_distance)/len(temp_distance)
             all_ds.append(smallest)
             #print(f"This is the avg distance from {location} to {key} --> {smallest}")
-            #print("\n")
 
         zipped = list(zip(all_ds, list(REGIONS.keys())))
         m = min(zipped)
         info.append((location, m[1]))
-        #print(f"{location} is closest to --> {m}")
 
-#print(info)
 
 master = {}
 for r in REGIONS:
@@ -172,6 +123,7 @@ for r in REGIONS:
     temp[name_fixer(r)] = t
     master.update(temp)
 
+master["no_value"] = ["no_value"]
 
 file_name_json = "rsrc/GLRaV3_regions.json"
 print("Writing all countries to regions for the json file --> ", file_name_json)
@@ -187,5 +139,4 @@ with open(file_name_csv, "w") as out:
     for p in payload:
         row = [name_fixer(p[0]), p[1]]
         writer.writerow(row)
-
 

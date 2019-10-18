@@ -1,6 +1,6 @@
 import json
 import argparse
-import xml.etree.ElementTree as et 
+import xml.etree.ElementTree as et
 from collections import Counter
 import re
 
@@ -44,7 +44,7 @@ for i in temp_info:
 #print(len(list(errors.keys())))
 
 '''
-## this is a sanity check to make sure no "bad values" are still in the master dict ## 
+## this is a sanity check to make sure no "bad values" are still in the master dict ##
 for i in info:
     if info[i]["CDS"] == info[i]["product"]:
         print(info[i])
@@ -60,6 +60,22 @@ regions = list(data.keys())
 '''
 scraping through the info dict to write each product sequence to a fasta file
 '''
+
+# making reference from one of our entries ##
+# rather arbitrary at this point, can hard code later #
+# assumes that there is one complete genome in the data #
+genomes = {}
+for i in info:
+    if "genome" in info[i]["viral_source"]:
+        temp = {}
+        temp[i] = info[i]
+        genomes.update(temp)
+
+with open("data/COMPLETE_GENOMES.json", "w") as jf:
+    json.dump(genomes, jf, indent=3)
+
+
+
 master = {}
 for r in regions:
     file_name = "data/fasta/%s_all.fasta" % r
@@ -73,23 +89,24 @@ for r in regions:
                 prods = info[key]["product"]
                 temp_prods.append(prods)
                 cds = info[key]["CDS"]
-                 
+
                 if len(prods) != len(cds):
                     print(info[key])
-                
+
                 else:
-                
+
                     for pos, item in enumerate(prods):
                         results = write_fasta(info, key, pos, item)
-                        header, seq, row = results[0], results[1], results[2] 
+                        header, seq, row = results[0], results[1], results[2]
                         out.write(">{}\n{}\n".format(header,seq))
 
-        
+
+
         prods = [name_fixer(i) for j in temp_prods for i in j]
         counter_prods = Counter(prods)
         most = list(counter_prods.most_common())
-        
+
         temp[r] = most
         master.update(temp)
-        
+
 

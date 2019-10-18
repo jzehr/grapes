@@ -81,8 +81,6 @@ def write_fasta(data, p, pos, item):
     acc_num = p
     CDS = data[p]["CDS"][pos] 
     nuc_seq = data[p]["nuc_seq"]
-    #l = len(nuc_seq)
-    #print(f"this is CDS {CDS} and length of seq is: {l}")
     orf1_s = int(re.findall(r'\d+', CDS.split("..")[0])[0]) - 1
     orf1_e = int(re.findall(r'\d+', CDS.split("..")[1])[0])
     if data[p]["collection_date"][0] == "no_value":

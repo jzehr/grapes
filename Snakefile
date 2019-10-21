@@ -2,27 +2,34 @@
 
 ## import all functions from python ##
 from python.helper import name_fixer
-from python.seq_blaster import blaster
+from python.flat import flatten
+#from python.seq_blaster import blaster
 
+with open("data/GOOD_PRODS.json") as gps:
+  data = json.load(gps)
 
-with open("rsrc/GLRaV3_regions.json") as regions_json:
-  data_dict = json.load(regions_json)
+temp_files = []
+for key, item in data.items():
+  f = [key + "_" + i for i in item]
+  temp_files.append(f)
 
-REGIONS = list(data_dict.keys())
-
+region_prods = flatten(temp_files)
+print(files)
 
 ## expand(products=data[REGIONS][1])
 
 ####################################################################
-# This rule will read in the XML file from NCBI and parse it
-# into a master JSON
+# This rule will read in the each REGION fasta file and 
+# split it into the ORFS from that region
+#
+# can use an input function to see how many ORFs will be made for each?
 ####################################################################
 rule region_fasta_to_orfs:
   input:
     in_f = "data/fasta/{REGION}_all.fasta"
   output:
-    out_f = "data/fasta/{REGION}_orf_{ORF}.fasta"
+    out_f = "data/fasta/{REGION}_orf.fasta"
   run:
-   blaster(input.in_f, output.out_f)
-   #import pdb;pdb.set_trace()
+   #blaster(input.in_f, output.out_f)
+   import pdb;pdb.set_trace()
  

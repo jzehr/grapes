@@ -3,7 +3,7 @@ from Bio import SeqIO
 from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
 from Bio import Align
-
+from collections import Counter
 
 #from Bio.Blast import NCBIWWW
 
@@ -62,10 +62,34 @@ for pos, item in enumerate(ORFS):
     ref_orfs.update(temp)
 
 refs = list(ref_orfs.values())
-print(len(refs))
 
 ## time to compare each sequence to
 
+for r in REGIONS[0:1]:
+    print(f"~ Checking {r} for ORFs ~")
+    infas = "data/fasta/%s_all.fasta" % r
+    aligner = Align.PairwiseAligner()
+    unique_ORFs = []
+    for record in SeqIO.parse(infas, "fasta"):
+        scores = []
+        pw = []
+        for pos, item in enumerate(refs):
+            print(f"len of seq {len(record.seq)} {len(item)}")
+            print(f"this is my seq {record.id}: {record.seq}, and this is ref {pos} {ORFS[pos]} --> {item}\n")
+            pw.append((pairwise2.align.localxx(record.seq, item, score_only=True), pos))
+
+            scores.append((aligner.score(record.seq, item), pos))
+
+        print(f"scores {scores}\n pw {pw}")
+        winner = min(scores)
+        binner = ORFS[winner[1]]
+        unique_ORFs.append(binner)
+        #print(scores)
+        print(f"Adding {winner} to {binner}")
+    uO = list(Counter(unique_ORFs))
+    print(f"RESULT {r} --> {uO}")
+
+'''
 for r in REGIONS[0:1]:
     infas = "data/fasta/%s_all.fasta" % r
     data = []
@@ -74,10 +98,19 @@ for r in REGIONS[0:1]:
 
 
     aligner = Align.PairwiseAligner()
-    for i in data[0:1]:
+    for i in data[0:5]:
         scores = []
-        for j in refs:
-            scores.append(aligner.score(i.seq, j))
-        print(scores)
+        for pos, item in enumerate(refs):
+            scores.append((aligner.score(i.seq, item), pos))
+
+        winner = min(scores)
+        binner = ORFS[winner[1]]
+        #print(scores)
+        print(f"Adding {winner} to {binner}\n")
+'''
+
+
+
+
 
 

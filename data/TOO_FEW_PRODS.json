@@ -1,0 +1,84 @@
+{
+   "EUROPE": [
+      "55_kDa_protein",
+      "major_coat_protein",
+      "RNA_polymerase",
+      "methyltransferase",
+      "19_3_kDa_protein",
+      "9_kDa_protein",
+      "6_2_kDa_protein"
+   ],
+   "SOUTH_AMERICA": [
+      "polymerase",
+      "RNA_dependent_RNA_polymerase",
+      "55_kDa_protein",
+      "53_kDa_coat_protein_divergent",
+      "diverged_copy_of_the_GLRaV_3_coat_protein",
+      "capsid_protein_divergent"
+   ],
+   "NORTH_AMERICA": [
+      "p19_6",
+      "p19_7",
+      "p4",
+      "p7",
+      "245_kDa_polyprotein",
+      "hsp90_h",
+      "coat_protein_divergent",
+      "hypothetical_protein",
+      "movement_protein",
+      "nucleic_acid_binding_protein",
+      "5_5_kDa_protein",
+      "replication_related_polyprotein",
+      "major_capsid_protein",
+      "p20A",
+      "p20B"
+   ],
+   "MIDDLE_EAST": [
+      "methyltransferase_helicase_protein"
+   ],
+   "NORTH_AFRICA": [
+      "all_good"
+   ],
+   "SOUTH_AFRICA": [
+      "replicase",
+      "HSP70"
+   ],
+   "ASIA": [
+      "hsp70_h",
+      "capsid_protein",
+      "methyl_transferase_helicase",
+      "6_kDa_protein",
+      "5_kDa_protein",
+      "divergent_coat_protein",
+      "21_kDa_protein",
+      "19_6_kDa_protein",
+      "19_7_kDa_protein",
+      "4_kDa_protein",
+      "7_kDa_protein",
+      "ORF7_protein"
+   ],
+   "OCEANIA": [
+      "RNA_dependent_RNA_polymerase_2",
+      "59_3_kDa_protein",
+      "55_1_kDa_protein",
+      "polyprotein",
+      "RNA_dependent_RNA_polymerase"
+   ],
+   "no_value": [
+      "p_protease_methyl_transferase_helicase",
+      "ORF1a",
+      "replication_associated_protein_3",
+      "p5",
+      "Hsp70h",
+      "Hsp90h",
+      "CP",
+      "dCP",
+      "p21",
+      "p19_6",
+      "p19_7",
+      "p7",
+      "p4",
+      "truncated_p6",
+      "p20_protein"
+   ]
+}

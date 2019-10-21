@@ -74,39 +74,106 @@ for i in info:
 with open("data/COMPLETE_GENOMES.json", "w") as jf:
     json.dump(genomes, jf, indent=3)
 
-
-
 master = {}
+bads = {}
 for r in regions:
-    file_name = "data/fasta/%s_all.fasta" % r
-    with open(file_name, "w") as out:
-        temp = {}
-        temp_prods = []
-        countries = data[r]
-        for key in acc_keys:
-            target = name_fixer(info[key]["country"][0])
-            if target in countries:
-                prods = info[key]["product"]
-                temp_prods.append(prods)
-                cds = info[key]["CDS"]
+    prods_in_region = []
+    region_temp = {}
+    countries = data[r]
+    for key in acc_keys:
+        target = name_fixer(info[key]["country"][0])
+        if target in countries:
+            prods = info[key]["product"]
+            cds = info[key]["CDS"]
 
-                if len(prods) != len(cds):
-                    print(info[key])
+            if len(prods) != len(cds):
+                print(info[key])
 
-                else:
+            else:
 
-                    for pos, item in enumerate(prods):
-                        results = write_fasta(info, key, pos, item)
-                        header, seq, row = results[0], results[1], results[2]
-                        out.write(">{}\n{}\n".format(header,seq))
+                '''
+                this is where some data cleaning occurs
+                '''
+                for pos, item in enumerate(prods):
+                    hsp70_like = ["heat_shock_70_like_protein", "heat_shock_protein_70_like_protein", "HSP70_like_protein", "Hsp70_like_protein", "heat_shock_protein_70_like_protein", "heat_schock_protein_70_like_protein"]
+                    hsp70_h = ["heat_shock_protein_70_homologue", "HSP70h", "heat_shock_protein_hsp70h", "Heat_shock_protein_70_homolog"]
+                    hsp90_like = ["Hsp90_like_protein","HSP90_like_protein"]
+                    hsp90_h = ["heat_shock_protein_90_homologue", "HSP90h", "heat_shock_protein_hsp90h", "Heat_shock_protein_90_homolog"]
 
+                    if name_fixer(item) in hsp70_like:
+                        prods_in_region.append("hsp70_like")
+                    elif name_fixer(item) in hsp70_h:
+                        prods_in_region.append("hsp70_h")
+                    elif name_fixer(item) in hsp90_like:
+                        prods_in_region.append("hsp90_like")
+                    elif name_fixer(item) in hsp90_h:
+                        prods_in_region.append("hsp90_h")
+                    else:
+                        prods_in_region.append(name_fixer(item))
 
+    region_prods = Counter(prods_in_region)
+    good = []
+    bad = []
+    for i in list(region_prods.most_common()):
+        if i[1] > 1:
+            good.append(i[0])
+        else:
+            bad.append(i[0])
 
-        prods = [name_fixer(i) for j in temp_prods for i in j]
-        counter_prods = Counter(prods)
-        most = list(counter_prods.most_common())
+    if len(bad) == 0:
+        bad.append("all_good")
 
-        temp[r] = most
-        master.update(temp)
+    good_region = {}
+    bad_region = {}
 
+    good_region[r] = good
+    bad_region[r] = bad
+    master.update(good_region)
+    bads.update(bad_region)
 
+with open("data/TOO_FEW_PRODS.json", "w") as jf:
+    json.dump(bads, jf, indent=3)
+
+with open("data/GOOD_PRODS.json", "w") as jf:
+    json.dump(master, jf, indent=3)
+
+'''
+now that we have the info we can make fasta files
+'''
+for r in regions:
+    for prod in master[r]:
+        fasta_out = "data/fasta/%s_%s.fasta" % (r, prod)
+        with open(fasta_out, "w") as out:
+            countries = data[r]
+            for key in acc_keys:
+                target = name_fixer(info[key]["country"][0])
+                if target in countries:
+                    prods = info[key]["product"]
+                    cds = info[key]["CDS"]
+
+                    if len(prods) != len(cds):
+                        print(info[key])
+
+                    else:
+
+                        for pos, item in enumerate(prods):
+                            hsp70_like = ["heat_shock_70_like_protein", "heat_shock_protein_70_like_protein", "HSP70_like_protein", "Hsp70_like_protein", "heat_shock_protein_70_like_protein", "heat_schock_protein_70_like_protein"]
+                            hsp70_h = ["heat_shock_protein_70_homologue", "HSP70h", "heat_shock_protein_hsp70h", "Heat_shock_protein_70_homolog"]
+                            hsp90_like = ["Hsp90_like_protein","HSP90_like_protein"]
+                            hsp90_h = ["heat_shock_protein_90_homologue", "HSP90h", "heat_shock_protein_hsp90h", "Heat_shock_protein_90_homolog"]
+
+                            if name_fixer(item) in hsp70_like:
+                                item = "hsp70_like"
+                            elif name_fixer(item) in hsp70_h:
+                                item = "hsp70_h"
+                            elif name_fixer(item) in hsp90_like:
+                                item = "hsp90_like"
+                            elif name_fixer(item) in hsp90_h:
+                                item = "hsp90_h"
+                            else:
+                                item = name_fixer(item)
+
+                            if item == prod:
+                                results = write_fasta(info, key, pos, item)
+                                header, seq, row = results[0], results[1], results[2]
+                                out.write(">{}\n{}\n".format(header, seq))

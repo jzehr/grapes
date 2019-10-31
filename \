@@ -1,0 +1,34 @@
+import os
+import json
+import argparse
+
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-f", "--file", help="path to your GOOD_PRODS.json", type=str)
+args = parser.parse_args()
+
+in_file = args.file
+
+with open(in_file) as j_file:
+    data = json.load(j_file)
+
+#print(data)
+keys = list(data.keys())
+
+
+cats = {}
+for key in keys:
+    prods = data[key]
+    for p in prods:
+        '''
+        need to check if p alread in the dict, 
+        if it isnt, then make it a new key,
+        otherwise, append this new key to the dict
+        '''
+        temp = {}
+        print(p)
+    print("\n")
+
+
+

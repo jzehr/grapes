@@ -11,6 +11,7 @@ mafft*
 data/csv/*
 data/fasta/*
 data/json/*
+data/*.json
 envs
 =======
 # Standard

@@ -48,6 +48,7 @@ key = "d8206078d64d423bbd9d85fd3d79cd8c"
 geocoder = OpenCageGeocode(key)
 
 ## data that will stay constant ##
+## should go in its own JSON ##
 REGIONS = {
         "EUROPE": {
             "Spain": (39.3262345, -4.8380649),

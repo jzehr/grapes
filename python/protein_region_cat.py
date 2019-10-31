@@ -20,6 +20,7 @@ def cat_files(prod, files):
     subprocess.call("touch %s" % cat_file, shell=True)
     subprocess.call("cat data/fasta/*%s.fasta > %s" % (prod, cat_file), shell=True)
     print(f"Done catting all {prod}s.")
+    return regions
 
 with open(in_file) as j_file:
     data = json.load(j_file)
@@ -45,13 +46,12 @@ for gk in good_keys:
     temp[gk] = regions
     cats.update(temp)
 
+master = {}
 for key, value in cats.items():
-    cat_files(key, value)
+    t = {}
+    t[key] = cat_files(key, value)
+    master.update(t)
 
 with open("data/CAT_REGION_PRODS.json", "w") as out_file:
-    json.dump(cats, out_file, indent=2)
-
-
-
-
+    json.dump(master, out_file, indent=2)
 

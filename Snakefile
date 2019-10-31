@@ -19,17 +19,21 @@ FEL_contrast = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/
 
 # making a list of all the poteins from each region
 # that had more then 1 sequence
-with open("data/GOOD_PRODS.json") as gps:
-  data = json.load(gps)
 
-temp_files = []
-for key, item in data.items():
-  f = [key + "_" + i for i in item]
-  temp_files.append(f)
-
-reg_prod_files = flatten(temp_files)
+#with open("data/GOOD_PRODS.json") as gps:
+#  data = json.load(gps)
+#temp_files = []
+#for key, item in data.items():
+#  f = [key + "_" + i for i in item]
+#  temp_files.append(f)
+#reg_prod_files = flatten(temp_files)
 # example ~ EUROPE_hsp70_like ~ # 
 
+with open("data/CAT_REGION_PRODS.json") as gps:
+  data = json.load(gps)
+
+files = [key + "_" + value for key, value in data.items()]
+print(files)
 ## need to add a rule ALL ##
 
 ####################################################################
@@ -68,6 +72,17 @@ rule rpf_post:
     out_f = "data/fasta/{RPF}.hyphy.fas"
   shell:
    "{HYPHY} {POST} --protein-msa {input.in_prot} --nucleotide-sequences {input.in_nuc} --output {output.out_f} --compress No"
+ 
+####################################################################
+# This rule will read in post-bf files 
+# and cat any overlapping genes 
+####################################################################
+#rule rpf_post:
+#  input:
+#    in_prot = rules.rpf_post.output.out_f
+#  output:
+#    out_f = "data/fasta/cat_{RPF}.hyphy.fas"
+#  shell:
  
 ####################################################################
 # This rule will read in the post-hyphy fasta 

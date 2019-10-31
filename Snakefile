@@ -3,9 +3,19 @@
 ## import all functions from ~ my ~ python dir ##
 from python.helper import name_fixer
 from python.flat import flatten
+from python.nexus_parser import nexus
+## might need to set node limits to run on ## 
+# only runs on node 5 right now 
+
 
 # setting HYPHYMP var #
-HYPHYMP = "~/hyphy/HYPHYMP LIBPATH=/home/jordanz/hyphy/res"
+#HYPHY = "/home/jordanz/grapes/hyphy-develop/hyphy LIBPATH=/home/jordanz/hyphy/res"
+HYPHY = "~/grapes/hyphy-develop/hyphy LIBPATH=/home/jordanz/grapes/hyphy-develop/res"
+PRE = "~/grapes/hyphy-analyses/codon-msa/pre-msa.bf"
+POST = "~/grapes/hyphy-analyses/codon-msa/post-msa.bf"
+GARD = "~/grapes/hyphy-develop/res/TemplateBatchFiles/GARD.bf"
+MEME = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf"
+FEL_contrast = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/FEL-contrast.bf"
 
 # making a list of all the poteins from each region
 # that had more then 1 sequence
@@ -32,7 +42,7 @@ rule rpf_pre:
     out_prot = "data/fasta/{RPF}.fasta_protein.fas",
     out_nuc = "data/fasta/{RPF}.fasta_nuc.fas"
   shell:
-   "{HYPHYMP} /home/jordanz/grapes/hyphy-analyses/codon-msa/pre-msa.bf --input {input.in_f}"
+   "{HYPHY} {PRE} --input {input.in_f}"
  
 ####################################################################
 # This rule will read protein fas from previous rule and
@@ -57,7 +67,7 @@ rule rpf_post:
   output:
     out_f = "data/fasta/{RPF}.hyphy.fas"
   shell:
-   "{HYPHYMP} /home/jordanz/grapes/hyphy-analyses/codon-msa/post-msa.bf --protein-msa {input.in_prot} --nucleotide-sequences {input.in_nuc} --output {output.out_f} --compress No"
+   "{HYPHY} {POST} --protein-msa {input.in_prot} --nucleotide-sequences {input.in_nuc} --output {output.out_f} --compress No"
  
 ####################################################################
 # This rule will read in the post-hyphy fasta 
@@ -67,22 +77,35 @@ rule rpf_GARD:
   input:
     in_f = rules.rpf_post.output.out_f
   output:
-    out_prot = str(rules.rpf_post.output.out_f) + ".GARD.json"
+    out_j = str(rules.rpf_post.output.out_f) + ".GARD.json",
+    out_nex = str(rules.rpf_post.output.out_f) + ".best-gard"
   shell:
-   "{HYPHYMP} GARD --alignment {input.in_f} --type Nucleotide --code Universal"
+   "{HYPHY} {GARD} --alignment {input.in_f}"
 
-#####################################################################
+######################################################################
 # This rule will read in the output from GARD 
+# and run it through a NEXUS parser to send each partition
+# to a fasta file
+#####################################################################
+rule rpf_nexus:
+  input:
+    in_f = rules.rpf_GARD.output.out_nex
+  output:
+    out_f = dynamic("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex")
+  run:
+    nexus(input.in_f, output.out_f)
+
+####################################################################
+# This rule will read in the output from the NEXUS parser  
 # and run it through ~ MEME ~
 #####################################################################
-#rule rpf_MEME:
-#  input:
-#    in_f = "data/fasta/{RPF}.fasta"
-#  output:
-#    out_prot = "data/fasta/{RPF}.fasta_protein.fas",
-#    out_nuc = "data/fasta/{RPF}.fasta_nuc.fas"
-#  shell:
-#   "{HYPHYMP} /home/jordanz/grapes/hyphy-analyses/codon-msa/pre-msa.bf --input {input.in_f}"
+rule rpf_MEME:
+  input:
+    in_f = rules.rpf_nexus.output.out_f
+  output:
+    out_j = dynamic("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex.MEME.json")
+  shell:
+   "{HYPHY} {MEME} --alignment {input.in_f}"
  
 ######################################################################
 # This rule will read in the output from MEME 
@@ -90,10 +113,26 @@ rule rpf_GARD:
 ###################################################################
 #rule rpf_Fc:
 #  input:
-#    in_f = "data/fasta/{RPF}.fasta"
+#    in_f = rules.rpf_GARD.output.out_prot
 #  output:
-#    out_prot = "data/fasta/{RPF}.fasta_protein.fas",
+#    out_j = dynamic("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex.FEL.json")
+#  shell:
+#   "{HYPHY} {FEL_contrast} --input {input.in_f}"
+
+######################################################################
+# This rule will read in the output from GARD, MEME, and FEL-contrast 
+# and send it out to be visualized 
+###################################################################
+#rule rpf_Fc:
+#  input:
+#    in_GARD = rules.rpf_GARD.output.out_j,
+#    in_MEME = rules.rpf_MEME.output.out_j,
+#    in_FELc = rules.rpf_Fc.output.out_j
+#  output:
 #    out_nuc = "data/fasta/{RPF}.fasta_nuc.fas"
 #  shell:
-#   "{HYPHYMP} /home/jordanz/grapes/hyphy-analyses/codon-msa/pre-msa.bf --input {input.in_f}"
- 
+#   "{HYPHY} {FEL_contrast} --input {input.in_f}"
+
+
+
+

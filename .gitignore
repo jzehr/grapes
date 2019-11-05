@@ -1,3 +1,9 @@
+
+
+data/fasta/*
+data/json/*
+
+
 <<<<<<< HEAD
 hyphy-analyses/codon-msa/*.fas
 hyphy-analyses/codon-msa/*.log

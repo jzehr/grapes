@@ -1,15 +1,8 @@
 from Bio import SeqIO
 
-def nexus(in_nex, out_fas):
+def nexus(in_nex):
     in_n = str(in_nex)
-    out_f = str(out_fas)
 
-
-    '''
-    might read in as text file and then as nexus... grab the
-    breakpoints from text, and split seqs after they are read in
-    with the nexus parser
-    '''
     def index_getter(in_n):
         f = open(in_n)
         lines = f.readlines()
@@ -39,7 +32,7 @@ def nexus(in_nex, out_fas):
     #print(inds)
     files = []
     for pos, i in enumerate(inds):
-        prot = out_f.split("/")[-1].split(".hyphy")[0]
+        prot = in_n.split("/")[-1].split(".hyphy")[0]
         f = "data/fasta/%s.hyphy.fas.GARD.%d.nex" % (prot, pos)
         files.append(f)
 

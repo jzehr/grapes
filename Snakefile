@@ -32,33 +32,45 @@ FEL_contrast = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/
 with open("data/CAT_REGION_PRODS.json") as gps:
   data = json.load(gps)
 
-files = [key + "_" + value for key, value in data.items()]
-print(files)
+files = [key + "_" + value for key, value in data.items() if key != "methyl_transferase_helicase"]
+#print(files)
+
+## filter for cat_methyltransferase_helicase_EUROPE_NORTH_AMERICA_no_value.fasta
+# this is a bad file 
+
+
 ## need to add a rule ALL ##
+rule all:
+  input:
+    expand("data/fasta/cat_{RPF}.hyphy.fas.best-gard", RPF=files)
 
 ####################################################################
 # This rule will read in a reg_prod_file and run it through pre-bf
+# ~~ some proteins are not in frame... ~~ might want to pre-process 
+# this data to get rid of these first 
 ####################################################################
 rule rpf_pre:
   input:
-    in_f = "data/fasta/{RPF}.fasta"
+    in_f = "data/fasta/cat_{RPF}.fasta"
   output:
-    out_prot = "data/fasta/{RPF}.fasta_protein.fas",
-    out_nuc = "data/fasta/{RPF}.fasta_nuc.fas"
+    out_prot = "data/fasta/cat_{RPF}.fasta_protein.fas",
+    out_nuc = "data/fasta/cat_{RPF}.fasta_nuc.fas"
   shell:
-   "{HYPHY} {PRE} --input {input.in_f}"
+   "{HYPHY} {PRE} --input {input.in_f} --E 0.05"
  
 ####################################################################
 # This rule will read protein fas from previous rule and
 # align it with MAFFT
+#
+# add a separate dir to send these files
 ####################################################################
 rule mafft_rpf:
   input:
     in_prot = rules.rpf_pre.output.out_prot
   output:
-    out_prot = "data/fasta/{RPF}.fasta_protein_aligned.fas"
+    out_prot = "data/fasta/cat_{RPF}.fasta_protein_aligned.fas"
   shell:
-    "mafft --quiet {input.in_f} > {output.out_prot}"
+    "mafft --quiet {input.in_prot} > {output.out_prot}"
 
 ####################################################################
 # This rule will read in aligned PROTEIN file  
@@ -69,7 +81,7 @@ rule rpf_post:
     in_prot = rules.mafft_rpf.output.out_prot,
     in_nuc = rules.rpf_pre.output.out_nuc
   output:
-    out_f = "data/fasta/{RPF}.hyphy.fas"
+    out_f = "data/fasta/cat_{RPF}.hyphy.fas"
   shell:
    "{HYPHY} {POST} --protein-msa {input.in_prot} --nucleotide-sequences {input.in_nuc} --output {output.out_f} --compress No"
  
@@ -102,25 +114,38 @@ rule rpf_GARD:
 # and run it through a NEXUS parser to send each partition
 # to a fasta file
 #####################################################################
-rule rpf_nexus:
-  input:
-    in_f = rules.rpf_GARD.output.out_nex
-  output:
-    out_f = dynamic("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex")
-  run:
-    nexus(input.in_f, output.out_f)
+#checkpoint rpf_nexus:
+#  input:
+#    in_f = rules.rpf_GARD.output.out_nex
+#  output:
+#    out_n = "data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex"
+#  run:
+#    nexus(input.in_f)
 
 ####################################################################
 # This rule will read in the output from the NEXUS parser  
 # and run it through ~ MEME ~
 #####################################################################
-rule rpf_MEME:
-  input:
-    in_f = rules.rpf_nexus.output.out_f
-  output:
-    out_j = dynamic("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex.MEME.json")
-  shell:
-   "{HYPHY} {MEME} --alignment {input.in_f}"
+#def agg_input(wildcards):
+#  checkpoint_output = checkpoints.rpf_nexus.get(**wildcards).output[0]
+#  print(f"checkpoint output {checkpoint_output}")
+#  x = expand("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex",
+#    RPF = wildcards.RPF,
+#    n = checkpoint_output
+#    )
+#  print(f"this is X {x}")
+#  return x
+#
+#rule rpf_MEME:
+#  input:
+#    agg_input
+#    #in_n = checkpoints.rpf_nexus
+#  output:
+#    out_j = "data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex.MEME.json"
+#  run:
+#    import pdb;pdb.set_trace()
+  #shell:
+   #"{HYPHY} {MEME} --alignment {input.in_n}"
  
 ######################################################################
 # This rule will read in the output from MEME 
@@ -128,9 +153,10 @@ rule rpf_MEME:
 ###################################################################
 #rule rpf_Fc:
 #  input:
-#    in_f = rules.rpf_GARD.output.out_prot
+#    #in_f = rules.rpf_GARD.output.out_prot
+#    in_f = "data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex"
 #  output:
-#    out_j = dynamic("data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex.FEL.json")
+#    out_j = "data/fasta/{RPF}.hyphy.fas.GARD.{n}.nex.FEL.json"
 #  shell:
 #   "{HYPHY} {FEL_contrast} --input {input.in_f}"
 

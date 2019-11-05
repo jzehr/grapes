@@ -5,7 +5,7 @@ echo "removing any pre-existing files"
 
 FILE=data/GPGV/GPGV_coat_protein_temp_cat.fasta
 if test -f "$FILE"; then
-    echo "blah"
+   #echo "blah"
     rm "$FILE"
 fi
 cat data/GPGV_CP.fasta \

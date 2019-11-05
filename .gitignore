@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 hyphy-analyses/codon-msa/*.fas
 hyphy-analyses/codon-msa/*.log
 
@@ -6,10 +7,14 @@ rsrc/GVA/*.json
 rsrc/GLRaV3/*.json
 
 *.snakemake*
+=======
+.snakemake
+>>>>>>> 62b8f15ca21b2ecb2ee26bf13fbea6521fa059a4
 *.treefile
 *.tree
 
 *.log
+*.log.*
 
-data/*.*
+data/*
 envs

@@ -11,8 +11,7 @@ ___
 
 [IQ-TREE](http://www.iqtree.org/#download)  (IQ-TREE multicore version 1.6.11 for Mac OS X 64-bit built Jun  6 2019)
 	
-	hyphy
-	hyphy-analysis
+[HyPhy](https://github.com/veg/hyphy) (Version 2.5.0(MP))
 ___
 
 Make sure to read the docs for BOTH hyphy-develop and [hyphy-analyses](https://github.com/veg/hyphy-analyses). These external repos will allow you to run useful commands on the data.
@@ -26,7 +25,7 @@ ___
 
 - activate the virtual environment:
 
-	```source envs/grape/bin/activate```
+	```source envs/grapes/bin/activate```
 
 - you should see a ```(grape)``` show up to the left of your command line
  
@@ -36,16 +35,23 @@ ___
 
 - then, set up your virtual environment:
 
-	``` pip install -r requirements.txt) ``` 
+	``` pip install -r requirements.txt ``` 
 
-___
+- cd back to the base directory 
 
 ___
 ### To Run
 
-- start by running this python script:
+- from the base grapes directory ```cd rsrc/```
+- then run this python script:
 
-```python rsrc/config_json.py ```
+	```python config_json.py ```
+
+- then
+```snakemake all ```
+
+- you can spice this up by adding a ```-j #``` flag after that command to provide snakemake with the available number of cores to run on.
+- if you use something like ```bpsh``` then just add ```bpsh #``` before the ```snakemake``` command
 
 ___
 ### Test:

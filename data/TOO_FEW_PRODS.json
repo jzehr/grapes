@@ -62,7 +62,8 @@
       "59_3_kDa_protein",
       "55_1_kDa_protein",
       "polyprotein",
-      "RNA_dependent_RNA_polymerase"
+      "methyl_transferase",
+      "heat_shock_protein_70"
    ],
    "no_value": [
       "p_protease_methyl_transferase_helicase",

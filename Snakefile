@@ -32,7 +32,11 @@ FEL_contrast = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/
 with open("data/CAT_REGION_PRODS.json") as gps:
   data = json.load(gps)
 
-files = [key + "_" + value for key, value in data.items() if key != "methyl_transferase_helicase"]
+#bads = ["4_kDa_protein", "5_kDa_protein", "6_kDa_protein", "methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "19_6_kDa_protein", "19_7_kDa_protein", "hypothetical_protein", "p55", "35_kDa_coat_protein", "hsp70_like"]
+#bads = ["polyprotein", "4_kDa_protein", "5_kDa_protein", "6_kDa_protein", "7_kDa_protein", "hsp70_like", "methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "19_6_kDa_protein", "19_7_kDa_protein", "59_kDa_protein", "hypothetical_protein", "p55", "35_kDa_coat_protein"]
+
+#files = [key + "_" + value for key, value in data.items() if not key in bads]
+files = [key + "_" + value for key, value in data.items()]
 #print(files)
 
 ## filter for cat_methyltransferase_helicase_EUROPE_NORTH_AMERICA_no_value.fasta
@@ -42,7 +46,8 @@ files = [key + "_" + value for key, value in data.items() if key != "methyl_tran
 ## need to add a rule ALL ##
 rule all:
   input:
-    expand("data/fasta/cat_{RPF}.hyphy.fas.best-gard", RPF=files)
+    #expand("data/fasta/cat_{RPF}.fasta_protein_aligned.fas.hyphy.fas.best-gard", RPF=files)
+    expand("data/fasta/cat_{RPF}.fasta_protein_aligned.fas.hyphy.fas", RPF=files)
 
 ####################################################################
 # This rule will read in a reg_prod_file and run it through pre-bf
@@ -81,7 +86,7 @@ rule rpf_post:
     in_prot = rules.mafft_rpf.output.out_prot,
     in_nuc = rules.rpf_pre.output.out_nuc
   output:
-    out_f = "data/fasta/cat_{RPF}.hyphy.fas"
+    out_f = "data/fasta/cat_{RPF}.fasta_protein_aligned.fas.hyphy.fas"
   shell:
    "{HYPHY} {POST} --protein-msa {input.in_prot} --nucleotide-sequences {input.in_nuc} --output {output.out_f} --compress No"
  
@@ -100,14 +105,14 @@ rule rpf_post:
 # This rule will read in the post-hyphy fasta 
 # and run it through ~ GARD ~
 ####################################################################
-rule rpf_GARD:
-  input:
-    in_f = rules.rpf_post.output.out_f
-  output:
-    out_j = str(rules.rpf_post.output.out_f) + ".GARD.json",
-    out_nex = str(rules.rpf_post.output.out_f) + ".best-gard"
-  shell:
-   "{HYPHY} {GARD} --alignment {input.in_f}"
+#rule rpf_GARD:
+#  input:
+#    in_f = rules.rpf_post.output.out_f
+#  output:
+#    out_j = str(rules.rpf_post.output.out_f) + ".GARD.json",
+#    out_nex = str(rules.rpf_post.output.out_f) + ".best-gard"
+#  shell:
+#   "{HYPHY} {GARD} --alignment {input.in_f}"
 
 ######################################################################
 # This rule will read in the output from GARD 

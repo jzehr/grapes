@@ -63,6 +63,7 @@
       "CPm",
       "p21",
       "3_9_kDa_protein",
+      "cytochrome_oxidase_subunit_I",
       "Papain_like_protease_methyl_transferase_AlkB_and_helicase_domains",
       "divergent_minor_coat_protein",
       "19_8_kDa_protein",
@@ -122,15 +123,17 @@
    ],
    "OCEANIA": [
       "hsp70_like",
+      "hypothetical_protein",
       "coat_protein",
+      "divergent_coat_protein",
       "5_kDa_protein",
       "hsp90_like",
-      "divergent_coat_protein",
       "21_kDa_protein",
       "19_6_kDa_protein",
       "19_7_kDa_protein",
       "4_kDa_protein",
-      "7_kDa_protein"
+      "7_kDa_protein",
+      "RNA_dependent_RNA_polymerase"
    ],
    "no_value": [
       "hypothetical_protein",

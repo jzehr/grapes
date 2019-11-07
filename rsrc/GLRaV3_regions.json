@@ -31,6 +31,7 @@
     "USA_Benton_County_WA",
     "USA_CA",
     "USA_California_Napa_Valley",
+    "USA_Hogue_Vineyards_Benton_County_WA",
     "USA_Idaho",
     "USA_Texas",
     "USA_Virginia"
@@ -68,6 +69,7 @@
     "South_Korea_Chuncheon_Gangwon_do"
   ],
   "OCEANIA": [
+    "Australia",
     "New_Zealand"
   ],
   "no_value": [

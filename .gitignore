@@ -3,6 +3,8 @@
 *.treefile
 *.tree
 
+/hyphy/*
+/hyphy-analyses/*
 
 mafft*
 *.log

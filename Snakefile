@@ -10,12 +10,12 @@ from python.nexus_parser import nexus
 
 # setting HYPHYMP var #
 #HYPHY = "/home/jordanz/grapes/hyphy-develop/hyphy LIBPATH=/home/jordanz/hyphy/res"
-HYPHY = "~/grapes/hyphy-develop/hyphy LIBPATH=/home/jordanz/grapes/hyphy-develop/res"
+HYPHY = "~/grapes/hyphy/hyphy LIBPATH=/home/jordanz/grapes/hyphy/res"
 PRE = "~/grapes/hyphy-analyses/codon-msa/pre-msa.bf"
 POST = "~/grapes/hyphy-analyses/codon-msa/post-msa.bf"
-GARD = "~/grapes/hyphy-develop/res/TemplateBatchFiles/GARD.bf"
-MEME = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf"
-FEL_contrast = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/FEL-contrast.bf"
+GARD = "~/grapes/hyphy/res/TemplateBatchFiles/GARD.bf"
+MEME = "~/grapes/hyphy/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf"
+FEL_contrast = "~/grapes/hyphy/res/TemplateBatchFiles/SelectionAnalyses/FEL-contrast.bf"
 
 # making a list of all the poteins from each region
 # that had more then 1 sequence
@@ -32,11 +32,11 @@ FEL_contrast = "~/grapes/hyphy-develop/res/TemplateBatchFiles/SelectionAnalyses/
 with open("data/CAT_REGION_PRODS.json") as gps:
   data = json.load(gps)
 
-#bads = ["4_kDa_protein", "5_kDa_protein", "6_kDa_protein", "methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "19_6_kDa_protein", "19_7_kDa_protein", "hypothetical_protein", "p55", "35_kDa_coat_protein", "hsp70_like"]
+bads = ["methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "hypothetical_protein", "p55", "19_7_kDa_protein"]
 #bads = ["polyprotein", "4_kDa_protein", "5_kDa_protein", "6_kDa_protein", "7_kDa_protein", "hsp70_like", "methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "19_6_kDa_protein", "19_7_kDa_protein", "59_kDa_protein", "hypothetical_protein", "p55", "35_kDa_coat_protein"]
 
-#files = [key + "_" + value for key, value in data.items() if not key in bads]
-files = [key + "_" + value for key, value in data.items()]
+files = [key + "_" + value for key, value in data.items() if not key in bads]
+#files = [key + "_" + value for key, value in data.items()]
 #print(files)
 
 ## filter for cat_methyltransferase_helicase_EUROPE_NORTH_AMERICA_no_value.fasta

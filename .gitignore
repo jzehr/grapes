@@ -1,7 +1,9 @@
-<<<<<<< HEAD
 .snakemake
 *.treefile
 *.tree
+
+rsrc/good_info.json
+rsrc/error_info.json
 
 /hyphy/*
 /hyphy-analyses/*

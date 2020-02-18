@@ -1,5 +1,5 @@
 {
-   "EUROPE": [
+   "E": [
       "hsp70_like",
       "capsid_protein",
       "coat_protein",
@@ -21,7 +21,7 @@
       "35_kDa_coat_protein",
       "59_kDa_protein"
    ],
-   "SOUTH_AMERICA": [
+   "SOAM": [
       "coat_protein",
       "35_kDa_coat_protein",
       "hsp70_like",
@@ -38,7 +38,7 @@
       "heat_shock_protein_70",
       "divergent_coat_protein"
    ],
-   "NORTH_AMERICA": [
+   "NOAM": [
       "hsp70_like",
       "coat_protein",
       "7_kDa_protein",
@@ -74,7 +74,7 @@
       "19_5_kDa_protein",
       "putative_small_protein"
    ],
-   "MIDDLE_EAST": [
+   "ME": [
       "hsp70_like",
       "coat_protein",
       "hsp70_h",
@@ -90,13 +90,13 @@
       "6_kDa_protein",
       "5_kDa_protein"
    ],
-   "NORTH_AFRICA": [
+   "NOAF": [
       "coat_protein",
       "hsp70_h",
       "hsp70_like",
       "RNA_dependent_RNA_polymerase"
    ],
-   "SOUTH_AFRICA": [
+   "SOAF": [
       "hsp70_like",
       "coat_protein",
       "methyl_transferase_helicase",
@@ -111,7 +111,7 @@
       "7_kDa_protein",
       "6_kDa_protein"
    ],
-   "ASIA": [
+   "A": [
       "coat_protein",
       "p19_7_RNA_silencing_suppressor_protein",
       "hsp70_like",
@@ -121,7 +121,7 @@
       "heat_shock_protein",
       "hsp90_like"
    ],
-   "OCEANIA": [
+   "O": [
       "hsp70_like",
       "hypothetical_protein",
       "coat_protein",
@@ -135,7 +135,7 @@
       "7_kDa_protein",
       "RNA_dependent_RNA_polymerase"
    ],
-   "no_value": [
+   "NV": [
       "hypothetical_protein",
       "polyprotein",
       "p6",

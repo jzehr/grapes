@@ -1,5 +1,5 @@
 {
-  "EUROPE": [
+  "E": [
     "Albania",
     "Austria",
     "Croatia",
@@ -20,12 +20,12 @@
     "Spain_Palma_de_Mallorca",
     "Switzerland"
   ],
-  "SOUTH_AMERICA": [
+  "SOAM": [
     "Brazil",
     "Brazil_Sao_Roque_SP",
     "Chile"
   ],
-  "NORTH_AMERICA": [
+  "NOAM": [
     "Canada",
     "USA",
     "USA_Benton_County_WA",
@@ -36,7 +36,7 @@
     "USA_Texas",
     "USA_Virginia"
   ],
-  "MIDDLE_EAST": [
+  "ME": [
     "Israel",
     "Jordan",
     "Pakistan",
@@ -48,7 +48,7 @@
     "Turkey_Menderes_Izmir",
     "Turkey_Salihli_Manisa"
   ],
-  "NORTH_AFRICA": [
+  "NOAF": [
     "Algeria",
     "Algeria_Alger",
     "Algeria_Boumerdes",
@@ -56,11 +56,11 @@
     "Nigeria",
     "Tunisia"
   ],
-  "SOUTH_AFRICA": [
+  "SOAF": [
     "South_Africa",
     "Tromelin_Island"
   ],
-  "ASIA": [
+  "A": [
     "China",
     "India",
     "India_Himachal_Pradesh",
@@ -68,11 +68,11 @@
     "South_Korea",
     "South_Korea_Chuncheon_Gangwon_do"
   ],
-  "OCEANIA": [
+  "O": [
     "Australia",
     "New_Zealand"
   ],
-  "no_value": [
+  "NV": [
     "no_value"
   ]
 }

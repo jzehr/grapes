@@ -5,12 +5,14 @@ echo " ~gathering all your information ~"
 
 # this will read in your XML from NCBI
 # it spits out a json of locations separated by regions
-python python/all_country_json.py --file rsrc/GLRaV3_10-2-19_sequence.gbc.xml
+python python/all_country_json.py --file rsrc/GLRaV3_10-2-19_sequence.gbc.xml -l rsrc/locations_to_test.json
 
 # this script will read in that XML file and split it into 
 # JSONs of products that have more than 2 sequences
 # and fasta files for each region and product
 python python/region_seq.py -x rsrc/GLRaV3_10-2-19_sequence.gbc.xml -j rsrc/GLRaV3_regions.json
 
+# this will cat all the regions together that share the protein of interest
+python python/protein_region_cat.py -f data/GOOD_PRODS.json
 
 

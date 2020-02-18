@@ -4,7 +4,7 @@
 ```Snakefile_all ``` is for all the viruses from ncbi, i am currently working with only GLRaV3
     print(dir(Blast))
 
-```python python/all_country_json.py --file rsrc/GLRaV3_10-2-19_sequence.gbc.xml ```
+```python python/all_country_json.py --file rsrc/GLRaV3_10-2-19_sequence.gbc.xml -l rsrc/locations_to_test.json```
 ```python python/region_seq.py -x rsrc/GLRaV3_10-2-19_sequence.gbc.xml -j rsrc/GLRaV3_regions.json ```
 ```python python/protein_region_cat.py -f data/GOOD_PRODS.json```
 In this repo you will find data from pathogens that impact grapevines. The goal of this repo is to use this data to analyze and examine pathogen diversity.
@@ -37,7 +37,7 @@ ___
 
 	```source envs/grapes/bin/activate```
 
-- you should see a ```(grape)``` show up to the left of your command line
+- you should see a ```(grapes)``` show up to the left of your command line
  
 - it might be useful to run:
 

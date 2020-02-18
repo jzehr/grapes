@@ -17,30 +17,12 @@ GARD = "~/grapes/hyphy/res/TemplateBatchFiles/GARD.bf"
 MEME = "~/grapes/hyphy/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf"
 FEL_contrast = "~/grapes/hyphy/res/TemplateBatchFiles/SelectionAnalyses/FEL-contrast.bf"
 
-# making a list of all the poteins from each region
-# that had more then 1 sequence
+with open("data/CAT_REGION_PRODS.json") as in_json:
+  data = json.load(in_json)
 
-#with open("data/GOOD_PRODS.json") as gps:
-#  data = json.load(gps)
-#temp_files = []
-#for key, item in data.items():
-#  f = [key + "_" + i for i in item]
-#  temp_files.append(f)
-#reg_prod_files = flatten(temp_files)
-# example ~ EUROPE_hsp70_like ~ # 
+protein, files = [(key, value) for key, value in data.items() if key == "coat_protein"][0]
+#print(f"locations for the coat protein {protein} | {files}")
 
-with open("data/CAT_REGION_PRODS.json") as gps:
-  data = json.load(gps)
-
-bads = ["methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "hypothetical_protein", "p55", "19_7_kDa_protein"]
-#bads = ["polyprotein", "4_kDa_protein", "5_kDa_protein", "6_kDa_protein", "7_kDa_protein", "hsp70_like", "methyl_transferase_helicase", "methyltransferase_helicase", "21_kDa_protein", "19_6_kDa_protein", "19_7_kDa_protein", "59_kDa_protein", "hypothetical_protein", "p55", "35_kDa_coat_protein"]
-
-files = [key + "_" + value for key, value in data.items() if not key in bads]
-#files = [key + "_" + value for key, value in data.items()]
-#print(files)
-
-## filter for cat_methyltransferase_helicase_EUROPE_NORTH_AMERICA_no_value.fasta
-# this is a bad file 
 
 
 ## need to add a rule ALL ##
@@ -56,10 +38,10 @@ rule all:
 ####################################################################
 rule rpf_pre:
   input:
-    in_f = "data/fasta/cat_{RPF}.fasta"
+    in_f = "data/fasta/{RPF}_{prot}.fasta"
   output:
-    out_prot = "data/fasta/cat_{RPF}.fasta_protein.fas",
-    out_nuc = "data/fasta/cat_{RPF}.fasta_nuc.fas"
+    out_prot = "data/fasta/{RPF}_{prot}.fasta_protein.fas",
+    out_nuc = "data/fasta/{RPF}_{prot}.fasta_nuc.fas"
   shell:
    "{HYPHY} {PRE} --input {input.in_f} --E 0.05"
  
@@ -73,7 +55,7 @@ rule mafft_rpf:
   input:
     in_prot = rules.rpf_pre.output.out_prot
   output:
-    out_prot = "data/fasta/cat_{RPF}.fasta_protein_aligned.fas"
+    out_prot = "data/fasta/{RPF}_{prot}.fasta_protein_aligned.fas"
   shell:
     "mafft --quiet {input.in_prot} > {output.out_prot}"
 
@@ -86,35 +68,36 @@ rule rpf_post:
     in_prot = rules.mafft_rpf.output.out_prot,
     in_nuc = rules.rpf_pre.output.out_nuc
   output:
-    out_f = "data/fasta/cat_{RPF}.fasta_protein_aligned.fas.hyphy.fas"
+    out_f = "data/fasta/{RPF}_{prot}.fasta_protein_aligned.fas.hyphy.fas"
   shell:
    "{HYPHY} {POST} --protein-msa {input.in_prot} --nucleotide-sequences {input.in_nuc} --output {output.out_f} --compress No"
- 
-####################################################################
-# This rule will read in post-bf files 
-# and cat any overlapping genes 
-####################################################################
-#rule rpf_post:
-#  input:
-#    in_prot = rules.rpf_post.output.out_f
-#  output:
-#    out_f = "data/fasta/cat_{RPF}.hyphy.fas"
-#  shell:
  
 ####################################################################
 # This rule will read in the post-hyphy fasta 
 # and run it through ~ GARD ~
 ####################################################################
-#rule rpf_GARD:
-#  input:
-#    in_f = rules.rpf_post.output.out_f
-#  output:
-#    out_j = str(rules.rpf_post.output.out_f) + ".GARD.json",
-#    out_nex = str(rules.rpf_post.output.out_f) + ".best-gard"
-#  shell:
-#   "{HYPHY} {GARD} --alignment {input.in_f}"
+rule rpf_GARD:
+  input:
+    in_f = rules.rpf_post.output.out_f
+  output:
+    out_j = str(rules.rpf_post.output.out_f) + ".GARD.json",
+    out_nex = str(rules.rpf_post.output.out_f) + ".best-gard"
+  shell:
+   "{HYPHY} {GARD} --alignment {input.in_f}"
 
-######################################################################
+####################################################################
+# This rule will read in the output of GARD 
+# and run it through ~ MEME ~
+####################################################################
+rule rpf_MEME:
+  input:
+    in_nex = rules.rpf_GARD.output.out_nex
+  output:
+    out_j = str(rules.rpf_post.output.out_f) + ".MEME.json"
+  shell:
+    "{HYPHY} {MEME} --alignment {input.in_nex}" 
+
+#####################################################################
 # This rule will read in the output from GARD 
 # and run it through a NEXUS parser to send each partition
 # to a fasta file

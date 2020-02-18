@@ -11,7 +11,6 @@ args = parser.parse_args()
 
 in_file = args.file
 
-
 def cat_files(prod, files):
     #print(f"catting this --> {prod} for --> {files}\n")
 
@@ -20,7 +19,7 @@ def cat_files(prod, files):
     subprocess.call("touch %s" % cat_file, shell=True)
     subprocess.call("cat data/fasta/*%s.fasta > %s" % (prod, cat_file), shell=True)
     print(f"Done catting all {prod}s.")
-    return regions
+    return files
 
 with open(in_file) as j_file:
     data = json.load(j_file)
@@ -45,6 +44,10 @@ for gk in good_keys:
 
     temp[gk] = regions
     cats.update(temp)
+
+#for cat in cats:
+#    print(f"orf: {cat} | region: {cats[cat]}")
+
 
 master = {}
 for key, value in cats.items():

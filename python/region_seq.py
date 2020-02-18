@@ -10,7 +10,6 @@ from helper import name_fixer, element_item, write_fasta
 parser = argparse.ArgumentParser()
 parser.add_argument("-x", "--xml_file", help="path to your rsrc XML file", type=str)
 parser.add_argument("-j", "--json_file", help="path to your rsrc country JSON file", type=str)
-
 args = parser.parse_args()
 
 xml_file = args.xml_file
@@ -142,7 +141,11 @@ now that we have the info we can make fasta files
 '''
 for r in regions:
     for prod in master[r]:
+        #print(f"prod | {prod}")
         fasta_out = "data/fasta/%s_%s.fasta" % (r, prod)
+        #if prod == "coat_protein":
+        #    print("coat")
+        #    fasta_out = "data/fasta/%s_THE_CP_%s.fasta" % (r, prod)
         with open(fasta_out, "w") as out:
             countries = data[r]
             for key in acc_keys:

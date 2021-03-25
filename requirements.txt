@@ -10,7 +10,7 @@ GitPython==2.1.13
 idna==2.8
 jsonschema==3.0.1
 pyrsistent==0.15.4
-PyYAML==5.1.1
+PyYAML==5.4
 ratelimiter==1.2.0.post0
 requests==2.22.0
 six==1.12.0
